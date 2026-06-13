@@ -52,7 +52,7 @@ export const mockScenes: Scene[] = [
     name: 'Exterior View',
     image: './assets/mat-bang-tang-360-6mb.jpg', // Using the asset provided
     hotspots: [
-      { id: 'h18', type: 'info', position: [-140.97, -21.37, -36.32], title: 'Ga S12', description: '5 phút', lineHeight: 160 },
+      { id: 'h18', type: 'info', position: [-142.60, -20.57, -29.84], title: 'Ga S12 - Metro số 01', description: '5 phút', lineHeight: 90 },
       { id: 'h6', type: 'info', position: [-104.99, -1.84, -79.13], title: 'Vincom Plaza', description: '8 phút', lineHeight: 250 },
       { id: 'h5', type: 'info', position: [-64.07, -3.08, -52.45], title: 'KCN Sóng Thần 2', description: '7 phút', lineHeight: 160 },
       { id: 'h4', type: 'info', position: [-79.18, -2.35, -69.37], title: 'ICD Sóng Thần', description: '7 phút', lineHeight: 90 },
@@ -70,8 +70,8 @@ export const mockScenes: Scene[] = [
       { id: 'h15', type: 'info', position: [63.02, -5.23, -70.59], title: 'ĐH Kinh tế - Kỹ thuật Bình Dương', description: '7 phút', lineHeight: 60 },
       { id: 'h16', type: 'info', position: [98.42, -8.05, -22.68], title: 'THCS Nguyễn Văn Trỗi & TH An Phú 1', description: '6 phút', lineHeight: 220 },
       { id: 'h19', type: 'info', position: [72.70, -5.44, 40.91], title: 'Chợ Phú An', description: '5 phút', lineHeight: 80 },
-      { id: 'h20', type: 'info', position: [32.43, -7.49, 41.74], title: 'Khu Di tích & Du lịch Hố Lang', description: '2 phút', lineHeight: 210 },
-      { id: 'h21', type: 'info', position: [-8.88, -3.24, 51.69], title: 'KĐT Đông Bình Dương', description: '7 phút', lineHeight: 130 },
+      { id: 'h20', type: 'info', position: [32.43, -7.49, 41.74], title: 'Khu Di tích & Du lịch Hố Lang', description: '2 phút', lineHeight: 160 },
+      { id: 'h21', type: 'info', position: [-8.88, -3.24, 51.69], title: 'KĐT Đông Bình Dương', description: '7 phút', lineHeight: 80 },
       { id: 'h22', type: 'info', position: [-30.11, -2.99, 34.41], title: 'THCS Tân Bình', description: '4 phút', lineHeight: 100 },
       { id: 'h23', type: 'info', position: [-46.44, -1.29, 26.13], title: 'Chợ Tân Bình', description: '5 phút', lineHeight: 200 },
       { id: 'h25', type: 'info', position: [-95.73, -0.73, 19.48], title: 'KCN Tân Đông Hiệp', description: '8 phút', lineHeight: 160 },
@@ -80,7 +80,7 @@ export const mockScenes: Scene[] = [
       { id: 'h28', type: 'info', position: [-133.70, -40.27, 19.07], title: 'MỸ PHƯỚC – TÂN VẠN', description: 'LỘ GIỚI 64 MÉT - 10 LÀN XE', lineHeight: 160 },
       { id: 'h29', type: 'info', position: [-70, -126.57, -70], title: 'TRẦN QUANG DIỆU', description: 'LỘ GIỚI 22 MÉT - 4 LÀN XE', lineHeight: 240 },
       { id: 'h30', type: 'info', position: [43.98, -29.12, -177.68], title: 'DT743', description: 'LỘ GIỚI 60 MÉT - 10 LÀN XE', lineHeight: 160 },
-      { id: 'h31', type: 'info', position: [173.62, -40.00, -96.03], title: 'CAO TỐC TPHCM – TDM - CT', description: 'LỘ GIỚI 60 MÉT - 10 LÀN XE', lineHeight: 170 },
+      { id: 'h31', type: 'info', position: [168.03, -31.01, -108.49], title: 'CAO TỐC TPHCM – TDM - CT', description: 'LỘ GIỚI 60 MÉT - 10 LÀN XE', lineHeight: 160 },
       { id: 'h32', type: 'info', position: [-31.34, -0.34, 33.43], title: 'Cụm công nghiệp', description: '10 phút', lineHeight: 140 },
       { id: 'h24', type: 'info', position: [-45.05, 0.00, 28.48], title: 'THPT Nguyễn Thị Minh Khai & THCS Tân Đông Hiệp B', description: '7 phút', lineHeight: 260 },
       { id: 'h33', type: 'info', position: [90.17, -11.76, -44.68], title: 'Tiểu học an Phú 3', description: '6 phút', lineHeight: 180 },
