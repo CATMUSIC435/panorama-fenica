@@ -4,7 +4,7 @@ import { FloatingMenu } from './components/ui/FloatingMenu';
 import { RightToolbar } from './components/ui/RightToolbar';
 import { useUIStore } from './store/useUIStore';
 import { AnimatePresence } from 'framer-motion';
-// const DebugPanel = React.lazy(() => import('./components/panorama/DebugPanel').then(module => ({ default: module.DebugPanel })));
+const DebugPanel = React.lazy(() => import('./components/panorama/DebugPanel').then(module => ({ default: module.DebugPanel })));
 const OverviewModal = React.lazy(() => import('./components/modals/OverviewModal').then(module => ({ default: module.OverviewModal })));
 const FloorPlanModal = React.lazy(() => import('./components/modals/FloorPlanModal').then(module => ({ default: module.FloorPlanModal })));
 const GalleryModal = React.lazy(() => import('./components/modals/GalleryModal').then(module => ({ default: module.GalleryModal })));
@@ -18,7 +18,7 @@ function App() {
   const { activeModal } = useUIStore();
 
   return (
-    <div className="w-screen h-screen overflow-hidden relative bg-gray-950 text-white font-sans selection:bg-gold-500/30 select-none">
+    <div className="w-screen h-screen overflow-hidden relative bg-gray-950 text-white font-sans selection:bg-gold-500/30">
       {/* 360 Viewer Background layer */}
       <PanoramaViewer />
 
@@ -43,9 +43,9 @@ function App() {
       </Suspense>
       
       {/* Debug Layer */}
-      {/* <Suspense fallback={null}>
+      <Suspense fallback={null}>
         <DebugPanel />
-      </Suspense> */}
+      </Suspense>
     </div>
   );
 }
