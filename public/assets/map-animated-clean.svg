@@ -1,0 +1,3088 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="map-animation-svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+    viewBox="0 0 678.75 575.6">
+    <defs>
+        <style>
+            .st0 {
+                letter-spacing: 0em;
+            }
+
+            .st1,
+            .st2,
+            .st3,
+            .st4,
+            .st5,
+            .st6,
+            .st7,
+            .st8,
+            .st9,
+            .st10,
+            .st11,
+            .st12,
+            .st13,
+            .st14,
+            .st15,
+            .st16,
+            .st17,
+            .st18,
+            .st19,
+            .st20,
+            .st21,
+            .st22,
+            .st23,
+            .st24,
+            .st25,
+            .st26,
+            .st27,
+            .st28,
+            .st29,
+            .st30,
+            .st31,
+            .st32,
+            .st33,
+            .st34,
+            .st35,
+            .st36,
+            .st37,
+            .st38,
+            .st39,
+            .st40,
+            .st41,
+            .st42,
+            .st43,
+            .st44,
+            .st45,
+            .st46,
+            .st47,
+            .st48,
+            .st49,
+            .st50,
+            .st51,
+            .st52,
+            .st53,
+            .st54,
+            .st55,
+            .st56 {
+                font-family: SVN-ProductSans, 'SVN-Product Sans';
+            }
+
+            .st1,
+            .st4,
+            .st5,
+            .st6,
+            .st7,
+            .st15,
+            .st18,
+            .st20,
+            .st21,
+            .st22,
+            .st23,
+            .st24,
+            .st25,
+            .st57,
+            .st27,
+            .st31,
+            .st33,
+            .st34,
+            .st35,
+            .st37,
+            .st38,
+            .st40,
+            .st43,
+            .st44,
+            .st46,
+            .st51,
+            .st52 {
+                fill: #f0e0ca;
+            }
+
+            .st1,
+            .st21,
+            .st51 {
+                font-size: 2.35px;
+            }
+
+            .st58,
+            .st25 {
+                letter-spacing: 0em;
+            }
+
+            .st59 {
+                letter-spacing: 0em;
+            }
+
+            .st60 {
+                letter-spacing: -.02em;
+            }
+
+            .st61 {
+                fill: url(#linear-gradient2);
+            }
+
+            .st62 {
+                letter-spacing: -.02em;
+            }
+
+            .st63 {
+                letter-spacing: 0em;
+            }
+
+            .st2,
+            .st64,
+            .st14,
+            .st19,
+            .st65,
+            .st26,
+            .st41,
+            .st54 {
+                fill: #da9f61;
+            }
+
+            .st2,
+            .st26 {
+                font-size: 3.64px;
+            }
+
+            .st2,
+            .st66 {
+                letter-spacing: 0em;
+            }
+
+            .st3 {
+                font-size: 5.81px;
+            }
+
+            .st3,
+            .st67,
+            .st68,
+            .st8,
+            .st69,
+            .st9,
+            .st70,
+            .st71,
+            .st72,
+            .st10,
+            .st73,
+            .st74,
+            .st75,
+            .st11,
+            .st12,
+            .st13,
+            .st76,
+            .st16,
+            .st77,
+            .st78,
+            .st79,
+            .st28,
+            .st30,
+            .st80,
+            .st32,
+            .st81,
+            .st36,
+            .st82,
+            .st42,
+            .st83,
+            .st45,
+            .st47,
+            .st48,
+            .st84,
+            .st85,
+            .st86,
+            .st87,
+            .st50,
+            .st88,
+            .st89,
+            .st90,
+            .st91,
+            .st53,
+            .st92,
+            .st55,
+            .st93,
+            .st94,
+            .st56,
+            .st95 {
+                fill: #fff;
+            }
+
+            .st96 {
+                letter-spacing: -.03em;
+            }
+
+            .st97 {
+                letter-spacing: -.02em;
+            }
+
+            .st98,
+            .st51 {
+                letter-spacing: 0em;
+            }
+
+            .st99 {
+                letter-spacing: -.03em;
+            }
+
+            .st100 {
+                letter-spacing: 0em;
+            }
+
+            .st67 {
+                font-size: 5.24px;
+            }
+
+            .st67,
+            .st69,
+            .st71,
+            .st72,
+            .st73,
+            .st64,
+            .st77,
+            .st78,
+            .st79,
+            .st80,
+            .st81,
+            .st101,
+            .st82,
+            .st84,
+            .st85,
+            .st86,
+            .st88,
+            .st91,
+            .st92,
+            .st93,
+            .st94,
+            .st95 {
+                font-family: SVN-ProductSansBold, 'SVN-Product Sans';
+                font-weight: 700;
+            }
+
+            .st68 {
+                font-size: 6.5px;
+            }
+
+            .st68,
+            .st70,
+            .st75,
+            .st76,
+            .st83,
+            .st87,
+            .st89,
+            .st90 {
+                font-family: UTMAvoBold, 'UTM Avo';
+            }
+
+            .st102 {
+                letter-spacing: 0em;
+            }
+
+            .st103 {
+                letter-spacing: 0em;
+            }
+
+            .st104 {
+                letter-spacing: -.03em;
+            }
+
+            .st4,
+            .st105 {
+                letter-spacing: -.02em;
+            }
+
+            .st4,
+            .st23,
+            .st33,
+            .st37 {
+                font-size: 2.32px;
+            }
+
+            .st106 {
+                fill: #45341c;
+            }
+
+            .st5,
+            .st25,
+            .st35 {
+                font-size: 3px;
+            }
+
+            .st107 {
+                letter-spacing: -.03em;
+            }
+
+            .st108 {
+                mask: url(#mask-1);
+            }
+
+            .st6 {
+                font-size: 2.39px;
+                letter-spacing: 0em;
+            }
+
+            .st109 {
+                letter-spacing: 0em;
+            }
+
+            .st110 {
+                letter-spacing: -.01em;
+            }
+
+            .st7 {
+                font-size: 2.64px;
+            }
+
+            .st111 {
+                letter-spacing: 0em;
+            }
+
+            .st112 {
+                letter-spacing: 0em;
+            }
+
+            .st113 {
+                letter-spacing: 0em;
+            }
+
+            .st114 {
+                letter-spacing: 0em;
+            }
+
+            .st8 {
+                font-size: 3.21px;
+            }
+
+            .st69,
+            .st89 {
+                font-size: 6.5px;
+            }
+
+            .st9 {
+                font-size: 3.13px;
+            }
+
+            .st115 {
+                fill: #003a54;
+            }
+
+            .st116 {
+                letter-spacing: 0em;
+            }
+
+            .st117 {
+                letter-spacing: -.02em;
+            }
+
+            .st70 {
+                font-size: 6.5px;
+            }
+
+            .st71 {
+                font-size: 5px;
+            }
+
+            .st118 {
+                letter-spacing: 0em;
+            }
+
+            .st119 {
+                letter-spacing: 0em;
+            }
+
+            .st120,
+            .st121 {
+                fill: #0e1e2e;
+            }
+
+            .st72 {
+                font-size: 5.24px;
+            }
+
+            .st122 {
+                stroke-width: 5px;
+            }
+
+            .st122,
+            .st123,
+            .st124,
+            .st125,
+            .st126,
+            .st127,
+            .st128,
+            .st129,
+            .st130,
+            .st131,
+            .st132,
+            .st133,
+            .st134,
+            .st135,
+            .st136,
+            .st137,
+            .st138,
+            .st139,
+            .st140,
+            .st141,
+            .st142,
+            .st143,
+            .st144,
+            .st145,
+            .st146 {
+                fill: none;
+            }
+
+            .st122,
+            .st123,
+            .st124,
+            .st125,
+            .st126,
+            .st127,
+            .st128,
+            .st131,
+            .st121,
+            .st135,
+            .st136,
+            .st137,
+            .st139,
+            .st140,
+            .st141,
+            .st142,
+            .st143,
+            .st144,
+            .st145,
+            .st146 {
+                stroke-miterlimit: 10;
+            }
+
+            .st122,
+            .st123,
+            .st126,
+            .st127,
+            .st140 {
+                stroke: #376070;
+            }
+
+            .st147 {
+                letter-spacing: 0em;
+            }
+
+            .st148 {
+                letter-spacing: -.03em;
+            }
+
+            .st10,
+            .st42,
+            .st84 {
+                font-size: 9px;
+            }
+
+            .st73 {
+                font-size: 6.5px;
+            }
+
+            .st149 {
+                letter-spacing: 0em;
+            }
+
+            .st150 {
+                letter-spacing: -.02em;
+            }
+
+            .st151 {
+                letter-spacing: 0em;
+            }
+
+            .st152,
+            .st24 {
+                letter-spacing: 0em;
+            }
+
+            .st153 {
+                letter-spacing: 0em;
+            }
+
+            .st154 {
+                letter-spacing: -.03em;
+            }
+
+            .st155 {
+                letter-spacing: 0em;
+            }
+
+            .st156,
+            .st21 {
+                letter-spacing: 0em;
+            }
+
+            .st157 {
+                mask: url(#mask);
+            }
+
+            .st75,
+            .st81 {
+                font-size: 6.5px;
+            }
+
+            .st64 {
+                font-size: 2.53px;
+            }
+
+            .st158 {
+                fill: url(#linear-gradient1);
+            }
+
+            .st11 {
+                font-size: 4px;
+            }
+
+            .st12 {
+                font-size: 3.99px;
+            }
+
+            .st159 {
+                letter-spacing: -.01em;
+            }
+
+            .st160 {
+                letter-spacing: -.04em;
+            }
+
+            .st161 {
+                letter-spacing: -.02em;
+            }
+
+            .st162 {
+                letter-spacing: 0em;
+            }
+
+            .st13,
+            .st36 {
+                font-size: 5.81px;
+            }
+
+            .st13,
+            .st163 {
+                letter-spacing: 0em;
+            }
+
+            .st164 {
+                letter-spacing: 0em;
+            }
+
+            .st76 {
+                font-size: 6.5px;
+            }
+
+            .st165 {
+                letter-spacing: -.01em;
+            }
+
+            .st123 {
+                stroke-width: 4px;
+            }
+
+            .st166 {
+                letter-spacing: 0em;
+            }
+
+            .st14 {
+                letter-spacing: 0em;
+            }
+
+            .st14,
+            .st19 {
+                font-size: 2.56px;
+            }
+
+            .st15 {
+                letter-spacing: -.02em;
+            }
+
+            .st15,
+            .st27 {
+                font-size: 2.57px;
+            }
+
+            .st124 {
+                stroke: #db9f61;
+            }
+
+            .st124,
+            .st125,
+            .st130 {
+                stroke-width: .5px;
+            }
+
+            .st167 {
+                letter-spacing: 0em;
+            }
+
+            .st168 {
+                letter-spacing: 0em;
+            }
+
+            .st169 {
+                letter-spacing: -.02em;
+            }
+
+            .st125,
+            .st130,
+            .st134,
+            .st142 {
+                stroke: #fff;
+            }
+
+            .st170 {
+                letter-spacing: 0em;
+            }
+
+            .st171 {
+                letter-spacing: -.01em;
+            }
+
+            .st172 {
+                letter-spacing: 0em;
+            }
+
+            .st173 {
+                letter-spacing: 0em;
+            }
+
+            .st16 {
+                font-size: 3.72px;
+            }
+
+            .st174 {
+                letter-spacing: 0em;
+            }
+
+            .st17,
+            .st175,
+            .st39 {
+                fill: #f0e0c9;
+            }
+
+            .st17,
+            .st176 {
+                letter-spacing: 0em;
+            }
+
+            .st17,
+            .st39,
+            .st44 {
+                font-size: 2.98px;
+            }
+
+            .st177 {
+                fill: #79a6bb;
+            }
+
+            .st77 {
+                font-size: 5.81px;
+            }
+
+            .st178,
+            .st35 {
+                letter-spacing: 0em;
+            }
+
+            .st179 {
+                letter-spacing: 0em;
+            }
+
+            .st18 {
+                font-size: 2.35px;
+            }
+
+            .st180 {
+                fill: url(#radial-gradient);
+            }
+
+            .st181,
+            .st48 {
+                letter-spacing: 0em;
+            }
+
+            .st19 {
+                letter-spacing: 0em;
+            }
+
+            .st182 {
+                letter-spacing: -.02em;
+            }
+
+            .st183 {
+                letter-spacing: 0em;
+            }
+
+            .st184,
+            .st46 {
+                letter-spacing: 0em;
+            }
+
+            .st78 {
+                font-size: 6.5px;
+            }
+
+            .st185 {
+                mask: url(#mask-2);
+            }
+
+            .st186 {
+                letter-spacing: -.01em;
+            }
+
+            .st187 {
+                letter-spacing: 0em;
+            }
+
+            .st188 {
+                letter-spacing: 0em;
+            }
+
+            .st20 {
+                font-size: 2.73px;
+            }
+
+            .st189 {
+                letter-spacing: 0em;
+            }
+
+            .st190 {
+                letter-spacing: 0em;
+            }
+
+            .st126 {
+                stroke-width: 5.24px;
+            }
+
+            .st191 {
+                letter-spacing: 0em;
+            }
+
+            .st192 {
+                letter-spacing: 0em;
+            }
+
+            .st127,
+            .st135,
+            .st137 {
+                stroke-width: 6px;
+            }
+
+            .st193 {
+                letter-spacing: .01em;
+            }
+
+            .st194 {
+                letter-spacing: -.07em;
+            }
+
+            .st22,
+            .st24,
+            .st46 {
+                font-size: 2.28px;
+            }
+
+            .st79 {
+                font-size: 5.04px;
+                letter-spacing: -.01em;
+            }
+
+            .st23,
+            .st195 {
+                letter-spacing: 0em;
+            }
+
+            .st128 {
+                stroke: #ff7900;
+                stroke-width: 5.67px;
+            }
+
+            .st196 {
+                fill: #dcf3ff;
+            }
+
+            .st197 {
+                letter-spacing: 0em;
+            }
+
+            .st198 {
+                letter-spacing: -.03em;
+            }
+
+            .st199 {
+                letter-spacing: 0em;
+            }
+
+            .st200 {
+                letter-spacing: -.01em;
+            }
+
+            .st201,
+            .st32 {
+                letter-spacing: 0em;
+            }
+
+            .st202 {
+                letter-spacing: 0em;
+            }
+
+            .st203 {
+                letter-spacing: -.03em;
+            }
+
+            .st129 {
+                stroke: url(#linear-gradient4);
+            }
+
+            .st129,
+            .st130,
+            .st132,
+            .st133,
+            .st134,
+            .st138 {
+                stroke-linejoin: round;
+            }
+
+            .st129,
+            .st132,
+            .st133,
+            .st134,
+            .st138 {
+                stroke-dasharray: 5 3;
+            }
+
+            .st204 {
+                letter-spacing: -.03em;
+            }
+
+            .st205 {
+                fill: #b3e400;
+            }
+
+            .st28,
+            .st32 {
+                font-size: 6px;
+            }
+
+            .st206 {
+                letter-spacing: 0em;
+            }
+
+            .st207 {
+                letter-spacing: 0em;
+            }
+
+            .st208 {
+                letter-spacing: 0em;
+            }
+
+            .st130 {
+                stroke-linecap: round;
+            }
+
+            .st29,
+            .st209,
+            .st56 {
+                letter-spacing: 0em;
+            }
+
+            .st29,
+            .st101,
+            .st210,
+            .st49 {
+                fill: #5fff5f;
+            }
+
+            .st29,
+            .st49,
+            .st56 {
+                font-size: 3.25px;
+            }
+
+            .st211 {
+                letter-spacing: 0em;
+            }
+
+            .st212 {
+                letter-spacing: -.07em;
+            }
+
+            .st213 {
+                letter-spacing: -.02em;
+            }
+
+            .st214 {
+                letter-spacing: 0em;
+            }
+
+            .st30 {
+                font-size: 5.81px;
+            }
+
+            .st215 {
+                letter-spacing: -.02em;
+            }
+
+            .st216 {
+                letter-spacing: -.01em;
+            }
+
+            .st217 {
+                letter-spacing: -.07em;
+            }
+
+            .st218 {
+                letter-spacing: 0em;
+            }
+
+            .st219 {
+                letter-spacing: 0em;
+            }
+
+            .st220 {
+                letter-spacing: 0em;
+            }
+
+            .st131 {
+                stroke-width: 8px;
+            }
+
+            .st131,
+            .st135,
+            .st137,
+            .st143 {
+                stroke: #da9f61;
+            }
+
+            .st221 {
+                letter-spacing: 0em;
+            }
+
+            .st121,
+            .st139,
+            .st141,
+            .st144,
+            .st145,
+            .st146 {
+                stroke: #5fff5f;
+            }
+
+            .st121,
+            .st142,
+            .st144 {
+                stroke-width: .25px;
+            }
+
+            .st222 {
+                letter-spacing: 0em;
+            }
+
+            .st31 {
+                font-size: 2.3px;
+            }
+
+            .st80 {
+                font-size: 5.24px;
+            }
+
+            .st132 {
+                stroke: url(#linear-gradient3);
+            }
+
+            .st223 {
+                letter-spacing: 0em;
+            }
+
+            .st224 {
+                letter-spacing: 0em;
+            }
+
+            .st225 {
+                letter-spacing: 0em;
+            }
+
+            .st226 {
+                letter-spacing: -.01em;
+            }
+
+            .st227 {
+                letter-spacing: -.07em;
+            }
+
+            .st228 {
+                filter: url(#luminosity-noclip1);
+            }
+
+            .st229 {
+                letter-spacing: 0em;
+            }
+
+            .st230 {
+                letter-spacing: -.01em;
+            }
+
+            .st34 {
+                font-size: 2.91px;
+            }
+
+            .st231 {
+                letter-spacing: -.04em;
+            }
+
+            .st133 {
+                stroke: url(#linear-gradient6);
+            }
+
+            .st232 {
+                letter-spacing: -.06em;
+            }
+
+            .st233 {
+                letter-spacing: 0em;
+            }
+
+            .st234 {
+                letter-spacing: 0em;
+            }
+
+            .st101 {
+                font-size: 3.13px;
+                letter-spacing: 0em;
+            }
+
+            .st235 {
+                filter: url(#luminosity-noclip2);
+            }
+
+            .st37,
+            .st236 {
+                letter-spacing: 0em;
+            }
+
+            .st38 {
+                font-size: 3.15px;
+            }
+
+            .st237 {
+                letter-spacing: 0em;
+            }
+
+            .st238 {
+                letter-spacing: 0em;
+            }
+
+            .st239 {
+                letter-spacing: -.02em;
+            }
+
+            .st240 {
+                letter-spacing: -.02em;
+            }
+
+            .st241 {
+                letter-spacing: 0em;
+            }
+
+            .st242 {
+                letter-spacing: 0em;
+            }
+
+            .st243 {
+                letter-spacing: 0em;
+            }
+
+            .st244 {
+                letter-spacing: 0em;
+            }
+
+            .st245,
+            .st55 {
+                letter-spacing: 0em;
+            }
+
+            .st246 {
+                letter-spacing: -.06em;
+            }
+
+            .st82 {
+                font-size: 5.24px;
+            }
+
+            .st40 {
+                font-size: 3.25px;
+            }
+
+            .st247 {
+                letter-spacing: 0em;
+            }
+
+            .st248 {
+                letter-spacing: 0em;
+            }
+
+            .st135 {
+                filter: url(#drop-shadow-1);
+            }
+
+            .st249 {
+                letter-spacing: -.07em;
+            }
+
+            .st250 {
+                letter-spacing: -.03em;
+            }
+
+            .st251 {
+                display: none;
+            }
+
+            .st41,
+            .st52 {
+                font-size: 3.21px;
+            }
+
+            .st252 {
+                letter-spacing: -.01em;
+            }
+
+            .st253 {
+                letter-spacing: 0em;
+            }
+
+            .st42,
+            .st254 {
+                letter-spacing: 0em;
+            }
+
+            .st83,
+            .st95 {
+                font-size: 6.5px;
+            }
+
+            .st43 {
+                font-size: 2.38px;
+                letter-spacing: 0em;
+            }
+
+            .st255 {
+                letter-spacing: 0em;
+            }
+
+            .st45 {
+                font-size: 5.81px;
+            }
+
+            .st256 {
+                letter-spacing: -.03em;
+            }
+
+            .st257 {
+                letter-spacing: 0em;
+            }
+
+            .st258,
+            .st52 {
+                letter-spacing: -.02em;
+            }
+
+            .st259 {
+                letter-spacing: -.02em;
+            }
+
+            .st47 {
+                font-size: 3.29px;
+            }
+
+            .st136 {
+                stroke: #bc5500;
+                stroke-width: .28px;
+            }
+
+            .st48,
+            .st53,
+            .st55 {
+                font-size: 8px;
+            }
+
+            .st260 {
+                letter-spacing: -.03em;
+            }
+
+            .st261 {
+                letter-spacing: -.04em;
+            }
+
+            .st262 {
+                letter-spacing: 0em;
+            }
+
+            .st263 {
+                letter-spacing: -.02em;
+            }
+
+            .st264 {
+                letter-spacing: -.02em;
+            }
+
+            .st265 {
+                letter-spacing: 0em;
+            }
+
+            .st266 {
+                letter-spacing: 0em;
+            }
+
+            .st85 {
+                font-size: 6.5px;
+            }
+
+            .st267 {
+                letter-spacing: 0em;
+            }
+
+            .st268 {
+                letter-spacing: 0em;
+            }
+
+            .st269 {
+                letter-spacing: 0em;
+            }
+
+            .st270 {
+                letter-spacing: 0em;
+            }
+
+            .st271 {
+                letter-spacing: 0em;
+            }
+
+            .st138 {
+                stroke: url(#linear-gradient5);
+            }
+
+            .st272 {
+                letter-spacing: 0em;
+            }
+
+            .st273 {
+                letter-spacing: 0em;
+            }
+
+            .st274 {
+                letter-spacing: 0em;
+            }
+
+            .st275 {
+                letter-spacing: 0em;
+            }
+
+            .st86 {
+                font-size: 6.5px;
+            }
+
+            .st87,
+            .st91 {
+                font-size: 6.5px;
+            }
+
+            .st276 {
+                letter-spacing: 0em;
+            }
+
+            .st50 {
+                font-size: 6.99px;
+            }
+
+            .st88 {
+                font-size: 7.43px;
+            }
+
+            .st90 {
+                font-size: 6.5px;
+            }
+
+            .st139 {
+                stroke-dasharray: .3 2.01;
+            }
+
+            .st139,
+            .st141,
+            .st145,
+            .st146 {
+                stroke-width: 2px;
+            }
+
+            .st277 {
+                letter-spacing: -.03em;
+            }
+
+            .st278 {
+                letter-spacing: 0em;
+            }
+
+            .st279 {
+                fill: #8af7ff;
+            }
+
+            .st280 {
+                letter-spacing: 0em;
+            }
+
+            .st281 {
+                letter-spacing: -.03em;
+            }
+
+            .st282 {
+                letter-spacing: 0em;
+            }
+
+            .st283 {
+                letter-spacing: -.01em;
+            }
+
+            .st284 {
+                fill: url(#linear-gradient);
+            }
+
+            .st285 {
+                letter-spacing: 0em;
+            }
+
+            .st286 {
+                letter-spacing: 0em;
+            }
+
+            .st140 {
+                stroke-width: 2.13px;
+            }
+
+            .st141 {
+                stroke-dasharray: .3 2;
+            }
+
+            .st54 {
+                font-size: 2.98px;
+            }
+
+            .st287 {
+                letter-spacing: -.02em;
+            }
+
+            .st92 {
+                font-size: 5.24px;
+            }
+
+            .st288 {
+                letter-spacing: 0em;
+            }
+
+            .st93 {
+                font-size: 5.24px;
+            }
+
+            .st94 {
+                font-size: 5.24px;
+            }
+
+            .st289 {
+                letter-spacing: -.02em;
+            }
+
+            .st143 {
+                stroke-width: 7px;
+            }
+
+            .st290 {
+                letter-spacing: -.02em;
+            }
+
+            .st291 {
+                letter-spacing: 0em;
+            }
+
+            .st292 {
+                letter-spacing: -.03em;
+            }
+
+            .st293 {
+                letter-spacing: -.01em;
+            }
+
+            .st294 {
+                mask: url(#mask-3);
+            }
+
+            .st295 {
+                letter-spacing: -.02em;
+            }
+
+            .st145 {
+                stroke-dasharray: .3 2;
+            }
+
+            .st296 {
+                filter: url(#luminosity-noclip);
+            }
+
+            .st297 {
+                letter-spacing: 0em;
+            }
+
+            .st298 {
+                letter-spacing: -.06em;
+            }
+        </style>
+        <radialGradient id="radial-gradient" cx="331.5" cy="287.17" fx="331.5" fy="287.17" r="288.43"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff"></stop>
+            <stop offset=".37" stop-color="#fdfdfd"></stop>
+            <stop offset=".51" stop-color="#f6f6f6"></stop>
+            <stop offset=".6" stop-color="#eaeaea"></stop>
+            <stop offset=".68" stop-color="#d9d9d9"></stop>
+            <stop offset=".75" stop-color="#c3c3c3"></stop>
+            <stop offset=".8" stop-color="#a8a8a8"></stop>
+            <stop offset=".86" stop-color="#878787"></stop>
+            <stop offset=".91" stop-color="#626262"></stop>
+            <stop offset=".95" stop-color="#373737"></stop>
+            <stop offset=".99" stop-color="#090909"></stop>
+            <stop offset="1" stop-color="#000"></stop>
+        </radialGradient>
+        <mask id="mask" x="43.07" y="-31.18" width="577.64" height="663.22" maskUnits="userSpaceOnUse">
+            <circle class="st180" cx="331.5" cy="287.17" r="288.43"></circle>
+        </mask>
+        <filter id="luminosity-noclip" x="130.21" y="147.85" width="534.33" height="343.5"
+            color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+            <feFlood flood-color="#fff" result="bg"></feFlood>
+            <feBlend in="SourceGraphic" in2="bg"></feBlend>
+        </filter>
+        <linearGradient id="linear-gradient" x1="644.16" y1="471.39" x2="609.33" y2="427.96"
+            gradientTransform="translate(429.61 -296.31) rotate(39.31)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#000"></stop>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+        </linearGradient>
+        <mask id="mask-1" x="130.21" y="147.85" width="534.33" height="343.5" maskUnits="userSpaceOnUse">
+            <g class="st296">
+                <rect class="st284" x="614.99" y="415.93" width="29.21" height="74.61"
+                    transform="translate(-144.67 501.43) rotate(-39.31)"></rect>
+            </g>
+        </mask>
+        <filter id="drop-shadow-1" x="50.35" y="99.21" width="632" height="313" filterUnits="userSpaceOnUse">
+            <feOffset dx=".5" dy=".5"></feOffset>
+            <feGaussianBlur result="blur" stdDeviation="5"></feGaussianBlur>
+            <feFlood flood-color="#000" flood-opacity="1"></feFlood>
+            <feComposite in2="blur" operator="in"></feComposite>
+            <feComposite in="SourceGraphic"></feComposite>
+        </filter>
+        <filter id="luminosity-noclip1" x="295.07" y="17.08" width="30.49" height="160.42"
+            color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+            <feFlood flood-color="#fff" result="bg"></feFlood>
+            <feBlend in="SourceGraphic" in2="bg"></feBlend>
+        </filter>
+        <linearGradient id="linear-gradient1" x1="322.35" y1="25.26" x2="325.31" y2="-9.71"
+            gradientTransform="translate(-3.84 76.39) rotate(-7.98) scale(1 1.2) skewX(-2.97)"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fefefe" stop-opacity="0"></stop>
+            <stop offset="1" stop-color="#000"></stop>
+        </linearGradient>
+        <mask id="mask-2" x="295.07" y="17.08" width="30.49" height="160.42" maskUnits="userSpaceOnUse">
+            <g class="st228">
+                <rect class="st158" x="311.89" y="17.08" width="13.68" height="47.15"></rect>
+            </g>
+        </mask>
+        <filter id="luminosity-noclip2" x="125.85" y="366.19" width="319.4" height="174.12"
+            color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+            <feFlood flood-color="#fff" result="bg"></feFlood>
+            <feBlend in="SourceGraphic" in2="bg"></feBlend>
+        </filter>
+        <linearGradient id="linear-gradient2" x1="204.31" y1="528.67" x2="131.09" y2="528.67"
+            gradientTransform="matrix(1,0,0,1,0,0)" xlink:href="#linear-gradient1"></linearGradient>
+        <mask id="mask-3" x="125.85" y="366.19" width="319.4" height="174.12" maskUnits="userSpaceOnUse">
+            <g class="st235">
+                <rect class="st61" x="125.85" y="517.03" width="81.76" height="23.28"></rect>
+            </g>
+        </mask>
+        <path id="path" d="M138.18,133.97s22.22,16.33,34.44,32.89"></path>
+        <path id="path1" d="M214.88,272.75s2.3,27.48-2.14,47.58"></path>
+        <linearGradient id="linear-gradient3" x1="419.41" y1="497.74" x2="419.41" y2="546.86"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff"></stop>
+            <stop offset=".06" stop-color="#fff" stop-opacity=".86"></stop>
+            <stop offset=".16" stop-color="#fff" stop-opacity=".66"></stop>
+            <stop offset=".26" stop-color="#fff" stop-opacity=".48"></stop>
+            <stop offset=".37" stop-color="#fff" stop-opacity=".34"></stop>
+            <stop offset=".48" stop-color="#fff" stop-opacity=".21"></stop>
+            <stop offset=".59" stop-color="#fff" stop-opacity=".12"></stop>
+            <stop offset=".71" stop-color="#fff" stop-opacity=".05"></stop>
+            <stop offset=".84" stop-color="#fff" stop-opacity=".01"></stop>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+        </linearGradient>
+        <linearGradient id="linear-gradient4" x1="165.25" y1="385.38" x2="67.18" y2="385.38"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff"></stop>
+            <stop offset=".23" stop-color="#fff" stop-opacity=".99"></stop>
+            <stop offset=".37" stop-color="#fff" stop-opacity=".96"></stop>
+            <stop offset=".48" stop-color="#fff" stop-opacity=".9"></stop>
+            <stop offset=".58" stop-color="#fff" stop-opacity=".82"></stop>
+            <stop offset=".67" stop-color="#fff" stop-opacity=".72"></stop>
+            <stop offset=".75" stop-color="#fff" stop-opacity=".59"></stop>
+            <stop offset=".83" stop-color="#fff" stop-opacity=".44"></stop>
+            <stop offset=".91" stop-color="#fff" stop-opacity=".27"></stop>
+            <stop offset=".97" stop-color="#fff" stop-opacity=".08"></stop>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+        </linearGradient>
+        <linearGradient id="linear-gradient5" x1="7.14" y1="157.57" x2="134.07" y2="157.57"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff" stop-opacity="0"></stop>
+            <stop offset="1" stop-color="#fff"></stop>
+        </linearGradient>
+        <linearGradient id="linear-gradient6" x1="505.63" y1="422.52" x2="513.6" y2="479.23"
+            xlink:href="#linear-gradient3"></linearGradient>
+    
+    <style>
+      @keyframes drawLineAnim {
+        0% { stroke-dashoffset: 3000; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes pulseLogo {
+        0%, 100% {
+          transform: scale(1) !important;
+          filter: drop-shadow(0 0 4px rgba(214,155,96,0.3)) !important;
+        }
+        50% {
+          transform: scale(1.15) !important;
+          filter: drop-shadow(0 0 15px rgba(255,200,100,0.9)) !important;
+        }
+      }
+      /* Target paths that have dasharray set, meaning they were prepared for drawing */
+      path[style*="stroke-dasharray"], path[style*="strokeDasharray"] {
+        animation: drawLineAnim 60s linear infinite !important;
+        will-change: stroke-dashoffset;
+      }
+      /* Animate specific highlighted lines if they have a specific class like st115 or st136 */
+      .st115, .st136, .st127, .st135 {
+        animation: drawLineAnim 50s linear infinite !important;
+      }
+      /* Make the special N logo pulse and glow */
+      #special-logo {
+        animation: pulseLogo 3s infinite ease-in-out !important;
+        transform-origin: center !important;
+        transform-box: fill-box !important;
+        will-change: transform, filter;
+      }
+    </style>
+  
+</defs>
+    <g id="Layer_2" class="st251">
+        <rect class="st120" width="678.75" height="575.6"></rect>
+    </g>
+    <g id="Layer_1">
+        <image width="900" height="537" transform="translate(-7771 -7893.72)"
+            href="/assets/map-bg-0.png">
+        </image>
+        <polyline class="st140" points="315.83 184.98 345.83 180.89 353.16 179.89"></polyline>
+        <g class="st157">
+            <g>
+                <path class="st115"
+                    d="M289.55,438.28c-7.04,2.46-11.08,10.3-14.63,15.71-6.86,9.3-16.8,16.72-27.37,21.33-6.44,2.74-13.39,4.49-20.28,3.29-5.42-1.01-6.32-2.13-4.94-7.33,4.16-12.22,7.44-25.33-3.28-35.54-4.26-4.28-10.55-7.25-14.23-11.65-2.99-3.33-3.52-8.57-1.16-12.3,2.84-4.25,7.86-4.83,12.91-5.02,1.57-.02,3.16.01,4.76.05,5.07.12,10.28.24,15.44-1.6,8.92-3.18,12.98-10.86,10.62-20.11-4.31-20.16-26.18-19.72-41.83-24.71-8.61-2.79-13.78-9.18-19.58-16.4-1.75-2.07-3.56-4.37-5.12-6.8-.05-.08-.1-.15-.15-.23-1.56-2.45-2.86-5.03-3.57-7.65-1.66-5.46.06-9.01,4.02-13.12,8.17-8.14,14.75-15.4,11.77-28.16-2.6-14.4-6.42-29-14.38-41.53-.6-.96-1.25-1.91-1.93-2.83-4.67-6.3-11.27-11.45-19.12-12.99-6.84-1.4-13.57-.16-20.11.55-11.67,1.62-23.33-1.96-32.77-8.76-19.52-14.69-11.81-27.43-10.28-47.81.36-6.67-.13-13.38-1.48-19.93-1.18-6.27-3.78-12.55-5.67-18.45-1.74-5.55-2.21-10.33.27-15.59,1.48-3.35,2.3-7.43,2.05-10.96-.25-5.43-1.31-10.77-3.92-15.66-1.44-2.74-4.26-5.92-7.73-6.84-1.43-.32-2.9-.46-4.36-.46-4.53,0-9.1,1.44-12.9,3.85-.42.26-.81.55-1.21.83l-1.09.85c-1.92,1.55-4.06,2.51-6.11,2.68l.83,9.12c4.27-.4,8.05-2.33,11-4.75,2.79-2.38,6.49-3.67,10.16-3.59.3-.01.6.03.91.04.17.01.19.02.3.04.17.06.38.14.64.34.54.38,1.22,1.2,1.78,2.22.58,1.03,1.08,2.24,1.49,3.52.81,2.56,1.3,5.41,1.42,8.13.05,1.35,0,2.73-.18,3.74l-.08.35c-.27,1.19-.71,2.16-1.14,3.37-4.93,10.42-.84,20.71,2.7,30.39,2.94,8.43,4.22,17.38,3.75,26.29-.47,9.61-3.58,18.97-2.57,28.85,2.27,21.53,24.92,35.05,44.84,36.82l.11.08c4.21.35,8.49-.17,12.72-.69,7.87-.97,15.55-1.94,22.2,2.7,2.9,2.05,5.42,4.72,7.63,7.82,7.9,11.11,11.72,27.57,13.94,39.65,3.13,12.03-6.91,16.47-13.07,25.08-5.33,7.27-3.96,15.64-.22,23.13h.02c2.14,4.31,5.06,8.33,7.95,11.68,9.73,12.62,16.86,18.68,33.03,21.84,8.66,2.15,17.55,2.96,23.37,9.27,1.94,2.23,3.06,5.37,3.39,8.46.16,1.53.21,2.99-.5,4.31-3.51,5.15-10.44,4.91-16.81,4.68-1.88-.07-3.7-.14-5.38-.07-7.28-.09-16.32,2.26-20.44,9.13-4.57,7.08-3.64,16.66,1.7,22.96,7.36,9.24,21.41,11.57,18.98,25.83-.73,7.63-5.87,14.48-4.07,22.5,1.43,6.03,7.48,9.09,12.96,9.89,8.76,1.69,18.14-.46,25.83-3.74,12.49-5.39,23.57-13.63,31.79-24.53,3.58-4.73,5.01-9.7,10.14-11.99,6.99-2.48,15,2.37,19.84,7.27,5.5,6.07,7.07,14.45,7.04,22.62-.12,5.61-1.28,11.27-3.64,15.92-1.74,3.8-5.34,5.8-9.61,4.84-3.77-.73-6.96-3.3-9.05-6.49-1.4-2.34-2.18-4.29-3.97-6.88-3.54-5.52-10.73-8.17-17.02-8.13-11.69-.1-21.31,7.09-25.93,16.69l-.26-.12c-1.42,3.15-2.16,6.22-2.45,9.09-.63,4.74-.1,9.67,1.89,14.36h.07c.9,2.39,1.77,3.86,1.88,4.04l.39.57c5.3,6.8,15.23,23.23,12.11,30.64l-.07.17c-3.29,8.53-10.44,12.45-17.36,16.23-9.82,5.37-23.26,12.73-12.13,34.56l.39.66c.81,1.19,19.63,28.14,51.62,28.14,1.11,0,2.24-.03,3.38-.1l-.71-11.98c-25.6,1.5-42.23-19.9-44.2-22.56-2.65-5.32-3.36-9.14-2.09-11.35,1.37-2.4,5.31-4.55,9.49-6.84,7.97-4.36,17.88-9.79,22.76-22.37,6.04-14.61-8.98-36.2-12.98-41.57-.73-1.43-1.4-2.86-1.9-4.31-.83-2.99-1.29-7.38.68-12.06,3.26-6.93,10.94-11.91,18.69-9.99,4.71.83,5.75,5.54,8.18,9.22,2.11,3.13,4.78,5.93,7.98,7.99,6.21,3.9,14.47,5.2,21.23,1.73,3.9-1.93,6.98-5.42,8.79-9.24,6.79-14.4,6.32-32.63-1.99-46.26-7.14-10.55-22.07-18.95-34.81-14.07Z"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 2029.05;"></path>
+                <path class="st115"
+                    d="M605.3,468.59c-1.54-2.15-3.08-4.23-4.72-6.12-2.97-3.29-6.49-7.28-9.34-10.77-20.44-24.87-41.18-51.33-53.31-81.23,1.67-4.37,3.15-8.83,4.36-13.4,1.94-7.29,3.14-15.02,2.94-22.57-.1-14.41-7.06-28.83-19.9-35.56-.29-.91-.6-1.79-.93-2.62-4.61-11.52-10.33-16.14-7.65-29.5.57-3.92,2.46-7.65,2.9-11.65.03-.24.04-.49.06-.73.65-.71,1.27-1.46,1.8-2.25,6.68-9.34,5.82-21.3,8.05-31.89.67-3.03,1.72-5.7,3.01-8.18,5.9-10.27,13.36-19.5,8.08-32.41-8-19.25-28.9-12.36-39.34.3-7.16,8.36-12.73,17.29-22.5,21.54-.28-.38-.56-.76-.77-1.17-4.15-8.35-8.56-16.38-15.2-23.3-12.02-12.39-29.3-17.8-45.79-20.23-12.71-1.57-24.39-1.53-32.57-12.81-.93-1.32-1.48-2.55-1.68-3.36-.24-.88-.2-1.36.23-2.15,1.59-2.3,3.69-4.34,6.01-6.15.38-.29.77-.58,1.16-.86.21-.15.41-.3.62-.44,1.98-1.37,4.06-2.57,6.09-3.6,3.81-1.92,6.95-2.43,10.94-4.73.13-.08.24-.17.36-.25.31-.19.6-.39.88-.6.04-.03.08-.06.12-.09,3.88-2.92,5.55-7.43,5.15-11.94h-.14c-.26-2.75-1.26-5.5-3.01-7.89-3.46-4.86-6.86-6.98-10.89-10.35-3.9-3.44-7.61-7.13-11.1-10.95-7.72-8.29-31.67-39.33-20.86-49.08,2.54-2.17,4.99-3.25,8.46-5.86,1.3-1,2.68-2.2,3.99-3.68,2.31-2.41,4.02-6.32,5-9.08.68-1.64.69-2.02,1.6-2.96.92-.96,3.57-2.51,4.85-3.44,4.61-2.99,9.51-6.24,14.54-8.16,6.71-2.66,12.29-2.32,20.35-3.91,15.4-2.85,23.76-11.91,25.53-25.68h-14.62c-.68,2.59-1.84,4.96-3.84,6.65-6.51,4.96-15.55,3.68-24.55,5.34-10.96,1.7-20.69,7.6-29.85,13.4-2.85,1.78-6.25,4.61-8.01,7.79-1.06,1.77-1.7,3.37-2.2,4.6-.5,1.26-.87,2.2-1.16,2.78-.31.59-.39.71-.75,1.12-2.01,2.04-4.08,2.98-7.26,5.21-15.81,10.45-14.02,29.56-6.02,44.16,8.32,16.41,20.11,30.83,33.88,42.87l.74.64.86.73c.56.46,1.1.89,1.63,1.29l2.87,2.2c1.37,1.08,2.49,2.05,3.22,2.88-2.16.91-5.12,1.98-7.41,3.24-3.5,1.78-6.83,3.86-9.96,6.21-1.39,1.04-2.75,2.13-4.06,3.28-3.01,2.64-6.05,5.61-7.93,9.44h.09c-6.33,13.79,4.28,27.61,14.57,35.77,6.42,4.92,14.41,8.11,21.98,10.25,6.29,1.89,13.76,3.91,19.65,6.45,7.84,3,14.83,7.07,21.82,11.32,5.15,3.12,10.51,7.27,14.35,12.25.34.43.68.86,1,1.31.62.9.72,2.09,1.31,3.01,2.29,4.37,4.16,8.95,5.62,13.7,1.42,4.71,2.74,9.63,5.74,14.27-.46.68-.98,1.45-.99,1.47-1.89,3.06-.84,5.52.08,6.49.11.11.22.22.35.31.28.63.57,2.3.62,3.66.05,1.21.86,2.26,2.02,2.61l.49.15-1.72,3.67-1.04.57c-1.11.61-1.68,1.87-1.41,3.1l1.15,5.23c.18.82.72,1.52,1.47,1.91l1.75.9,1.53,3.26c1.29,3.31,3.99,5.38,5.06,6.11,1.43,1.51,3.64,2.27,6.59,2.27,2.52,0,4.83-.57,4.92-.59.26-.07.51-.18.74-.31.39,1.38.79,2.79,1.19,4.24,1.19,4.19,3.17,8.37,4.87,11.92,1.92,4.06,3.59,7.59,3.76,11.66-.1,4.19-.39,8.41-.36,12.61.05,15.9,2.61,31.8,7.32,46.98,12.03,38.69,35.79,70.81,60.5,101.88,2.41,3,5.04,6.06,7.5,8.85,4.49,4.73,9.94,9.76,13.07,14.96,1.66,2.75,3.02,4.94,3.01,7.92-.26,4.63-3.11,9.94-6.55,14.24h28.04c1.61-4.78,2.48-9.7,2.38-14.58-.12-12.84-8.53-24.27-15.41-33.87ZM493.52,279.3c-2.54.3-6.3.39-7.89-1.35,0,0-3.59-1.8-4.95-4.99l-1.89-3.54c-.22-.42-.59-.75-1.02-.94l-1.37-.59c-.61-.26-1.06-.8-1.21-1.44l-.61-2.54c-.23-.96.24-1.96,1.13-2.39l.05-.02c.39-.19.71-.49.92-.87l2.55-4.56c.68-1.22.01-2.74-1.34-3.07h-.05c-.86-.22-1.49-.95-1.6-1.83-.16-1.35-.53-3.28-1.4-4.06-.64-.58-.95-1.46-.64-2.27.12-.32.31-.67.6-1.06l.8-1c.23.3.46.6.7.89,1.43,1.67,3.14,3.24,5.06,4.42,2.7,1.65,5.79,2.73,8.71,3.54.02.22.86.62,3.25,1.3-.16-.04.67,1.89,1.09,3.01.02.5.02,1.02,0,1.55-2.33,7.28-1.28,13.69.61,20.88-.33.51-.86.88-1.52.96ZM493.22,231.96c-.79-.28-1.21-.49-1.47-.66,0-.01-.01-.01-.01-.01h0s-.01,0-.05-.04c-.86-.91-1.4-1.74-2.16-3.87-2.19-6.82-4.68-15.17-8.25-21.73l-.37-.71c3.52-1.4,6.82-3.33,9.77-5.74,8.14-6.57,13.21-16.36,22.06-21.85,8.06-5.02,18-5.55,21.35,4.84,4,11.38-5.58,15.74-11.08,24.33-3.33,5.32-4.51,11.23-5.2,17.15-.69,5.99-.43,12.8-1.94,18.73-1.99-2.56-4.6-4.64-7.49-5.89-5.42-2.57-10.64-3.01-15.18-4.55ZM530.93,348.87c-1.43-5.81-2.43-11.72-3.04-17.67,2.82,2.91,5.35,6.11,7.36,9.6.56.98,1.06,2,1.5,3.04-.76,4.64-1.95,9.19-3.45,13.64-.87-2.84-1.67-5.71-2.37-8.62ZM537.6,335.69c-2.62-5.46-6.46-10.57-10.41-14.93-.09-3.19-.07-6.39.05-9.58.03-1.11-.01-2.25-.11-3.4,7.65,6.88,10.84,17.34,10.47,27.92Z"
+                    style="stroke-dashoffset: 2px; stroke-dasharray: 2027.13;"></path>
+            </g>
+        </g>
+        <path class="st128"
+            d="M309.46,146.5c1.54,11.17,9.11,64.27,9.11,64.27l.79,4.66c.82,4.85,3.53,9.17,7.53,12.02l24.81,17.64c4.57,3.25,8.07,7.78,10.07,13.01l2.23,5.86"
+            style="stroke-dashoffset: 0px; stroke-dasharray: 137.596;"></path>
+        <path class="st136"
+            d="M361.35,264.99l-2.23-5.86c-1.8-4.73-4.94-8.78-9.06-11.71l-24.81-17.64c-4.65-3.31-7.74-8.23-8.69-13.86l-.79-4.66c-.09-.6-7.59-53.3-9.12-64.35l5.62-.78c1.52,11.04,9.03,63.73,9.1,64.26l.77,4.59c.7,4.14,2.96,7.75,6.38,10.18l24.81,17.64c5.04,3.58,8.87,8.53,11.07,14.31l2.23,5.86-5.3,2.02Z"
+            style="stroke-dashoffset: 0px; stroke-dasharray: 286.569;"></path>
+        <path class="st123" d="M215.86,314.61l109.04-54.1s17.89-9.65,35.76,1.77c11.23,5.51,54.18,29.64,54.18,29.64"
+            style="stroke-dashoffset: 0px; stroke-dasharray: 220.894;"></path>
+        <polyline class="st123" points="407.67 299.09 436.31 304.76 460.78 306.25"></polyline>
+        <path class="st122"
+            d="M344.78,213.33c8.6.04,45.84,1.83,58.29,2.43,2.68.13,5.3.87,7.65,2.16l2.64,1.45c4.64,2.55,8.41,5.91,16.19,5.94l33.89,2.29"
+            style="stroke-dashoffset: 0px; stroke-dasharray: 120.861;"></path>
+        <g class="st108">
+            <path class="st131"
+                d="M131.13,476.06l110.08-26.11c22.65-4.67,55.33-23.08,70.95-40.25l147.99-169.74c3.02-3.46,4.89-7.76,5.38-12.32l.32-3.01-2.42-52.16c0-14.6,4.84-13.41,14.69-14.81l56.06-5.72c8.64-.96,14.52,6.73,16.01,14.55l13.55,71.33,31.04,150.32s8.28,45.54,57.91,86.61"
+                style="stroke-dashoffset: 2px; stroke-dasharray: 926.793;"></path>
+        </g>
+        <path class="st122" d="M318.74,82.81s16.63-.53,24.85,9.5c8.72,9.13,8.19,21.96,8.19,21.96l2.09,99"
+            style="stroke-dashoffset: 0px; stroke-dasharray: 150.46;"></path>
+        <path class="st123"
+            d="M215.86,266.64l29.87-.43c3.24-.06,6.22-1.8,7.85-4.6l4.34-7.43c1.66-2.85,4.71-4.6,8.01-4.6h19.82"
+            style="stroke-dashoffset: 0px; stroke-dasharray: 77.4771;"></path>
+        <text class="st56" transform="translate(359.03 215.38) rotate(1.79)" style="opacity: 1;">
+            <tspan x="0" y="0">BÙI THỊ XUÂN</tspan>
+        </text>
+        <path class="st127"
+            d="M42.64,4.22s26.77,29.89,31.5,42.22c2.56,6.69,7.36,12.29,13.42,16.1l14.9,9.37c7.07,4.45,12.17,11.43,14.25,19.52l4.97,19.36c1.98,7.69,6.68,14.39,13.24,18.86,25.65,17.47,91.18,73.3,81.14,182.56l-.89,6.73c-.2,1.53-.51,3.04-.93,4.52-1.73,6.23-6.84,21.07,9.72,27.27l23.76,6.62c12.24,3.56,28.29,19.99,23.4,37.27l-58.39,183.31"
+            style="stroke-dashoffset: 2px; stroke-dasharray: 679.503;"></path>
+        <path class="st126"
+            d="M342.82,216.27l-10.96-1.55c-5.12-.93-10.02-2.82-14.45-5.56-17.4-10.75-66.69-39.28-108-44.64,0,0-8.93-2.91-35.93.88"
+            style="stroke-dashoffset: 0px; stroke-dasharray: 180.369;"></path>
+        <path class="st135"
+            d="M67.47,393.7l19.81-14.12c3.68-1.8,7.75-2.62,11.84-2.38l117.59,11.98c3.42.2,6.85-.35,10.04-1.6l103.26-40.26c5.15-2.01,10.84-2.17,16.1-.45l76.34,25.03c9.14,3,19.18.2,25.46-7.07l90.27-103.91c2.53-2.93,5.74-5.21,9.35-6.62l42.81-16.76c3.44-1.35,6.52-3.48,8.99-6.22l33.2-36.77c3.95-4.38,6.14-10.07,6.14-15.96v-30.53c0-6.27,2.48-12.3,6.89-16.76l18.44-14.72"
+            style="stroke-dashoffset: 2px; stroke-dasharray: 746.551;"></path>
+        <g class="st185">
+            <path class="st122" d="M297.37,176.51l8.43-19.7,7.23-20.38c1.92-5.4,3.22-11.01,3.88-16.71l1.81-37.97V17.08"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 162.927;"></path>
+        </g>
+        <polyline class="st131" points="483.89 324.01 288.16 172.93 141 50.73"></polyline>
+        <text class="st79" transform="translate(325.21 202.87) rotate(37.93)" style="opacity: 1;">
+            <tspan x="0" y="0">MỸ PHƯỚC - TÂN VẠN</tspan>
+        </text>
+        <line class="st143" x1="285.74" y1="366.48" x2="285.74" y2="25.03"></line>
+        <path class="st65"
+            d="M295.82,171.57c0,5.34-4.33,9.66-9.66,9.66s-9.66-4.33-9.66-9.66,4.33-9.66,9.66-9.66,9.66,4.33,9.66,9.66"
+            style="stroke-dashoffset: 0px; stroke-dasharray: 60.6978;"></path>
+        <path class="st65"
+            d="M435.63,278.81c0,5.05-4.1,9.15-9.15,9.15s-9.15-4.1-9.15-9.15,4.1-9.15,9.15-9.15,9.15,4.1,9.15,9.15"
+            style="stroke-dashoffset: 0px; stroke-dasharray: 57.4936;"></path>
+        <path class="st65"
+            d="M291.59,191.15c0,3.23-2.62,5.84-5.84,5.84s-5.84-2.62-5.84-5.84,2.62-5.84,5.84-5.84,5.84,2.62,5.84,5.84"
+            style="stroke-dashoffset: 0px; stroke-dasharray: 36.6921;"></path>
+        <path class="st175"
+            d="M289.48,191.15c0,2.06-1.67,3.73-3.73,3.73s-3.73-1.67-3.73-3.73,1.67-3.73,3.73-3.73,3.73,1.67,3.73,3.73"
+            style="stroke-dashoffset: 0px; stroke-dasharray: 23.4397;"></path>
+        <text class="st28" transform="translate(288.13 249.09) rotate(-90.21)" style="opacity: 1;">
+            <tspan x="0" y="0">ĐT743</tspan>
+        </text>
+        <text class="st79" transform="translate(287.65 344.49) rotate(-90.21)" style="opacity: 1;">
+            <tspan x="0" y="0">( CAO TỐC HCM - CHƠN THÀNH)</tspan>
+        </text>
+        <text class="st50" transform="translate(288.13 125.51) rotate(-90)" style="opacity: 1;">
+            <tspan class="st277" x="0" y="0">Đ</tspan>
+            <tspan x="4.62" y="0">T</tspan>
+            <tspan class="st249" x="8.4" y="0">7</tspan>
+            <tspan x="11.56" y="0">43</tspan>
+        </text>
+        <text class="st11" transform="translate(249.61 299.73) rotate(-26.53)" style="opacity: 1;">
+            <tspan x="0" y="0">ĐT 743B</tspan>
+        </text>
+        <text class="st71" transform="translate(155.86 472.3) rotate(-13.44)" style="opacity: 1;">
+            <tspan x="0" y="0">PHẠM</tspan>
+            <tspan class="st261" x="14.4" y="0"> </tspan>
+            <tspan class="st212" x="15.3" y="0">V</tspan>
+            <tspan class="st118" x="18.35" y="0">ĂN ĐỒ</tspan>
+            <tspan class="st229" x="34.35" y="0">N</tspan>
+            <tspan class="st222" x="37.92" y="0">G</tspan>
+        </text>
+        <text class="st77" transform="translate(322.05 401.65) rotate(-49)" style="opacity: 1;">
+            <tspan x="0" y="0">PHẠM</tspan>
+            <tspan class="st231" x="16.72" y="0"> </tspan>
+            <tspan class="st227" x="17.77" y="0">V</tspan>
+            <tspan x="21.32" y="0">ĂN ĐỒ</tspan>
+            <tspan class="st149" x="39.9" y="0">N</tspan>
+            <tspan x="44.05" y="0">G</tspan>
+        </text>
+        <text class="st77" transform="translate(382.88 331.89) rotate(-49)" style="opacity: 1;">
+            <tspan x="0" y="0">QL 1K</tspan>
+        </text>
+        <text class="st77" transform="translate(451.94 253.13) rotate(-49)" style="opacity: 1;">
+            <tspan x="0" y="0">QL 1K</tspan>
+        </text>
+        <text class="st77" transform="translate(495.96 312.65) rotate(-49)" style="opacity: 1;">
+            <tspan x="0" y="0">QL 1A</tspan>
+        </text>
+        <text class="st77" transform="translate(614.09 218.88) rotate(-49)" style="opacity: 1;">
+            <tspan x="0" y="0">QL 1A</tspan>
+        </text>
+        <text class="st77" transform="translate(570.7 279.6) rotate(79.16)" style="opacity: 1;">
+            <tspan x="0" y="0">QL 51</tspan>
+        </text>
+        <text class="st11" transform="translate(300.63 274.34) rotate(-26.75)" style="opacity: 1;">
+            <tspan x="0" y="0">ĐT 743A</tspan>
+        </text>
+        <text class="st12" transform="translate(205.11 165.41) rotate(9.89)" style="opacity: 1;">
+            <tspan x="0" y="0">22</tspan>
+            <tspan class="st160" x="4.15" y="0"> </tspan>
+            <tspan x="4.88" y="0">THÁ</tspan>
+            <tspan class="st165" x="12.44" y="0">N</tspan>
+            <tspan x="15.18" y="0">G </tspan>
+            <tspan class="st193" x="19.26" y="0">1</tspan>
+            <tspan class="st268" x="20.83" y="0">2</tspan>
+        </text>
+        <text class="st45" transform="translate(400.52 366.36) rotate(17.98)" style="opacity: 1;">
+            <tspan x="0" y="0">QL 1A</tspan>
+        </text>
+        <text class="st8" transform="translate(347.54 348.93) rotate(17.98)" style="opacity: 1;">
+            <tspan class="st116" x="0" y="0">C</tspan>
+            <tspan class="st113" x="2.36" y="0">Ầ</tspan>
+            <tspan class="st207" x="4.49" y="0">U</tspan>
+            <tspan class="st203" x="6.56" y="0"> </tspan>
+            <tspan class="st162" x="7.16" y="0">VƯ</tspan>
+            <tspan class="st239" x="11.29" y="0">Ợ</tspan>
+            <tspan class="st116" x="13.81" y="0">T LINH</tspan>
+            <tspan class="st186" x="23.14" y="0"> </tspan>
+            <tspan class="st116" x="23.81" y="0">XUÂ</tspan>
+            <tspan class="st267" x="30.09" y="0">N</tspan>
+        </text>
+        <text class="st30" transform="translate(307.27 359.05) rotate(-22.7)" style="opacity: 1;">
+            <tspan x="0" y="0">QL 1A</tspan>
+        </text>
+        <text class="st3" transform="translate(167.1 385.59) rotate(8.47)" style="opacity: 1;">
+            <tspan x="0" y="0">QL 1A</tspan>
+        </text>
+        <polygon class="st65" points="671.84 108.88 660.26 110.32 670.4 120.46 671.84 108.88" style="opacity: 1;">
+        </polygon>
+        <polygon class="st65" points="58.56 399.63 70.23 400.11 61.88 388.44 58.56 399.63" style="opacity: 1;">
+        </polygon>
+        <polygon class="st65" points="126.79 40.88 130.85 58.42 144.79 41.24 126.79 40.88" style="opacity: 1;">
+        </polygon>
+        <polygon class="st65" points="285.74 8.79 274.68 23 296.81 23 285.74 8.79" style="opacity: 1;"></polygon>
+        <polygon class="st65" points="116.73 478.24 130.68 484.84 126.55 466.34 116.73 478.24" style="opacity: 1;">
+        </polygon>
+        <g class="st294">
+            <path class="st137"
+                d="M443.61,368.71l-52.51,34.03c-3.73,2.46-6.71,5.88-8.63,9.91l-39.66,88.7-5.45,11.31c-4.13,9.24-13.31,15.19-23.43,15.19h-181.17"
+                style="stroke-dashoffset: 2px; stroke-dasharray: 396.289;"></path>
+        </g>
+        <text class="st78" transform="translate(491.08 200.89) rotate(53.2)" style="opacity: 1;">
+            <tspan x="0" y="0"> </tspan>
+        </text>
+        <text class="st91" transform="translate(501.88 218.88) rotate(65.16)" style="opacity: 1;">
+            <tspan x="0" y="0"> </tspan>
+        </text>
+        <g>
+            <text class="st81" transform="translate(402.05 169.07) rotate(1.79)" style="opacity: 1;">
+                <tspan x="0" y="0">S</tspan>
+            </text>
+            <text class="st95" transform="translate(405.64 169.19) rotate(6.78)" style="opacity: 1;">
+                <tspan x="0" y="0">Ô</tspan>
+            </text>
+            <text class="st85" transform="translate(410.9 169.76) rotate(11.34)" style="opacity: 1;">
+                <tspan x="0" y="0">N</tspan>
+            </text>
+            <text class="st69" transform="translate(415.37 170.77) rotate(15.21)" style="opacity: 1;">
+                <tspan x="0" y="0">G</tspan>
+            </text>
+            <text class="st86" transform="translate(421.78 172.45) rotate(19.59)" style="opacity: 1;">
+                <tspan x="0" y="0">Đ</tspan>
+            </text>
+            <text class="st69" transform="translate(426.14 174.03) rotate(22.66)" style="opacity: 1;">
+                <tspan x="0" y="0">Ồ</tspan>
+            </text>
+            <text class="st73" transform="translate(430.94 176.09) rotate(25.45)" style="opacity: 1;">
+                <tspan x="0" y="0">N</tspan>
+            </text>
+            <text class="st69" transform="translate(435.1 177.96) rotate(27.95)" style="opacity: 1;">
+                <tspan x="0" y="0">G</tspan>
+            </text>
+            <text class="st85" transform="translate(440.98 181.16) rotate(30.91)" style="opacity: 1;">
+                <tspan x="0" y="0">N</tspan>
+            </text>
+            <text class="st81" transform="translate(444.98 183.55) rotate(32.9)" style="opacity: 1;">
+                <tspan x="0" y="0">A</tspan>
+            </text>
+            <text class="st86" transform="translate(448.81 185.99) rotate(34.18)" style="opacity: 1;">
+                <tspan x="0" y="0">I</tspan>
+            </text>
+        </g>
+        <g>
+            <text class="st68" transform="translate(514.6 323.44) rotate(89.52)" style="opacity: 1;">
+                <tspan x="0" y="0">S</tspan>
+            </text>
+            <text class="st83" transform="translate(514.65 327.17) rotate(87.37)" style="opacity: 1;">
+                <tspan x="0" y="0">Ô</tspan>
+            </text>
+            <text class="st76" transform="translate(514.95 332.6) rotate(85.3)" style="opacity: 1;">
+                <tspan x="0" y="0">N</tspan>
+            </text>
+            <text class="st90" transform="translate(515.39 337.53) rotate(83.33)" style="opacity: 1;">
+                <tspan x="0" y="0">G</tspan>
+            </text>
+            <text class="st75" transform="translate(515.94 343.01) rotate(81.96)" style="opacity: 1;">
+                <tspan x="0" y="0"> </tspan>
+            </text>
+            <text class="st70" transform="translate(516.31 345.01) rotate(80.7)" style="opacity: 1;">
+                <tspan x="0" y="0">Đ</tspan>
+            </text>
+            <text class="st70" transform="translate(517.06 349.87) rotate(78.8)" style="opacity: 1;">
+                <tspan x="0" y="0">Ồ</tspan>
+            </text>
+            <text class="st68" transform="translate(518.12 355.3) rotate(76.91)" style="opacity: 1;">
+                <tspan x="0" y="0">N</tspan>
+            </text>
+            <text class="st68" transform="translate(519.22 360.04) rotate(74.99)" style="opacity: 1;">
+                <tspan x="0" y="0">G</tspan>
+            </text>
+            <text class="st68" transform="translate(520.71 365.38) rotate(73.58)" style="opacity: 1;">
+                <tspan x="0" y="0"> </tspan>
+            </text>
+            <text class="st87" transform="translate(521.18 367.29) rotate(72.27)" style="opacity: 1;">
+                <tspan x="0" y="0">N</tspan>
+            </text>
+            <text class="st87" transform="translate(522.67 371.98) rotate(70.39)" style="opacity: 1;">
+                <tspan x="0" y="0">A</tspan>
+            </text>
+            <text class="st89" transform="translate(524.42 376.55) rotate(69.02)" style="opacity: 1;">
+                <tspan x="0" y="0">I</tspan>
+            </text>
+        </g>
+        <text class="st71" transform="translate(357.77 472.09) rotate(-65.53)" style="opacity: 1;">
+            <tspan x="0" y="0">VÕ NGUYÊN GIÁP</tspan>
+        </text>
+        <text class="st47" transform="translate(310.03 157.32) rotate(82.02)" style="opacity: 1;">
+            <tspan x="0" y="0">TRẦN</tspan>
+            <tspan class="st263" x="8.17" y="0"> </tspan>
+            <tspan class="st276" x="8.84" y="0">QUA</tspan>
+            <tspan class="st183" x="15.82" y="0">N</tspan>
+            <tspan x="18.08" y="0">G DIỆU</tspan>
+        </text>
+        <text class="st47" transform="translate(317.51 125.03) rotate(-82.42)" style="opacity: 1;">
+            <tspan x="0" y="0">LIÊN HUYỆN</tspan>
+        </text>
+        <text class="st36" transform="translate(70.53 472.02)" style="opacity: 1;">
+            <tspan class="st280" x="0" y="0">S</tspan>
+            <tspan class="st163" x="3.19" y="0">Â</tspan>
+            <tspan class="st100" x="7.1" y="0">N</tspan>
+            <tspan class="st163" x="11.17" y="0"> </tspan>
+            <tspan class="st190" x="12.48" y="0">B</tspan>
+            <tspan class="st194" x="15.92" y="0">A</tspan>
+            <tspan class="st234" x="19.4" y="0">Y</tspan>
+            <tspan class="st200" x="22.88" y="0"> </tspan>
+            <tspan class="st60" x="24.08" y="0">Q</tspan>
+            <tspan x="28.65" y="0">T</tspan>
+        </text>
+        <text class="st36" transform="translate(66.39 479.02)" style="opacity: 1;">
+            <tspan class="st246" x="0" y="0">T</tspan>
+            <tspan class="st163" x="2.79" y="0">ÂN</tspan>
+            <tspan class="st60" x="10.78" y="0"> </tspan>
+            <tspan class="st100" x="11.93" y="0">S</tspan>
+            <tspan class="st163" x="15.17" y="0">ƠN NH</tspan>
+            <tspan class="st298" x="33.39" y="0">Ấ</tspan>
+            <tspan x="36.93" y="0">T</tspan>
+        </text>
+        <text class="st36" transform="translate(59.52 409.17)" style="opacity: 1;">
+            <tspan class="st163" x="0" y="0">H</tspan>
+            <tspan class="st100" x="4.02" y="0">Ư</tspan>
+            <tspan class="st163" x="7.78" y="0">Ớ</tspan>
+            <tspan class="st243" x="12.51" y="0">N</tspan>
+            <tspan class="st163" x="16.53" y="0">G </tspan>
+            <tspan class="st100" x="22.53" y="0">Đ</tspan>
+            <tspan x="26.57" y="0">I</tspan>
+        </text>
+        <text class="st13" transform="translate(56.88 416.17)" style="opacity: 1;">
+            <tspan x="0" y="0">BX MIỀN TÂY</tspan>
+        </text>
+        <text class="st36" transform="translate(619.47 115.22)" style="opacity: 1;">
+            <tspan class="st233" x="0" y="0">HƯỚ</tspan>
+            <tspan class="st253" x="12.52" y="0">N</tspan>
+            <tspan class="st100" x="16.54" y="0">G</tspan>
+            <tspan class="st233" x="21.22" y="0"> </tspan>
+            <tspan class="st192" x="22.54" y="0">Đ</tspan>
+            <tspan class="st273" x="26.58" y="0">I</tspan>
+        </text>
+        <text class="st36" transform="translate(619.36 122.21)" style="opacity: 1;">
+            <tspan class="st192" x="0" y="0">Đ</tspan>
+            <tspan class="st275" x="4.04" y="0">Ồ</tspan>
+            <tspan class="st253" x="8.78" y="0">N</tspan>
+            <tspan class="st100" x="12.8" y="0">G NA</tspan>
+            <tspan class="st273" x="26.77" y="0">I</tspan>
+        </text>
+        <text class="st53" transform="translate(326.56 296.54)" style="opacity: 1;">
+            <tspan class="st181" x="0" y="0">P. D</tspan>
+            <tspan class="st208" x="13.82" y="0">Ĩ</tspan>
+            <tspan class="st213" x="15.75" y="0"> </tspan>
+            <tspan class="st245" x="17.33" y="0">A</tspan>
+            <tspan class="st241" x="22.72" y="0">N</tspan>
+        </text>
+        <text class="st48" transform="translate(227.4 324.01)" style="opacity: 1;">
+            <tspan x="0" y="0">P. BÌNH HÒA</tspan>
+        </text>
+        <text class="st32" transform="translate(404.11 320.47)" style="opacity: 1;">
+            <tspan x="0" y="0">P. LINH XUÂN</tspan>
+        </text>
+        <text class="st32" transform="translate(387.24 207.93)" style="opacity: 1;">
+            <tspan x="0" y="0">P. TÂN ĐÔNG HIỆP</tspan>
+        </text>
+        <text class="st84" transform="translate(479.11 126.01)" style="opacity: 1;">
+            <tspan class="st225" x="0" y="0">B</tspan>
+            <tspan class="st254" x="5.71" y="0">IÊN </tspan>
+            <tspan class="st109" x="22.12" y="0">H</tspan>
+            <tspan class="st226" x="28.52" y="0">Ò</tspan>
+            <tspan class="st172" x="35.8" y="0">A</tspan>
+        </text>
+        <text class="st10" transform="translate(95.79 36.18)" style="opacity: 1;">
+            <tspan class="st254" x="0" y="0">P. THỦ </tspan>
+            <tspan class="st289" x="28.31" y="0">D</tspan>
+            <tspan class="st297" x="34.32" y="0">Ầ</tspan>
+            <tspan class="st201" x="40.3" y="0">U </tspan>
+            <tspan class="st221" x="48.17" y="0">M</tspan>
+            <tspan class="st161" x="55.61" y="0">Ộ</tspan>
+            <tspan x="62.68" y="0">T</tspan>
+        </text>
+        <text class="st42" transform="translate(215.5 91.22)" style="opacity: 1;">
+            <tspan x="0" y="0">P. AN PHÚ</tspan>
+        </text>
+        <path class="st74"
+            d="M92.21,455.89c.35-.14.66-.39,1.04-.44.95-.11.99.61.7,1.32-.26.64-.81,1.16-1.3,1.62l.43,2.59-1.43,1.67-3.27-6.99-5.4,4.47.49,2.81-.71.73-4.97-4.97.73-.71,2.81.49,4.47-5.4-6.99-3.27,1.67-1.43,2.59.43c.49-.5.99-1.04,1.66-1.31.71-.28,1.39-.21,1.29.71-.04.39-.3.69-.44,1.04l3.34.58c1.06-.75,2.03-1.63,3.08-2.41.65-.48,2.01-1.48,2.78-.75.78.75-.25,2.15-.73,2.8-.77,1.05-1.65,2.02-2.4,3.08l.58,3.34Z"
+            style="stroke-dashoffset: 1px; stroke-dasharray: 85.1204;"></path>
+        <g>
+            <text class="st36" transform="translate(610.04 370.66)" style="opacity: 1;">
+                <tspan class="st190" x="0" y="0">S</tspan>
+                <tspan class="st100" x="3.19" y="0">ÂN</tspan>
+                <tspan class="st233" x="11.17" y="0"> </tspan>
+                <tspan class="st243" x="12.48" y="0">B</tspan>
+                <tspan class="st194" x="15.91" y="0">A</tspan>
+                <tspan class="st100" x="19.39" y="0">Y</tspan>
+                <tspan class="st171" x="22.87" y="0"> </tspan>
+                <tspan class="st97" x="24.07" y="0">Q</tspan>
+                <tspan x="28.64" y="0">T</tspan>
+            </text>
+            <text class="st36" transform="translate(607.66 377.66)" style="opacity: 1;">
+                <tspan class="st114" x="0" y="0">L</tspan>
+                <tspan class="st233" x="2.85" y="0">O</tspan>
+                <tspan class="st253" x="7.58" y="0">N</tspan>
+                <tspan class="st100" x="11.61" y="0">G</tspan>
+                <tspan class="st204" x="16.29" y="0"> </tspan>
+                <tspan class="st192" x="17.37" y="0">T</tspan>
+                <tspan class="st233" x="20.54" y="0">HÀ</tspan>
+                <tspan class="st192" x="28.47" y="0">N</tspan>
+                <tspan x="32.54" y="0">H</tspan>
+            </text>
+            <path class="st74"
+                d="M631.71,354.52c.35-.14.66-.39,1.04-.44.95-.11.99.61.7,1.32-.26.64-.81,1.16-1.3,1.62l.43,2.59-1.43,1.67-3.27-6.99-5.4,4.47.49,2.81-.71.73-4.98-4.98.73-.71,2.81.49,4.47-5.4-6.99-3.27,1.67-1.43,2.59.43c.49-.5.99-1.04,1.66-1.31.71-.28,1.39-.21,1.29.71-.04.39-.3.7-.44,1.04l3.34.57c1.06-.75,2.03-1.63,3.08-2.41.65-.48,2.01-1.48,2.78-.75.78.75-.25,2.15-.73,2.8-.77,1.05-1.65,2.02-2.4,3.08l.58,3.34Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 85.1353;"></path>
+        </g>
+        <g>
+            <path class="st74"
+                d="M224.06,239v1.4h2.69v.64h-3.41v-2.17c-.27-.13-1.02-.28-1.04-.64-.02-.42.69-.6,1.01-.69l.03-2h-.06s-4.14,5.5-4.14,5.5h-.84l4.26-5.64h4.14s0,.64,0,.64h-2.63v1.37c.48-.08.96-.09,1.44-.11.07,0,.13-.03.19-.03.16,0,.76-.03.86,0,.04.01.05.04.05.08-.04.05-.8.02-.94.03-.06,0-.11.03-.17.03-.48.03-.96.04-1.44.14v.94s.5.08.57.09c.67.07,1.57.11,2.24.06.06,0,.12-.02.18-.03v-.8c0-.55.54-1.43.95-1.79,1.98-1.77,5.29-.34,5.12,2.41-.18,2.91-4.23,3.75-5.67,1.31-.12-.2-.19-.42-.3-.62-1.03.06-2.07.04-3.09-.12M228,237.41c.44-.03,1.84.21,1.97.7.05.19-.04.29-.18.4-.51.39-1.23.36-1.8.52-.03,0-.05,0-.07.04.68,1.68,3.08,1.96,4.1.43.86-1.3.22-3.09-1.29-3.49-1.65-.44-3.16.85-2.95,2.54.04.04,1.01-.17,1.14-.22.18-.06.42-.15.5-.33.03-.34-1.13-.5-1.37-.52l-.05-.08ZM223.33,238.33l-.04-.62c-.16.08-.36.12-.43.29,0,.16.34.31.48.32"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 92.9676;"></path>
+            <polygon class="st74"
+                points="237.37 239.7 237.37 235.39 238.04 235.39 238.04 241.04 237.5 241.04 234.38 236.74 234.38 241.04 233.71 241.04 233.71 235.39 234.25 235.39 237.37 239.7"
+                style="opacity: 1;"></polygon>
+        </g>
+        <g>
+            <path class="st57"
+                d="M364.2,319.12c.1.02.2.03.3.06.49.13.9.49,1.1.95.02.04.09.26.1.26,1.07-.36,2.24.34,2.44,1.44.19,1.12-.64,2.14-1.76,2.19v2.09h1.71s.06.04.06.05c.04.07-.02.14-.09.13h-6.96c-.06,0-.07-.02-.1-.06v-.07l.1-.06h1.06v-1.41c-.5-.04-.97-.4-1.11-.88-.02-.08-.03-.16-.05-.24,0-.08,0-.16,0-.24.09-.99,1.3-1.46,2.06-.83.87.73.39,2.11-.71,2.19v1.41h1.61v-3.63c-1.11-.07-1.87-1.13-1.53-2.21.2-.62.81-1.1,1.47-1.15h.29ZM363.97,322.3v-.58l-.6-.57c-.07-.05-.02-.17.06-.17.03,0,.12.08.15.1.14.12.25.27.39.38v-1.18c0-.08.18-.07.18.01v.64c.16-.1.28-.29.43-.41.15-.12.25,0,.15.11l-.58.56v1.1l.27-.04c-.02-.09-.01-.2,0-.3.07-.66.51-1.23,1.11-1.5-.27-1.21-1.88-1.57-2.66-.59-.77.97-.1,2.36,1.11,2.43M366.39,323.85c.71-.04,1.35-.53,1.54-1.22.48-1.69-1.63-2.88-2.85-1.66-1.05,1.05-.32,2.8,1.13,2.88v-.67l-.68-.66c-.07-.09.03-.18.12-.12l.55.53v-1.34c0-.06.18-.08.18.01v.75l.55-.53c.1-.05.18.05.11.14-.21.2-.42.41-.62.61-.02.02-.04.02-.04.02v1.26ZM362.36,324.51c.68-.06,1.15-.73.93-1.39-.26-.78-1.28-.99-1.83-.37-.59.67-.15,1.68.71,1.76v-.26s-.29-.29-.33-.33c-.05-.05-.19-.13-.09-.22.06-.06.12,0,.17.04.09.07.16.18.25.24v-.76s.05-.09.09-.09c.02,0,.09.05.09.06v.43c.09-.05.25-.28.33-.31.1-.03.16.1.08.17l-.41.4v.62ZM364.15,322.48v3.63h2.06v-2.07s-.09-.02-.13-.02c-.83-.1-1.52-.75-1.64-1.58l-.28.04Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 99.1868;"></path>
+            <text class="st38" transform="translate(356.18 329.84)" style="opacity: 1;">
+                <tspan class="st151" x="0" y="0">C</tspan>
+                <tspan class="st119" x="2.29" y="0">Ô</tspan>
+                <tspan class="st59" x="4.85" y="0">N</tspan>
+                <tspan class="st119" x="7.03" y="0">G</tspan>
+                <tspan class="st154" x="9.57" y="0"> </tspan>
+                <tspan class="st187" x="10.16" y="0">VIÊ</tspan>
+                <tspan class="st167" x="14.65" y="0">N</tspan>
+            </text>
+            <text class="st38" transform="translate(360.66 333.29)" style="opacity: 1;">
+                <tspan class="st119" x="0" y="0">DĨ</tspan>
+                <tspan class="st117" x="2.95" y="0"> </tspan>
+                <tspan class="st119" x="3.57" y="0">A</tspan>
+                <tspan class="st167" x="5.69" y="0">N</tspan>
+            </text>
+        </g>
+        <g>
+            <path class="st57"
+                d="M333.29,94.58c.09.02.18.03.27.05.45.12.83.46,1.02.88.01.03.08.24.09.24.99-.34,2.08.31,2.25,1.33.18,1.03-.59,1.98-1.63,2.02v1.93h1.59s.05.04.06.04c.04.06-.02.13-.08.12h-6.43c-.05,0-.07-.02-.1-.05v-.06l.1-.05h.98v-1.31c-.46-.03-.9-.37-1.03-.82-.02-.07-.03-.14-.05-.22,0-.07,0-.15,0-.22.08-.91,1.2-1.35,1.9-.77.8.67.36,1.95-.66,2.03v1.31h1.49v-3.35c-1.02-.07-1.73-1.04-1.41-2.04.19-.58.75-1.02,1.36-1.07h.27ZM333.07,97.52v-.54l-.55-.52c-.07-.05-.02-.15.05-.15.03,0,.11.07.14.1.13.11.23.25.36.36v-1.09c0-.07.17-.07.17.01v.59c.15-.1.26-.26.39-.38.14-.12.23,0,.14.1l-.54.51v1.02l.25-.04c-.02-.09,0-.19,0-.28.07-.61.47-1.13,1.02-1.39-.25-1.12-1.74-1.45-2.46-.54-.71.9-.09,2.18,1.02,2.24M335.31,98.95c.66-.04,1.25-.49,1.43-1.13.45-1.56-1.51-2.66-2.64-1.53-.97.97-.29,2.59,1.04,2.66v-.61l-.63-.61c-.06-.09.03-.17.11-.12l.51.49v-1.24c0-.06.17-.07.17.01v.69l.51-.49c.09-.05.16.05.1.13-.2.18-.38.38-.58.56-.01.01-.04.02-.04.02v1.16ZM331.58,99.56c.63-.05,1.06-.67.86-1.28-.24-.72-1.19-.91-1.69-.34-.54.62-.14,1.55.66,1.62v-.24s-.27-.27-.3-.3c-.04-.04-.17-.12-.08-.2.06-.05.11,0,.15.04.08.07.15.16.23.23v-.71s.05-.08.09-.08c.02,0,.08.04.08.05v.39c.08-.05.23-.26.31-.28.09-.03.15.09.08.15l-.38.37v.58ZM333.24,97.69v3.35h1.9v-1.91s-.08-.02-.12-.02c-.77-.09-1.41-.69-1.52-1.46l-.26.04Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 91.6599;"></path>
+            <text class="st34" transform="translate(324.12 105.11)" style="opacity: 1;">
+                <tspan class="st168" x="0" y="0">KDL</tspan>
+                <tspan class="st215" x="5.32" y="0"> </tspan>
+                <tspan class="st168" x="5.89" y="0">SINH</tspan>
+                <tspan class="st96" x="12.28" y="0"> </tspan>
+                <tspan class="st188" x="12.83" y="0">THÁ</tspan>
+                <tspan class="st285" x="18.38" y="0">I</tspan>
+            </text>
+            <text class="st34" transform="translate(327.26 108.3)" style="opacity: 1;">
+                <tspan class="st170" x="0" y="0">H</tspan>
+                <tspan class="st168" x="1.99" y="0">Ố LA</tspan>
+                <tspan class="st153" x="8.45" y="0">N</tspan>
+                <tspan class="st285" x="10.47" y="0">G</tspan>
+            </text>
+        </g>
+        <g>
+            <path class="st57"
+                d="M453.5,322.75c.09.02.18.03.27.05.45.12.83.46,1.02.88.01.03.08.24.09.24.99-.34,2.08.31,2.25,1.33.18,1.03-.59,1.98-1.63,2.02v1.93h1.59s.05.04.06.04c.04.06-.02.13-.08.12h-6.43c-.05,0-.07-.02-.1-.05v-.06l.1-.05h.98v-1.31c-.46-.03-.9-.37-1.03-.82-.02-.07-.03-.15-.05-.22,0-.07,0-.15,0-.22.08-.91,1.2-1.35,1.9-.77.8.67.36,1.95-.66,2.03v1.31h1.49v-3.35c-1.02-.07-1.73-1.04-1.41-2.04.19-.58.75-1.02,1.36-1.07h.27ZM453.28,325.69v-.54l-.55-.52c-.07-.05-.02-.15.05-.15.03,0,.11.07.14.1.13.11.23.25.36.36v-1.09c0-.07.17-.07.17.01v.59c.15-.1.26-.26.39-.38.14-.12.23,0,.14.1l-.54.51v1.02l.25-.04c-.02-.09,0-.19,0-.28.07-.61.47-1.13,1.02-1.39-.25-1.12-1.74-1.45-2.46-.54-.71.9-.09,2.18,1.02,2.24M455.52,327.13c.66-.04,1.25-.49,1.43-1.13.45-1.56-1.51-2.66-2.64-1.53-.97.97-.29,2.59,1.04,2.66v-.61l-.63-.61c-.06-.09.03-.17.11-.12l.51.49v-1.24c0-.06.17-.07.17.01v.69l.51-.49c.09-.05.16.05.1.13-.2.18-.38.38-.58.56-.01.01-.04.02-.04.02v1.16ZM451.8,327.74c.63-.05,1.06-.67.86-1.28-.24-.72-1.19-.91-1.69-.34-.54.62-.14,1.55.66,1.62v-.24s-.27-.26-.3-.3c-.04-.04-.17-.12-.08-.2.06-.05.11,0,.15.04.08.07.15.16.23.23v-.71s.05-.08.09-.08c.02,0,.08.04.08.05v.39c.08-.05.23-.26.31-.28.09-.03.15.09.08.15l-.38.37v.58ZM453.45,325.86v3.35h1.9v-1.91s-.08-.01-.12-.02c-.77-.09-1.41-.69-1.52-1.46l-.26.04Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 91.6602;"></path>
+            <text class="st34" transform="translate(444.33 332.96)" style="opacity: 1;">
+                <tspan class="st168" x="0" y="0">KDL</tspan>
+                <tspan class="st215" x="5.32" y="0"> </tspan>
+                <tspan class="st168" x="5.89" y="0">SINH</tspan>
+                <tspan class="st96" x="12.28" y="0"> </tspan>
+                <tspan class="st188" x="12.83" y="0">THÁ</tspan>
+                <tspan class="st285" x="18.38" y="0">I</tspan>
+            </text>
+            <text class="st34" transform="translate(445.98 336.15)" style="opacity: 1;">
+                <tspan class="st147" x="0" y="0">THỦY</tspan>
+                <tspan class="st293" x="7.22" y="0"> </tspan>
+                <tspan class="st168" x="7.83" y="0">CH</tspan>
+                <tspan class="st278" x="11.98" y="0">Â</tspan>
+                <tspan x="13.91" y="0">U</tspan>
+            </text>
+        </g>
+        <g>
+            <path class="st57"
+                d="M454.62,371.82c.09.02.18.03.27.05.45.12.83.46,1.02.88.01.03.08.24.09.24.99-.34,2.08.31,2.25,1.33.18,1.03-.59,1.98-1.63,2.02v1.93h1.59s.05.04.06.04c.04.06-.02.13-.08.12h-6.43c-.05,0-.07-.02-.1-.05v-.06l.1-.05h.98v-1.31c-.46-.03-.9-.37-1.03-.82-.02-.07-.03-.15-.05-.22,0-.07,0-.15,0-.22.08-.91,1.2-1.35,1.9-.77.8.67.36,1.95-.66,2.03v1.31h1.49v-3.35c-1.02-.07-1.73-1.04-1.41-2.04.19-.58.75-1.02,1.36-1.07h.27ZM454.4,374.76v-.54l-.55-.52c-.07-.05-.02-.15.05-.15.03,0,.11.07.14.1.13.11.23.25.36.36v-1.09c0-.07.17-.07.17.01v.59c.15-.1.26-.26.39-.38.14-.12.23,0,.14.1l-.54.51v1.02l.25-.04c-.02-.09,0-.19,0-.28.07-.61.47-1.13,1.02-1.39-.25-1.12-1.74-1.45-2.46-.54-.71.9-.09,2.18,1.02,2.24M456.64,376.2c.66-.04,1.25-.49,1.43-1.13.45-1.56-1.51-2.66-2.64-1.53-.97.97-.29,2.59,1.04,2.66v-.61l-.63-.61c-.06-.09.03-.17.11-.12l.51.49v-1.24c0-.06.17-.07.17.01v.69l.51-.49c.09-.05.16.05.1.13-.2.18-.38.38-.58.56-.01.01-.04.02-.04.02v1.16ZM452.91,376.8c.63-.05,1.06-.67.86-1.28-.24-.72-1.19-.91-1.69-.34-.54.62-.14,1.55.66,1.62v-.24s-.27-.26-.3-.3c-.04-.04-.17-.12-.08-.2.06-.05.11,0,.15.04.08.07.15.16.23.23v-.71s.05-.08.09-.08c.02,0,.08.04.08.05v.39c.08-.05.23-.26.31-.28.09-.03.15.09.08.15l-.38.37v.58ZM454.57,374.93v3.35h1.9v-1.91s-.08-.01-.12-.02c-.77-.09-1.41-.69-1.52-1.46l-.26.04Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 91.6602;"></path>
+            <text class="st34" transform="translate(452.33 381.83)" style="opacity: 1;">
+                <tspan class="st168" x="0" y="0">KD</tspan>
+                <tspan class="st285" x="3.86" y="0">L</tspan>
+            </text>
+            <text class="st34" transform="translate(448.46 385.02)" style="opacity: 1;">
+                <tspan class="st188" x="0" y="0">SUỐI</tspan>
+                <tspan class="st292" x="6.58" y="0"> </tspan>
+                <tspan class="st164" x="7.13" y="0">TIÊ</tspan>
+                <tspan class="st174" x="11.01" y="0">N</tspan>
+            </text>
+        </g>
+        <g>
+            <text class="st22" transform="translate(294.11 289.98)" style="opacity: 1;">
+                <tspan class="st184" x="0" y="0">VI</tspan>
+                <tspan class="st220" x="2" y="0">NC</tspan>
+                <tspan class="st255" x="5.23" y="0">OM PLAZ</tspan>
+                <tspan class="st166" x="14.77" y="0">A</tspan>
+            </text>
+            <text class="st22" transform="translate(299.15 292.47)" style="opacity: 1;">
+                <tspan class="st152" x="0" y="0">DĨ</tspan>
+                <tspan class="st62" x="2.13" y="0"> </tspan>
+                <tspan class="st255" x="2.58" y="0">AN</tspan>
+                <tspan x="5.71" y="0"> </tspan>
+            </text>
+            <path class="st57"
+                d="M300.84,285.86c-.14-.02-.13-.22-.12-.33.02-.22.15-.35.29-.49l-.39-1.95c-.1-.36-.37-.43-.61-.65-.16-.14,0-.35.18-.25.09.05.3.22.39.29.14.12.25.28.32.45h3.52c.1,0,.17.1.14.19-.2.51-.32,1.08-.53,1.58-.09.22-.29.37-.53.4l-2.23.13s-.16.13-.19.17c-.03.04-.06.1-.06.15h2.96c.06,0,.12.09.12.15,0,.06-.06.16-.12.16h-.27l.18.07c.45.28.15.98-.37.84-.39-.1-.46-.63-.12-.84l.18-.07h-2.33l.18.07c.45.28.15.98-.37.84-.39-.1-.46-.63-.12-.84l.18-.07c-.08,0-.2.01-.27,0M301.8,283.25h-.83l.06.31h.77v-.31ZM302.88,283.25h-.77v.31h.77v-.31ZM304.21,283.25h-1.02v.31h.91c.05-.1.07-.21.11-.31M301.8,283.86h-.7l.06.31h.65v-.31ZM302.88,283.86h-.77v.31h.77v-.31ZM303.99,283.86h-.81v.31h.71l.1-.31ZM301.8,284.48h-.58l.09.45.49-.03v-.42ZM302.88,284.48h-.77v.4l.77-.04v-.37ZM303.79,284.48h-.61v.35c.14-.03.3.01.43-.07.11-.06.15-.16.18-.28M301.15,286.18c-.19.03-.15.34.06.3.19-.03.15-.34-.06-.3M303.62,286.18c-.19.03-.15.34.06.3.19-.03.15-.34-.06-.3"
+                style="stroke-dashoffset: 0px; stroke-dasharray: 47.2543;"></path>
+        </g>
+        <g>
+            <text class="st46" transform="translate(261.73 454.48)" style="opacity: 1;">
+                <tspan x="0" y="0">GIGA MALL</tspan>
+            </text>
+            <path class="st57"
+                d="M266.21,450.82c-.14-.02-.13-.22-.12-.33.02-.22.15-.35.29-.49l-.39-1.95c-.1-.36-.37-.43-.61-.65-.16-.14,0-.35.18-.25.09.05.3.22.39.29.14.12.25.28.32.45h3.52c.1,0,.17.1.14.19-.2.51-.32,1.08-.53,1.58-.09.22-.29.37-.53.4l-2.23.13s-.16.13-.19.17c-.03.04-.06.1-.06.15h2.96c.06,0,.12.09.12.15,0,.06-.06.16-.12.16h-.27l.18.07c.45.28.15.98-.37.84-.39-.1-.46-.63-.12-.84l.18-.07h-2.33l.18.07c.45.28.15.98-.37.84-.39-.1-.46-.63-.12-.84l.18-.07c-.08,0-.2.01-.27,0M267.17,448.2h-.83l.06.31h.77v-.31ZM268.25,448.2h-.77v.31h.77v-.31ZM269.58,448.2h-1.02v.31h.91c.05-.1.07-.21.11-.31M267.17,448.82h-.7l.06.31h.65v-.31ZM268.25,448.82h-.77v.31h.77v-.31ZM269.36,448.82h-.81v.31h.71l.1-.31ZM267.17,449.44h-.58l.09.45.49-.03v-.42ZM268.25,449.44h-.77v.4l.77-.04v-.37ZM269.16,449.44h-.61v.35c.14-.03.3.01.43-.07.11-.06.15-.16.18-.28M266.52,451.13c-.19.03-.15.34.06.3.19-.03.15-.34-.06-.3M268.99,451.13c-.19.03-.15.34.06.3.19-.03.15-.34-.06-.3"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 47.2544;"></path>
+        </g>
+        <g>
+            <text class="st43" transform="translate(296.04 238.5)" style="opacity: 1;">
+                <tspan x="0" y="0">CHỢ</tspan>
+                <tspan x="-5.24" y="2.86">THÔNG DỤNG</tspan>
+            </text>
+            <path class="st57"
+                d="M296.97,234.59c-.15-.02-.13-.24-.13-.35.02-.23.15-.36.31-.51l-.41-2.04c-.11-.38-.39-.45-.64-.68-.16-.15,0-.37.19-.27.1.06.32.23.41.31.15.13.26.29.34.47h3.69c.1,0,.18.1.15.2-.21.53-.34,1.13-.55,1.65-.1.24-.3.39-.56.42l-2.33.13s-.17.14-.2.17c-.03.04-.06.11-.06.16h3.1c.06,0,.13.1.13.16,0,.06-.06.17-.13.17h-.29l.18.07c.47.3.16,1.02-.38.88-.4-.11-.48-.66-.13-.88l.18-.07h-2.44l.18.07c.47.3.16,1.02-.38.88-.4-.11-.48-.66-.13-.88l.18-.07c-.09,0-.2.01-.29,0M297.98,231.85h-.87l.06.32h.81v-.32ZM299.1,231.85h-.81v.32h.81v-.32ZM300.5,231.85h-1.07v.32h.95c.05-.1.07-.22.12-.32M297.98,232.5h-.74l.06.32h.68v-.32ZM299.1,232.5h-.81v.32h.81v-.32ZM300.27,232.5h-.85v.32h.75l.1-.32ZM297.98,233.14h-.6l.09.47.51-.03v-.44ZM299.1,233.14h-.81v.42l.81-.04v-.38ZM300.06,233.14h-.63v.36c.15-.03.31.01.45-.07.11-.07.15-.17.18-.29M297.3,234.92c-.19.03-.16.35.07.32.19-.03.16-.35-.07-.32M299.88,234.92c-.19.03-.16.35.07.32.19-.03.16-.35-.07-.32"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 49.3795;"></path>
+        </g>
+        <g>
+            <text class="st31" transform="translate(387.24 301.66)" style="opacity: 1;">
+                <tspan class="st214" x="0" y="0">GO DĨ</tspan>
+                <tspan class="st287" x="6.41" y="0"> </tspan>
+                <tspan class="st262" x="6.86" y="0">AN</tspan>
+                <tspan x="10.02" y="0"> </tspan>
+            </text>
+            <path class="st57"
+                d="M391.06,297.59c-.14-.02-.13-.23-.12-.34.02-.22.15-.35.3-.5l-.39-1.97c-.11-.37-.38-.43-.62-.65-.16-.15,0-.35.18-.26.09.05.31.22.39.3.14.12.25.28.32.46h3.56c.1,0,.17.1.15.19-.2.51-.32,1.09-.53,1.6-.09.23-.29.38-.54.41l-2.25.13s-.17.13-.19.17c-.03.04-.06.1-.06.15h2.99c.06,0,.12.09.12.15,0,.06-.06.16-.12.16h-.28l.18.07c.45.29.15.99-.37.85-.39-.1-.47-.64-.12-.85l.18-.07h-2.35l.18.07c.45.29.15.99-.37.85-.39-.1-.47-.64-.12-.85l.18-.07c-.08,0-.2.01-.28,0M392.03,294.95h-.84l.06.31h.78v-.31ZM393.12,294.95h-.78v.31h.78v-.31ZM394.46,294.95h-1.03v.31h.92c.05-.1.07-.21.11-.31M392.03,295.57h-.71l.06.31h.65v-.31ZM393.12,295.57h-.78v.31h.78v-.31ZM394.25,295.57h-.82v.31h.72l.1-.31ZM392.03,296.19h-.58l.09.46.49-.03v-.43ZM393.12,296.19h-.78v.41l.78-.04v-.37ZM394.04,296.19h-.61v.35c.14-.03.3.01.43-.07.11-.06.15-.17.18-.28M391.38,297.91c-.19.03-.15.34.06.31.19-.03.16-.34-.06-.31M393.87,297.91c-.19.03-.16.34.06.31.19-.03.16-.34-.06-.31"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 47.7095;"></path>
+        </g>
+        <g>
+            <text class="st31" transform="translate(303.32 542.89)" style="opacity: 1;">
+                <tspan class="st63" x="0" y="0">MM MEGA MARKET</tspan>
+                <tspan class="st238" x="20.24" y="0"> </tspan>
+            </text>
+            <path class="st57"
+                d="M311,539.38c-.14-.02-.13-.23-.12-.34.02-.22.15-.35.3-.5l-.39-1.97c-.11-.37-.38-.43-.62-.65-.16-.15,0-.35.18-.26.09.05.31.22.39.3.14.12.25.28.32.46h3.56c.1,0,.17.1.15.19-.2.51-.32,1.09-.53,1.6-.09.23-.29.38-.54.41l-2.25.13s-.17.13-.19.17c-.03.04-.06.1-.06.15h2.99c.06,0,.12.09.12.15,0,.06-.06.16-.12.16h-.28l.18.07c.45.29.15.99-.37.85-.39-.1-.47-.64-.12-.85l.18-.07h-2.35l.18.07c.45.29.15.99-.37.85-.39-.1-.47-.64-.12-.85l.18-.07c-.08,0-.2.01-.28,0M311.97,536.73h-.84l.06.31h.78v-.31ZM313.06,536.73h-.78v.31h.78v-.31ZM314.4,536.73h-1.03v.31h.92c.05-.1.07-.21.11-.31M311.97,537.36h-.71l.06.31h.65v-.31ZM313.06,537.36h-.78v.31h.78v-.31ZM314.18,537.36h-.82v.31h.72l.1-.31ZM311.97,537.98h-.58l.09.46.49-.03v-.43ZM313.06,537.98h-.78v.41l.78-.04v-.37ZM313.98,537.98h-.61v.35c.14-.03.3.01.43-.07.11-.06.15-.17.18-.28M311.31,539.69c-.19.03-.15.34.06.31.19-.03.16-.34-.06-.31M313.8,539.69c-.19.03-.16.34.06.31.19-.03.16-.34-.06-.31"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 47.7098;"></path>
+        </g>
+        <g>
+            <text class="st27" transform="translate(377.62 186.1)" style="opacity: 1;">
+                <tspan class="st242" x="0" y="0">C</tspan>
+                <tspan class="st211" x="1.89" y="0">H</tspan>
+                <tspan x="3.65" y="0">Ợ</tspan>
+            </text>
+            <text class="st15" transform="translate(375.09 189.25)" style="opacity: 1;">
+                <tspan x="0" y="0">TÂN BÌNH</tspan>
+            </text>
+            <path class="st57"
+                d="M378.88,182.11c-.16-.03-.15-.25-.14-.38.02-.25.17-.39.33-.55l-.44-2.2c-.12-.41-.42-.48-.69-.73-.18-.16,0-.4.2-.29.11.06.34.25.44.33.16.14.28.32.36.51h3.98c.11,0,.19.11.16.22-.23.57-.36,1.22-.6,1.79-.11.25-.33.42-.6.45l-2.52.14s-.18.15-.21.19c-.03.04-.06.11-.06.17h3.35c.07,0,.13.1.14.17,0,.07-.06.18-.14.18h-.31l.2.08c.5.32.17,1.1-.41.95-.44-.12-.52-.71-.14-.95l.2-.08h-2.64l.2.08c.5.32.17,1.1-.41.95-.44-.12-.52-.71-.14-.95l.2-.08c-.09-.01-.22.01-.31,0M379.96,179.15h-.94l.07.35h.87v-.35ZM381.18,179.15h-.87v.35h.87v-.35ZM382.68,179.15h-1.15v.35h1.03c.05-.11.08-.23.12-.35M379.96,179.85h-.79l.06.35h.73v-.35ZM381.18,179.85h-.87v.35h.87v-.35ZM382.45,179.85h-.91v.35h.81l.11-.35ZM379.96,180.55h-.65l.1.51.55-.03v-.48ZM381.18,180.55h-.87v.46l.87-.04v-.41ZM382.22,180.55h-.69v.39c.16-.03.34.01.49-.07.12-.07.17-.18.2-.32M379.23,182.46c-.21.03-.17.38.07.34.21-.03.17-.38-.07-.34M382.02,182.46c-.21.03-.17.38.07.34.21-.03.17-.38-.07-.34"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 53.3619;"></path>
+        </g>
+        <g>
+            <text class="st5" transform="translate(298.63 132.41)" style="opacity: 1;">
+                <tspan class="st58" x="0" y="0">C</tspan>
+                <tspan class="st189" x="2.2" y="0">H</tspan>
+                <tspan class="st202" x="4.26" y="0">Ợ</tspan>
+            </text>
+            <text class="st5" transform="translate(296.75 135.7)" style="opacity: 1;">
+                <tspan class="st178" x="0" y="0">PHÚ</tspan>
+                <tspan class="st264" x="5.74" y="0"> </tspan>
+                <tspan class="st58" x="6.33" y="0">A</tspan>
+                <tspan x="8.35" y="0">N</tspan>
+            </text>
+            <path class="st57"
+                d="M300.1,127.04c-.19-.03-.17-.3-.16-.44.02-.29.19-.46.39-.65l-.51-2.57c-.14-.48-.49-.56-.81-.86-.2-.19,0-.46.23-.33.12.07.4.29.52.39.19.16.32.37.42.6h4.65c.13,0,.22.13.19.25-.26.67-.42,1.43-.7,2.09-.12.3-.38.49-.7.53l-2.94.17c-.05,0-.22.17-.25.22-.04.05-.07.13-.08.2h3.91c.08,0,.16.12.16.2,0,.08-.08.21-.16.21h-.36l.23.09c.59.37.2,1.29-.48,1.11-.51-.14-.61-.83-.16-1.11l.23-.09h-3.07l.23.09c.59.37.2,1.29-.48,1.11-.51-.14-.61-.83-.16-1.11l.23-.09c-.11-.01-.26.02-.36,0M301.36,123.59h-1.09l.08.41h1.02v-.41ZM302.78,123.59h-1.02v.41h1.02v-.41ZM304.54,123.59h-1.35v.41h1.2c.06-.13.09-.27.15-.41M301.36,124.4h-.93l.08.41h.85v-.41ZM302.78,124.4h-1.02v.41h1.02v-.41ZM304.26,124.4h-1.07v.41h.94l.13-.41ZM301.36,125.22h-.76l.12.6.65-.04v-.56ZM302.78,125.22h-1.02v.53l1.02-.05v-.48ZM303.99,125.22h-.8v.46c.19-.03.4.01.57-.09.14-.08.19-.22.23-.37M300.51,127.45c-.24.04-.2.45.08.4.24-.04.2-.45-.08-.4M303.76,127.45c-.25.04-.2.45.08.4.24-.04.2-.45-.08-.4"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 62.3633;"></path>
+        </g>
+        <g>
+            <text class="st5" transform="translate(301.23 102.55)" style="opacity: 1;">
+                <tspan class="st58" x="0" y="0">C</tspan>
+                <tspan class="st189" x="2.2" y="0">H</tspan>
+                <tspan class="st202" x="4.26" y="0">Ợ</tspan>
+            </text>
+            <text class="st5" transform="translate(295.96 105.84)" style="opacity: 1;">
+                <tspan class="st178" x="0" y="0">THÀNH NA</tspan>
+                <tspan class="st202" x="14.74" y="0">M</tspan>
+            </text>
+            <path class="st57"
+                d="M302.74,97.32c-.19-.03-.17-.3-.16-.44.02-.29.19-.46.39-.65l-.51-2.57c-.14-.48-.49-.56-.81-.86-.2-.19,0-.46.23-.33.12.07.4.29.52.39.19.16.32.37.42.6h4.65c.13,0,.22.13.19.25-.26.67-.42,1.43-.7,2.09-.12.3-.38.49-.7.53l-2.94.17c-.05,0-.22.17-.25.22-.04.05-.07.13-.08.2h3.91c.08,0,.16.12.16.2,0,.08-.08.21-.16.21h-.36l.23.09c.59.37.2,1.29-.48,1.11-.51-.14-.61-.83-.16-1.11l.23-.09h-3.07l.23.09c.59.37.2,1.29-.48,1.11-.51-.14-.61-.83-.16-1.11l.23-.09c-.11-.01-.26.02-.36,0M304.01,93.86h-1.09l.08.41h1.02v-.41ZM305.43,93.86h-1.02v.41h1.02v-.41ZM307.18,93.86h-1.35v.41h1.2c.06-.13.09-.27.15-.41M304.01,94.68h-.93l.08.41h.85v-.41ZM305.43,94.68h-1.02v.41h1.02v-.41ZM306.9,94.68h-1.07v.41h.94l.13-.41ZM304.01,95.49h-.76l.12.6.65-.04v-.56ZM305.43,95.49h-1.02v.53l1.02-.05v-.48ZM306.64,95.49h-.8v.46c.19-.03.4.01.57-.09.14-.08.19-.22.23-.37M303.15,97.73c-.24.04-.2.45.08.4.24-.04.2-.45-.08-.4M306.4,97.73c-.25.04-.2.45.08.4.24-.04.2-.45-.08-.4"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 62.3634;"></path>
+        </g>
+        <g>
+            <text class="st18" transform="translate(177.86 154.02)" style="opacity: 1;">
+                <tspan class="st265" x="0" y="0">BỆNH</tspan>
+                <tspan class="st198" x="5.97" y="0"> </tspan>
+                <tspan class="st288" x="6.41" y="0">VIỆ</tspan>
+                <tspan x="9.76" y="0">N</tspan>
+            </text>
+            <text class="st18" transform="translate(174.9 156.59)" style="opacity: 1;">
+                <tspan class="st218" x="0" y="0">C</tspan>
+                <tspan class="st265" x="1.7" y="0">O</tspan>
+                <tspan class="st218" x="3.62" y="0">L</tspan>
+                <tspan class="st288" x="4.78" y="0">UMBIA</tspan>
+                <tspan class="st182" x="11.83" y="0"> </tspan>
+                <tspan class="st288" x="12.3" y="0">ASI</tspan>
+                <tspan x="15.76" y="0">A</tspan>
+            </text>
+            <rect class="st57" x="182.71" y="146.72" width="1.7" height="4.55"></rect>
+            <rect class="st57" x="181.28" y="148.14" width="4.55" height="1.7"></rect>
+        </g>
+        <g>
+            <text class="st20" transform="translate(234.14 189.55)" style="opacity: 1;">
+                <tspan class="st206" x="0" y="0">B</tspan>
+                <tspan class="st244" x="1.61" y="0">V </tspan>
+                <tspan class="st259" x="3.98" y="0">Đ</tspan>
+                <tspan class="st0" x="5.8" y="0">A K</tspan>
+                <tspan class="st206" x="9.96" y="0">H</tspan>
+                <tspan class="st230" x="11.83" y="0">O</tspan>
+                <tspan x="14.01" y="0">A</tspan>
+            </text>
+            <text class="st20" transform="translate(237.27 192.54)" style="opacity: 1;">
+                <tspan class="st244" x="0" y="0">AN PH</tspan>
+                <tspan x="7.83" y="0">Ú</tspan>
+            </text>
+            <rect class="st57" x="241.06" y="180.81" width="1.98" height="5.29"></rect>
+            <rect class="st57" x="239.4" y="182.46" width="5.29" height="1.98"></rect>
+        </g>
+        <g>
+            <text class="st1" transform="translate(349.18 275.25)" style="opacity: 1;">
+                <tspan class="st98" x="0" y="0">TT</tspan>
+                <tspan class="st99" x="2.57" y="0"> </tspan>
+                <tspan class="st98" x="3.01" y="0">Y</tspan>
+                <tspan class="st107" x="4.42" y="0"> </tspan>
+                <tspan class="st98" x="4.86" y="0">T</tspan>
+                <tspan x="6.14" y="0">Ế</tspan>
+            </text>
+            <text class="st1" transform="translate(349.95 277.83)" style="opacity: 1;">
+                <tspan class="st156" x="0" y="0">DĨ</tspan>
+                <tspan class="st295" x="2.2" y="0"> </tspan>
+                <tspan class="st156" x="2.67" y="0">A</tspan>
+                <tspan x="4.25" y="0">N</tspan>
+            </text>
+            <rect class="st57" x="352.03" y="267.26" width="1.7" height="4.56"></rect>
+            <rect class="st57" x="350.6" y="268.69" width="4.56" height="1.7"></rect>
+        </g>
+        <g>
+            <text class="st51" transform="translate(371.25 312.98)" style="opacity: 1;">
+                <tspan x="0" y="0">BV HOÀN MỸ</tspan>
+            </text>
+            <text class="st21" transform="translate(373.4 315.55)" style="opacity: 1;">
+                <tspan x="0" y="0">THỦ ĐỨC</tspan>
+            </text>
+            <rect class="st57" x="377.51" y="305.03" width="1.7" height="4.56"></rect>
+            <rect class="st57" x="376.08" y="306.46" width="4.56" height="1.7"></rect>
+        </g>
+        <g>
+            <text class="st33" transform="translate(204.19 150.16)" style="opacity: 1;">
+                <tspan class="st105" x="0" y="0">Đ</tspan>
+                <tspan class="st236" x="1.55" y="0">ẠI </tspan>
+                <tspan class="st257" x="4.19" y="0">HỌ</tspan>
+                <tspan class="st199" x="7.64" y="0">C</tspan>
+            </text>
+            <text class="st33" transform="translate(198.56 152.7)" style="opacity: 1;">
+                <tspan class="st195" x="0" y="0">KINH</tspan>
+                <tspan class="st250" x="5.24" y="0"> </tspan>
+                <tspan class="st248" x="5.67" y="0">TẾ - KỸ</tspan>
+                <tspan class="st250" x="13.12" y="0"> </tspan>
+                <tspan class="st237" x="13.55" y="0">THU</tspan>
+                <tspan class="st232" x="17.92" y="0">Ậ</tspan>
+                <tspan x="19.34" y="0">T</tspan>
+            </text>
+            <text class="st33" transform="translate(201.77 155.24)" style="opacity: 1;">
+                <tspan class="st195" x="0" y="0">BÌNH DƯƠ</tspan>
+                <tspan class="st257" x="10.7" y="0">N</tspan>
+                <tspan x="12.31" y="0">G</tspan>
+            </text>
+            <path class="st57"
+                d="M205.78,144.25c.04-.09.09-.11.17-.15.88-.36,1.81-.62,2.69-.98.09-.02.17.01.25.04.89.29,1.76.67,2.65.96.14.08.14.25,0,.32-.07.04-.24.07-.29.11-.01,0-.02.01-.02.03v1.54s.01.04.01.04l.46.46c.06.09.05.16-.01.24-.12.15-.33.3-.45.45-.04.17.09.54-.17.57-.27.02-.16-.41-.19-.57-.13-.16-.33-.3-.45-.45-.05-.06-.07-.11-.04-.18.14-.2.34-.35.5-.53v-1.45l-.43.16v1.17c-.02.14-.38.34-.51.39-.71.31-1.98.31-2.66-.07-.12-.06-.35-.22-.37-.36v-1.17s-1.02-.37-1.02-.37c-.06-.02-.08-.07-.11-.12v-.08ZM210.95,144.3l-.03-.02-2.2-.79-2.25.81,2.21.82,2.27-.81ZM210.1,144.97l-1.42.5-1.41-.51v.95c.05.05.11.09.17.13.6.34,1.96.35,2.55-.04.04-.03.08-.05.12-.09v-.94ZM211.05,146.47l-.25.26.26.25.25-.26-.26-.25Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 41.3598;"></path>
+        </g>
+        <g>
+            <text class="st4" transform="translate(226.24 156.25)" style="opacity: 1;">
+                <tspan x="0" y="0">TRƯỜNG THPT</tspan>
+            </text>
+            <text class="st23" transform="translate(226.13 158.79)" style="opacity: 1;">
+                <tspan x="0" y="0">TRẦN VĂN ƠN</tspan>
+            </text>
+            <path class="st57"
+                d="M230.58,150.35c.04-.09.09-.11.17-.15.88-.36,1.81-.62,2.69-.98.09-.02.17.01.25.04.89.29,1.76.67,2.65.96.14.08.14.25,0,.32-.07.04-.24.07-.29.11-.01,0-.02.01-.02.03v1.54s.01.04.01.04l.46.46c.06.09.05.16-.01.24-.12.15-.33.3-.45.45-.04.17.09.54-.17.57-.27.02-.16-.41-.19-.57-.13-.16-.33-.3-.45-.45-.05-.06-.07-.11-.04-.18.14-.2.34-.35.5-.53v-1.45l-.43.16v1.17c-.02.14-.38.34-.51.39-.71.31-1.98.31-2.66-.07-.12-.06-.35-.22-.37-.36v-1.17s-1.02-.37-1.02-.37c-.06-.02-.08-.07-.11-.12v-.08ZM235.74,150.39l-.03-.02-2.2-.79-2.25.81,2.21.82,2.27-.81ZM234.89,151.07l-1.42.5-1.41-.51v.95c.05.05.11.09.17.13.6.34,1.96.35,2.55-.04.04-.03.08-.05.12-.09v-.94ZM235.84,152.57l-.25.26.26.25.25-.26-.26-.25Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 41.3598;"></path>
+        </g>
+        <g>
+            <text class="st4" transform="translate(203.85 184.05)" style="opacity: 1;">
+                <tspan x="0" y="0">CAO ĐẲNG</tspan>
+            </text>
+            <text class="st37" transform="translate(197.29 187.18)" style="opacity: 1;">
+                <tspan x="0" y="0">VIỆT NAM - SINGAPORE</tspan>
+            </text>
+            <path class="st57"
+                d="M206.72,178.14c.04-.09.09-.11.17-.15.88-.36,1.81-.62,2.69-.98.09-.02.17.01.25.04.89.29,1.76.67,2.65.96.14.08.14.25,0,.32-.07.04-.24.07-.29.11-.01,0-.02.01-.02.03v1.54s.01.04.01.04l.46.46c.06.09.05.16-.01.24-.12.15-.33.3-.45.45-.04.17.09.54-.17.57-.27.02-.16-.41-.19-.57-.13-.16-.33-.3-.45-.45-.05-.06-.07-.11-.04-.18.14-.2.34-.35.5-.53v-1.45l-.43.16v1.17c-.02.14-.38.34-.51.39-.71.31-1.98.31-2.66-.07-.12-.06-.35-.22-.37-.36v-1.17s-1.02-.37-1.02-.37c-.06-.02-.08-.07-.11-.12v-.08ZM211.89,178.19l-.03-.02-2.2-.79-2.25.81,2.21.82,2.27-.81ZM211.04,178.86l-1.42.5-1.41-.51v.95c.05.05.11.09.17.13.6.34,1.96.35,2.55-.04.04-.03.08-.05.12-.09v-.94ZM211.99,180.37l-.25.26.26.25.25-.26-.26-.25Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 41.3598;"></path>
+        </g>
+        <g>
+            <text class="st4" transform="translate(267.53 141.8)" style="opacity: 1;">
+                <tspan x="0" y="0">TIỂU HỌC</tspan>
+            </text>
+            <text class="st37" transform="translate(267.51 144.57)" style="opacity: 1;">
+                <tspan x="0" y="0">AN PHÚ 3</tspan>
+            </text>
+            <path class="st57"
+                d="M269.39,135.8c.04-.09.09-.11.17-.15.88-.36,1.81-.62,2.69-.98.09-.02.17.01.25.04.89.29,1.76.67,2.65.96.14.08.14.25,0,.32-.07.04-.24.07-.29.11-.01,0-.02.01-.02.03v1.54s.01.04.01.04l.46.46c.06.09.05.16-.01.24-.12.15-.33.3-.45.45-.04.17.09.54-.17.57-.27.02-.16-.41-.19-.57-.13-.16-.33-.3-.45-.45-.05-.06-.07-.11-.04-.18.14-.2.34-.35.5-.53v-1.45l-.43.16v1.17c-.02.14-.38.34-.51.39-.71.31-1.98.31-2.66-.07-.12-.06-.35-.22-.37-.36v-1.17s-1.02-.37-1.02-.37c-.06-.02-.08-.07-.11-.12v-.08ZM274.56,135.85l-.03-.02-2.2-.79-2.25.81,2.21.82,2.27-.81ZM273.71,136.52l-1.42.5-1.41-.51v.95c.05.05.11.09.17.13.6.34,1.96.35,2.55-.04.04-.03.08-.05.12-.09v-.94ZM274.66,138.02l-.25.26.26.25.25-.26-.26-.25Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 41.3599;"></path>
+        </g>
+        <g>
+            <text class="st4" transform="translate(265.2 124.66)" style="opacity: 1;">
+                <tspan x="0" y="0">THCS</tspan>
+            </text>
+            <text class="st37" transform="translate(258.01 127.19)" style="opacity: 1;">
+                <tspan x="0" y="0">NGUYỄN VĂN TRỖI</tspan>
+            </text>
+            <path class="st57"
+                d="M265.05,118.42c.04-.09.09-.11.17-.15.88-.36,1.81-.62,2.69-.98.09-.02.17.01.25.04.89.29,1.76.67,2.65.96.14.08.14.25,0,.32-.07.04-.24.07-.29.11-.01,0-.02.01-.02.03v1.54s.01.04.01.04l.46.46c.06.09.05.16-.01.24-.12.15-.33.3-.45.45-.04.17.09.54-.17.57-.27.02-.16-.41-.19-.57-.13-.16-.33-.3-.45-.45-.05-.06-.07-.11-.04-.18.14-.2.34-.35.5-.53v-1.45l-.43.16v1.17c-.02.14-.38.34-.51.39-.71.31-1.98.31-2.66-.07-.12-.06-.35-.22-.37-.36v-1.17s-1.02-.37-1.02-.37c-.06-.02-.08-.07-.11-.12v-.08ZM270.22,118.47l-.03-.02-2.2-.79-2.25.81,2.21.82,2.27-.81ZM269.37,119.14l-1.42.5-1.41-.51v.95c.05.05.11.09.17.13.6.34,1.96.35,2.55-.04.04-.03.08-.05.12-.09v-.94ZM270.32,120.65l-.25.26.26.25.25-.26-.26-.25Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 41.3599;"></path>
+        </g>
+        <g>
+            <text class="st4" transform="translate(268.45 104.94)" style="opacity: 1;">
+                <tspan x="0" y="0">THPT</tspan>
+            </text>
+            <text class="st23" transform="translate(265.21 107.48)" style="opacity: 1;">
+                <tspan x="0" y="0">LÝ THÁI TỔ</tspan>
+            </text>
+            <path class="st57"
+                d="M268.09,98.71c.04-.09.09-.11.17-.15.88-.36,1.81-.62,2.69-.98.09-.02.17.01.25.04.89.29,1.76.67,2.65.96.14.08.14.25,0,.32-.07.04-.24.07-.29.11-.01,0-.02.01-.02.03v1.54s.01.04.01.04l.46.46c.06.09.05.16-.01.24-.12.15-.33.3-.45.45-.04.17.09.54-.17.57-.27.02-.16-.41-.19-.57-.13-.16-.33-.3-.45-.45-.05-.06-.07-.11-.04-.18.14-.2.34-.35.5-.53v-1.45l-.43.16v1.17c-.02.14-.38.34-.51.39-.71.31-1.98.31-2.66-.07-.12-.06-.35-.22-.37-.36v-1.17s-1.02-.37-1.02-.37c-.06-.02-.08-.07-.11-.12v-.08ZM273.26,98.76l-.03-.02-2.2-.79-2.25.81,2.21.82,2.27-.81ZM272.41,99.43l-1.42.5-1.41-.51v.95c.05.05.11.09.17.13.6.34,1.96.35,2.55-.04.04-.03.08-.05.12-.09v-.94ZM273.36,100.93l-.25.26.26.25.25-.26-.26-.25Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 41.3599;"></path>
+        </g>
+        <g>
+            <text class="st37" transform="translate(324.11 120.25)" style="opacity: 1;">
+                <tspan x="0" y="0">MẦM NON</tspan>
+            </text>
+            <text class="st37" transform="translate(324.97 122.64)" style="opacity: 1;">
+                <tspan x="0" y="0">ÁNH MAI</tspan>
+            </text>
+            <path class="st57"
+                d="M326.67,113.96c.04-.09.09-.11.17-.15.88-.36,1.81-.62,2.69-.98.09-.02.17.01.25.04.89.29,1.76.67,2.65.96.14.08.14.25,0,.32-.07.04-.24.07-.29.11-.01,0-.02.01-.02.03v1.54s.01.04.01.04l.46.46c.06.09.05.16-.01.24-.12.15-.33.3-.45.45-.04.17.09.54-.17.57-.27.02-.16-.41-.19-.57-.13-.16-.33-.3-.45-.45-.05-.06-.07-.11-.04-.18.14-.2.34-.35.5-.53v-1.45l-.43.16v1.17c-.02.14-.38.34-.51.39-.71.31-1.98.31-2.66-.07-.12-.06-.35-.22-.37-.36v-1.17s-1.02-.37-1.02-.37c-.06-.02-.08-.07-.11-.12v-.08ZM331.84,114l-.03-.02-2.2-.79-2.25.81,2.21.82,2.27-.81ZM330.99,114.68l-1.42.5-1.41-.51v.95c.05.05.11.09.17.13.6.34,1.96.35,2.55-.04.04-.03.08-.05.12-.09v-.94ZM331.94,116.18l-.25.26.26.25.25-.26-.26-.25Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 41.3599;"></path>
+        </g>
+        <g>
+            <text class="st23" transform="translate(326.88 61.78)" style="opacity: 1;">
+                <tspan x="0" y="0">TỔ HỢP</tspan>
+                <tspan x="-3.53" y="2.78">GIÁO DỤC FPT</tspan>
+            </text>
+            <path class="st57"
+                d="M328.22,55.49c.04-.09.09-.11.17-.15.88-.36,1.81-.62,2.69-.98.09-.02.17.01.25.04.89.29,1.76.67,2.65.96.14.08.14.25,0,.32-.07.04-.24.07-.29.11-.01,0-.02.01-.02.03v1.54s.01.04.01.04l.46.46c.06.09.05.16-.01.24-.12.15-.33.3-.45.45-.04.17.09.54-.17.57-.27.02-.16-.41-.19-.57-.13-.16-.33-.3-.45-.45-.05-.06-.07-.11-.04-.18.14-.2.34-.35.5-.53v-1.45l-.43.16v1.17c-.02.14-.38.34-.51.39-.71.31-1.98.31-2.66-.07-.12-.06-.35-.22-.37-.36v-1.17s-1.02-.37-1.02-.37c-.06-.02-.08-.07-.11-.12v-.08ZM333.39,55.54l-.03-.02-2.2-.79-2.25.81,2.21.82,2.27-.81ZM332.54,56.21l-1.42.5-1.41-.51v.95c.05.05.11.09.17.13.6.34,1.96.35,2.55-.04.04-.03.08-.05.12-.09v-.94ZM333.49,57.72l-.25.26.26.25.25-.26-.26-.25Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 41.3599;"></path>
+        </g>
+        <g>
+            <text class="st41" transform="translate(261.57 270.1)" style="opacity: 1;">
+                <tspan class="st258" x="0" y="0">K</tspan>
+                <tspan class="st266" x="1.92" y="0">CN</tspan>
+                <tspan class="st104" x="6.53" y="0"> </tspan>
+                <tspan class="st272" x="7.13" y="0">ICD</tspan>
+                <tspan class="st266">
+                    <tspan x="-2.93" y="3.85">SÓNG THẦN</tspan>
+                </tspan>
+            </text>
+            <path class="st124"
+                d="M275.27,260.11c0,3.51-2.85,6.36-6.36,6.36s-6.36-2.85-6.36-6.36,2.85-6.36,6.36-6.36,6.36,2.85,6.36,6.36"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 39.9624;"></path>
+            <path class="st65"
+                d="M264.93,260.43l.07-.11,1.11-.45v-2.81c.01-.12.09-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.11c.27-.06.77-.49.93-.09v1.13l.93-.34v-2.77c.01-.12.08-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.16l.91-.31c.11-.02.24.06.26.17v4.15c0,.13-.09.21-.22.23h-7.52c-.12-.01-.17-.07-.22-.17v-2.8ZM267.51,257.3h-.93v.47h.93v-.47ZM271.25,257.3h-.93v.47h.93v-.47ZM267.51,258.23h-.93v1.43l.93-.36v-1.08ZM271.25,258.23h-.93v1.43l.93-.33v-1.1ZM272.43,262.93v-3.52l-3.69,1.3c-.1.05-.3-.07-.3-.17v-1.11l-3.05,1.21v2.29h.95v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.16.06.01.01.07.11.07.12v.76h.95ZM267.28,262.47h-.47v.47h.47v-.47ZM269.15,262.47h-.47v.47h.47v-.47ZM271.01,262.47h-.47v.47h.47v-.47Z"
+                style="stroke-dashoffset: 2px; stroke-dasharray: 81.6984;"></path>
+        </g>
+        <g>
+            <text class="st26" transform="translate(300.3 342.43)" style="opacity: 1;">
+                <tspan class="st290" x="0" y="0">K</tspan>
+                <tspan class="st274" x="2.18" y="0">C</tspan>
+                <tspan class="st112" x="4.85" y="0">N</tspan>
+            </text>
+            <text class="st26" transform="translate(292.32 346.41)" style="opacity: 1;">
+                <tspan class="st66" x="0" y="0">SÓ</tspan>
+                <tspan class="st291" x="5" y="0">N</tspan>
+                <tspan class="st66" x="7.51" y="0">G</tspan>
+                <tspan class="st148" x="10.45" y="0"> </tspan>
+                <tspan class="st274" x="11.13" y="0">THẦN </tspan>
+                <tspan x="21.45" y="0">1</tspan>
+            </text>
+            <path class="st124"
+                d="M310.44,331.6c0,3.51-2.85,6.36-6.36,6.36s-6.36-2.85-6.36-6.36,2.85-6.36,6.36-6.36,6.36,2.85,6.36,6.36"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 39.9624;"></path>
+            <path class="st65"
+                d="M300.09,331.92l.07-.11,1.11-.45v-2.81c.01-.12.09-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.11c.27-.06.77-.49.93-.09v1.13l.93-.34v-2.77c.01-.12.08-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.16l.91-.31c.11-.02.24.06.26.17v4.15c0,.13-.09.21-.22.23h-7.52c-.12-.01-.17-.07-.22-.17v-2.8ZM302.68,328.79h-.93v.47h.93v-.47ZM306.41,328.79h-.93v.47h.93v-.47ZM302.68,329.73h-.93v1.43l.93-.36v-1.08ZM306.41,329.73h-.93v1.43l.93-.33v-1.1ZM307.6,334.43v-3.52l-3.69,1.3c-.1.05-.3-.07-.3-.17v-1.11l-3.05,1.21v2.29h.95v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.16.06.01.01.07.11.07.12v.76h.95ZM302.44,333.96h-.47v.47h.47v-.47ZM304.31,333.96h-.47v.47h.47v-.47ZM306.18,333.96h-.47v.47h.47v-.47Z"
+                style="stroke-dashoffset: 3px; stroke-dasharray: 81.6984;"></path>
+        </g>
+        <g>
+            <text class="st54" transform="translate(297.11 259.77)" style="opacity: 1;">
+                <tspan class="st169" x="0" y="0">K</tspan>
+                <tspan class="st155" x="1.78" y="0">C</tspan>
+                <tspan x="3.97" y="0">N</tspan>
+            </text>
+            <text class="st54" transform="translate(290.57 263.03)" style="opacity: 1;">
+                <tspan class="st197" x="0" y="0">SÓ</tspan>
+                <tspan class="st270" x="4.1" y="0">N</tspan>
+                <tspan class="st155" x="6.16" y="0">G</tspan>
+                <tspan class="st281" x="8.56" y="0"> </tspan>
+                <tspan class="st155" x="9.12" y="0">THẦN </tspan>
+                <tspan class="st247" x="17.58" y="0">2</tspan>
+            </text>
+            <path class="st124"
+                d="M306.7,249.86c0,3.51-2.85,6.36-6.36,6.36s-6.36-2.85-6.36-6.36,2.85-6.36,6.36-6.36,6.36,2.85,6.36,6.36"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 39.9624;"></path>
+            <path class="st65"
+                d="M296.36,250.18l.07-.11,1.11-.45v-2.81c.01-.12.09-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.11c.27-.06.77-.49.93-.09v1.13l.93-.34v-2.77c.01-.12.08-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.16l.91-.31c.11-.02.24.06.26.17v4.15c0,.13-.09.21-.22.23h-7.52c-.12-.01-.17-.07-.22-.17v-2.8ZM298.94,247.05h-.93v.47h.93v-.47ZM302.68,247.05h-.93v.47h.93v-.47ZM298.94,247.99h-.93v1.43l.93-.36v-1.08ZM302.68,247.99h-.93v1.43l.93-.33v-1.1ZM303.86,252.69v-3.52l-3.69,1.3c-.1.05-.3-.07-.3-.17v-1.11l-3.05,1.21v2.29h.95v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.16.06.01.01.07.11.07.12v.76h.95ZM298.71,252.22h-.47v.47h.47v-.47ZM300.58,252.22h-.47v.47h.47v-.47ZM302.45,252.22h-.47v.47h.47v-.47Z"
+                style="stroke-dashoffset: 3px; stroke-dasharray: 81.6983;"></path>
+        </g>
+        <g>
+            <text class="st14" transform="translate(419.94 259.45)" style="opacity: 1;">
+                <tspan x="0" y="0">KCN</tspan>
+            </text>
+            <text class="st19" transform="translate(411.98 263.08)" style="opacity: 1;">
+                <tspan x="0" y="0">TÂN ĐÔNG HIỆP B</tspan>
+            </text>
+            <path class="st124"
+                d="M428.1,251.07c0,3.05-2.47,5.52-5.52,5.52s-5.52-2.47-5.52-5.52,2.47-5.52,5.52-5.52,5.52,2.47,5.52,5.52"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 34.6906;"></path>
+            <path class="st65"
+                d="M419.12,251.35l.06-.09.97-.39v-2.44c.01-.11.08-.18.18-.2.4.04.87-.05,1.26,0,.03,0,.1.03.12.05.01,0,.06.1.06.1v1.83c.24-.05.67-.42.81-.07v.98l.81-.29v-2.41c0-.11.07-.18.18-.2.4.04.87-.05,1.26,0,.03,0,.1.03.12.05.01,0,.06.1.06.1v1.87l.79-.27c.1-.01.21.05.23.15v3.61c0,.11-.08.18-.19.2h-6.53c-.1-.01-.15-.06-.2-.15v-2.43ZM421.37,248.63h-.81v.41h.81v-.41ZM424.61,248.63h-.81v.41h.81v-.41ZM421.37,249.44h-.81v1.24l.81-.31v-.93ZM424.61,249.44h-.81v1.24l.81-.29v-.95ZM425.64,253.53v-3.06l-3.2,1.13c-.08.04-.26-.06-.26-.15v-.97l-2.65,1.05v1.99h.82v-.66s.05-.09.06-.1c.02-.02.08-.05.11-.05.27.02.58-.03.85,0,.04,0,.1.03.13.05.01.01.06.1.06.1v.66h.41v-.66s.05-.09.06-.1c.02-.02.09-.05.11-.05.27.02.58-.03.85,0,.04,0,.1.03.13.05.01.01.06.1.06.1v.66h.41v-.66s.05-.09.06-.1c.02-.02.08-.05.11-.05.27.02.58-.03.85,0,.04,0,.11.03.14.05.01.01.06.1.06.1v.66h.82ZM421.16,253.12h-.41v.41h.41v-.41ZM422.78,253.12h-.41v.41h.41v-.41ZM424.41,253.12h-.41v.41h.41v-.41Z"
+                style="stroke-dashoffset: 3px; stroke-dasharray: 70.9405;"></path>
+        </g>
+        <g>
+            <text class="st41" transform="translate(223.31 262.28)" style="opacity: 1;">
+                <tspan class="st258" x="0" y="0">K</tspan>
+                <tspan class="st266" x="1.92" y="0">CN</tspan>
+                <tspan class="st104" x="6.53" y="0"> </tspan>
+                <tspan class="st272" x="7.13" y="0">VSIP </tspan>
+                <tspan class="st282" x="14.29" y="0">1</tspan>
+            </text>
+            <path class="st124"
+                d="M237.01,252.11c0,3.51-2.85,6.36-6.36,6.36s-6.36-2.85-6.36-6.36,2.85-6.36,6.36-6.36,6.36,2.85,6.36,6.36"
+                style="stroke-dashoffset: 2px; stroke-dasharray: 39.9625;"></path>
+            <path class="st65"
+                d="M226.66,252.43l.07-.11,1.11-.45v-2.81c.01-.12.09-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.11c.27-.06.77-.49.93-.09v1.13l.93-.34v-2.77c.01-.12.08-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.16l.91-.31c.11-.02.24.06.26.17v4.15c0,.13-.09.21-.22.23h-7.52c-.12-.01-.17-.07-.22-.17v-2.8ZM229.25,249.3h-.93v.47h.93v-.47ZM232.98,249.3h-.93v.47h.93v-.47ZM229.25,250.24h-.93v1.43l.93-.36v-1.08ZM232.98,250.24h-.93v1.43l.93-.33v-1.1ZM234.17,254.94v-3.52l-3.69,1.3c-.1.05-.3-.07-.3-.17v-1.11l-3.05,1.21v2.29h.95v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.16.06.01.01.07.11.07.12v.76h.95ZM229.01,254.47h-.47v.47h.47v-.47ZM230.88,254.47h-.47v.47h.47v-.47ZM232.75,254.47h-.47v.47h.47v-.47Z"
+                style="stroke-dashoffset: 4px; stroke-dasharray: 81.6982;"></path>
+        </g>
+        <text class="st41" transform="translate(214.2 228.25)" style="opacity: 1;">
+            <tspan class="st258" x="0" y="0">K</tspan>
+            <tspan class="st266" x="1.92" y="0">CN</tspan>
+            <tspan class="st104" x="6.53" y="0" xml:space="preserve"> VIỆT HƯƠNG</tspan>
+        </text>
+        <g>
+            <text class="st41" transform="translate(255.9 313.2)" style="opacity: 1;">
+                <tspan class="st258" x="0" y="0">K</tspan>
+                <tspan class="st266" x="1.92" y="0">CN ĐỒNG AN</tspan>
+            </text>
+            <path class="st124"
+                d="M273.72,301.84c0,3.51-2.85,6.36-6.36,6.36s-6.36-2.85-6.36-6.36,2.85-6.36,6.36-6.36,6.36,2.85,6.36,6.36"
+                style="stroke-dashoffset: 2px; stroke-dasharray: 39.9625;"></path>
+            <path class="st65"
+                d="M263.38,302.16l.07-.11,1.11-.45v-2.81c.01-.12.09-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.11c.27-.06.77-.49.93-.09v1.13l.93-.34v-2.77c.01-.12.08-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.16l.91-.31c.11-.02.24.06.26.17v4.15c0,.13-.09.21-.22.23h-7.52c-.12-.01-.17-.07-.22-.17v-2.8ZM265.96,299.03h-.93v.47h.93v-.47ZM269.7,299.03h-.93v.47h.93v-.47ZM265.96,299.97h-.93v1.43l.93-.36v-1.08ZM269.7,299.97h-.93v1.43l.93-.33v-1.1ZM270.88,304.67v-3.52l-3.69,1.3c-.1.05-.3-.07-.3-.17v-1.11l-3.05,1.21v2.29h.95v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.16.06.01.01.07.11.07.12v.76h.95ZM265.73,304.2h-.47v.47h.47v-.47ZM267.6,304.2h-.47v.47h.47v-.47ZM269.47,304.2h-.47v.47h.47v-.47Z"
+                style="stroke-dashoffset: 4px; stroke-dasharray: 81.6984;"></path>
+        </g>
+        <g>
+            <text class="st41" transform="translate(244.39 346.03)" style="opacity: 1;">
+                <tspan class="st258" x="0" y="0">K</tspan>
+                <tspan class="st266" x="1.92" y="0">CN</tspan>
+                <tspan class="st272">
+                    <tspan x="-7" y="3.85">LINH TRUNG 2</tspan>
+                </tspan>
+            </text>
+            <path class="st124"
+                d="M254,335.7c0,3.51-2.85,6.36-6.36,6.36s-6.36-2.85-6.36-6.36,2.85-6.36,6.36-6.36,6.36,2.85,6.36,6.36"
+                style="stroke-dashoffset: 2px; stroke-dasharray: 39.9624;"></path>
+            <path class="st65"
+                d="M243.66,336.02l.07-.11,1.11-.45v-2.81c.01-.12.09-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.11c.27-.06.77-.49.93-.09v1.13l.93-.34v-2.77c.01-.12.08-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.16l.91-.31c.11-.02.24.06.26.17v4.15c0,.13-.09.21-.22.23h-7.52c-.12-.01-.17-.07-.22-.17v-2.8ZM246.24,332.89h-.93v.47h.93v-.47ZM249.98,332.89h-.93v.47h.93v-.47ZM246.24,333.83h-.93v1.43l.93-.36v-1.08ZM249.98,333.83h-.93v1.43l.93-.33v-1.1ZM251.16,338.53v-3.52l-3.69,1.3c-.1.05-.3-.07-.3-.17v-1.11l-3.05,1.21v2.29h.95v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.16.06.01.01.07.11.07.12v.76h.95ZM246.01,338.06h-.47v.47h.47v-.47ZM247.88,338.06h-.47v.47h.47v-.47ZM249.75,338.06h-.47v.47h.47v-.47Z"
+                style="stroke-dashoffset: 4px; stroke-dasharray: 81.6982;"></path>
+        </g>
+        <g>
+            <text class="st41" transform="translate(362.03 380.77)" style="opacity: 1;">
+                <tspan class="st258" x="0" y="0">K</tspan>
+                <tspan class="st266" x="1.92" y="0">CN</tspan>
+                <tspan class="st272">
+                    <tspan x="-6.79" y="3.85">LINH TRUNG 1</tspan>
+                </tspan>
+            </text>
+            <path class="st124"
+                d="M370.83,370.61c0,3.51-2.85,6.36-6.36,6.36s-6.36-2.85-6.36-6.36,2.85-6.36,6.36-6.36,6.36,2.85,6.36,6.36"
+                style="stroke-dashoffset: 2px; stroke-dasharray: 39.9624;"></path>
+            <path class="st65"
+                d="M360.48,370.93l.07-.11,1.11-.45v-2.81c.01-.12.09-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.11c.27-.06.77-.49.93-.09v1.13l.93-.34v-2.77c.01-.12.08-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.16l.91-.31c.11-.02.24.06.26.17v4.15c0,.13-.09.21-.22.23h-7.52c-.12-.01-.17-.07-.22-.17v-2.8ZM363.07,367.8h-.93v.47h.93v-.47ZM366.8,367.8h-.93v.47h.93v-.47ZM363.07,368.73h-.93v1.43l.93-.36v-1.08ZM366.8,368.73h-.93v1.43l.93-.33v-1.1ZM367.99,373.43v-3.52l-3.69,1.3c-.1.05-.3-.07-.3-.17v-1.11l-3.05,1.21v2.29h.95v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.16.06.01.01.07.11.07.12v.76h.95ZM362.83,372.97h-.47v.47h.47v-.47ZM364.7,372.97h-.47v.47h.47v-.47ZM366.57,372.97h-.47v.47h.47v-.47Z"
+                style="stroke-dashoffset: 5px; stroke-dasharray: 81.6984;"></path>
+        </g>
+        <text class="st93" transform="translate(187.29 263.58) rotate(68.75)" style="opacity: 1;">
+            <tspan x="0" y="0"> </tspan>
+        </text>
+        <text class="st92" transform="translate(190.23 272.13) rotate(74.32)" style="opacity: 1;">
+            <tspan x="0" y="0"> </tspan>
+        </text>
+        <g>
+            <text class="st92" transform="translate(172.23 247.88) rotate(59.1)" style="opacity: 1;">
+                <tspan x="0" y="0">S</tspan>
+            </text>
+            <text class="st72" transform="translate(173.73 250.4) rotate(61.79)" style="opacity: 1;">
+                <tspan x="0" y="0">Ô</tspan>
+            </text>
+            <text class="st80" transform="translate(175.67 254.23) rotate(64.54)" style="opacity: 1;">
+                <tspan x="0" y="0">N</tspan>
+            </text>
+            <text class="st94" transform="translate(177.34 257.55) rotate(67.08)" style="opacity: 1;">
+                <tspan x="0" y="0">G</tspan>
+            </text>
+            <text class="st93" transform="translate(179.28 262.4) rotate(69.94)" style="opacity: 1;">
+                <tspan x="0" y="0">S</tspan>
+            </text>
+            <text class="st94" transform="translate(180.27 265.11) rotate(71.97)" style="opacity: 1;">
+                <tspan x="0" y="0">À</tspan>
+            </text>
+            <text class="st94" transform="translate(181.46 268.71) rotate(73.54)" style="opacity: 1;">
+                <tspan x="0" y="0">I</tspan>
+            </text>
+            <text class="st67" transform="translate(182.18 271.07) rotate(75.87)" style="opacity: 1;">
+                <tspan x="0" y="0">G</tspan>
+            </text>
+            <text class="st82" transform="translate(183.17 275.07) rotate(78.41)" style="opacity: 1;">
+                <tspan x="0" y="0">Ò</tspan>
+            </text>
+            <text class="st80" transform="translate(184.06 279.27) rotate(80.78)" style="opacity: 1;">
+                <tspan x="0" y="0">N</tspan>
+            </text>
+        </g>
+        <line class="st130" x1="356.47" y1="346.16" x2="373.36" y2="351.7"></line>
+        <line class="st130" x1="351.09" y1="352.55" x2="367.98" y2="358.09"></line>
+        <text style="opacity: 1;">
+            <textPath startOffset="9.18%" xlink:href="#path">
+                <tspan class="st11">
+                    <tspan x="0" y="0">QUỐC LỘ 13</tspan>
+                </tspan>
+            </textPath>
+        </text>
+        <text style="opacity: 1;">
+            <textPath startOffset="9.18%" xlink:href="#path1">
+                <tspan class="st11">
+                    <tspan x="0" y="0">QUỐC LỘ 13</tspan>
+                </tspan>
+            </textPath>
+        </text>
+        <text class="st55" transform="translate(140.35 221.58)" style="opacity: 1;">
+            <tspan x="0" y="0">P. LÁI THIÊU</tspan>
+        </text>
+        <polyline class="st125" points="240.53 472.81 241.59 474.23 236.23 491.89 234.47 492.98"></polyline>
+        <polyline class="st125" points="251.88 472.13 250.22 472.73 245.01 490.44 245.88 492.31"></polyline>
+        <text class="st9" transform="translate(241.38 493.02) rotate(-74.24)" style="opacity: 1;">
+            <tspan x="0" y="0">CẦU BÌNH TRIỆU</tspan>
+        </text>
+        <polyline class="st125" points="272.02 522.66 270.97 524.09 252.51 524.12 250.96 522.75"></polyline>
+        <polyline class="st125" points="276.59 533.24 275.52 531.83 257.07 532.01 255.53 533.39"></polyline>
+        <text class="st16" transform="translate(254.12 529.73) rotate(-.19)" style="opacity: 1;">
+            <tspan x="0" y="0">CẦU SÀI GÒN</tspan>
+        </text>
+        <polyline class="st125" points="229.64 446.33 228.94 447.95 210.97 452.16 209.15 451.19"></polyline>
+        <polyline class="st125" points="232.41 458.32 231.05 457.19 213.12 461.55 211.93 463.24"></polyline>
+        <text class="st9" transform="translate(211.06 458.24) rotate(-12.97)" style="opacity: 1;">
+            <tspan x="0" y="0">CẦU BÌNH LỢI</tspan>
+        </text>
+        <polyline class="st125" points="248.67 372.91 248.23 374.62 231.11 381.52 229.15 380.83"></polyline>
+        <polyline class="st125" points="252.94 383.42 251.44 382.48 234.29 389.3 233.35 391.14"></polyline>
+        <text class="st9" transform="translate(229.93 387.32) rotate(-19.46)" style="opacity: 1;">
+            <tspan x="0" y="0">CẦU BÌNH PHƯỚC</tspan>
+        </text>
+        <path class="st65"
+            d="M260.48,446.75c0,3.27-2.65,5.92-5.92,5.92s-5.92-2.65-5.92-5.92,2.65-5.92,5.92-5.92,5.92,2.65,5.92,5.92"
+            style="stroke-dashoffset: 2px; stroke-dasharray: 37.2028;"></path>
+        <path class="st175"
+            d="M258.34,446.75c0,2.09-1.69,3.78-3.78,3.78s-3.78-1.69-3.78-3.78,1.69-3.78,3.78-3.78,3.78,1.69,3.78,3.78"
+            style="stroke-dashoffset: 1px; stroke-dasharray: 23.758;"></path>
+        <g>
+            <path class="st65"
+                d="M234.13,527.57c0,2.93-2.38,5.31-5.31,5.31s-5.31-2.38-5.31-5.31,2.38-5.31,5.31-5.31,5.31,2.38,5.31,5.31"
+                style="stroke-dashoffset: 2px; stroke-dasharray: 33.3641;"></path>
+            <path class="st175"
+                d="M232.21,527.57c0,1.87-1.52,3.39-3.39,3.39s-3.39-1.52-3.39-3.39,1.52-3.39,3.39-3.39,3.39,1.52,3.39,3.39"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 21.2993;"></path>
+        </g>
+        <path class="st132" d="M409.42,497.95c6.78,14.37,19.14,43.95,19.94,48.83"
+            style="stroke-dashoffset: 4px; stroke-dasharray: 52.7858px, 3px;"></path>
+        <path class="st134"
+            d="M254.73,376.67l23.66-9.23,2.46-.96c2.71-1.05,5.65.85,5.79,3.75h0s.19,8.33.58,18.61c.83,21.44,14.67,37.96,33.97,47.32,10.17,4.93,22.75,10.8,37.54,17.26,6.96,3.04,13.61,6.71,19.83,10.98"
+            style="stroke-dashoffset: 13px; stroke-dasharray: 180.043px, 3px;"></path>
+        <path class="st134" d="M183.79,385.82l32.93,3.35c3.42.2,6.85-.35,10.04-1.6"
+            style="stroke-dashoffset: 3px; stroke-dasharray: 43.346px, 3px;"></path>
+        <path class="st129" d="M67.47,393.7l19.81-14.12c3.68-1.8,7.75-2.62,11.84-2.38l66.07,6.73"
+            style="stroke-dashoffset: 8px; stroke-dasharray: 102.95px, 3px;"></path>
+        <text class="st88" transform="translate(378.63 467.2) rotate(45.57)" style="opacity: 1;">
+            <tspan x="0" y="0">VÀNH ĐAI 2</tspan>
+        </text>
+        <text class="st88" transform="translate(500.02 379.51) rotate(84)" style="opacity: 1;">
+            <tspan class="st217" x="0" y="0">V</tspan>
+            <tspan x="4.53" y="0">ÀNH </tspan>
+            <tspan class="st256" x="22.18" y="0">Đ</tspan>
+            <tspan x="27.31" y="0">AI 3</tspan>
+        </text>
+        <text class="st88" transform="translate(135.79 134.75) rotate(-45.61)" style="opacity: 1;">
+            <tspan class="st217" x="0" y="0">V</tspan>
+            <tspan x="4.53" y="0">ÀNH </tspan>
+            <tspan class="st256" x="22.18" y="0">Đ</tspan>
+            <tspan x="27.31" y="0">AI 3</tspan>
+        </text>
+        <path class="st138" d="M133.7,134.75l-18.06,20.43c-15.44,16-36.72,25.03-58.96,25.03H7.14"
+            style="stroke-dashoffset: 11px; stroke-dasharray: 142.616px, 3px;"></path>
+        <path class="st134" d="M223.66,120.65l-26.66-22.86c-9.34-7.42-23.69-6.47-31.97,2.11l-2.52,2.61"
+            style="stroke-dashoffset: 6px; stroke-dasharray: 73.7537px, 3px;"></path>
+        <line class="st134" x1="323.75" y1="199.37" x2="268.6" y2="157.32"></line>
+        <path class="st134" d="M502.65,377.67l-2.3-20.06c-1.77-12.83-6.32-25.48-16.46-33.54l-105.61-81.52-9.41-7.26"
+            style="stroke-dashoffset: 17px; stroke-dasharray: 203.786px, 3px;"></path>
+        <path class="st175"
+            d="M293.58,171.57c0,4.1-3.32,7.42-7.42,7.42s-7.42-3.32-7.42-7.42,3.32-7.42,7.42-7.42,7.42,3.32,7.42,7.42"
+            style="stroke-dashoffset: 4px; stroke-dasharray: 46.6316;"></path>
+        <text class="st64" transform="translate(280.32 171.72)" style="opacity: 1;">
+            <tspan class="st102" x="0" y="0">NÚT</tspan>
+            <tspan class="st252" x="5.04" y="0"> </tspan>
+            <tspan class="st102" x="5.56" y="0">GI</tspan>
+            <tspan class="st216" x="8.34" y="0">A</tspan>
+            <tspan x="10.12" y="0">O</tspan>
+        </text>
+        <text class="st64" transform="translate(281.72 174.49)" style="opacity: 1;">
+            <tspan class="st102" x="0" y="0">AN PH</tspan>
+            <tspan x="7.57" y="0">Ú</tspan>
+        </text>
+        <path class="st175"
+            d="M432.32,278.79c.01,3.23-2.59,5.85-5.82,5.86s-5.85-2.59-5.87-5.82,2.59-5.85,5.82-5.86c3.23-.01,5.85,2.59,5.86,5.82"
+            style="stroke-dashoffset: 3px; stroke-dasharray: 36.7142;"></path>
+        <text class="st101" transform="translate(380.72 256.35) rotate(39.87)" style="opacity: 1;">
+            <tspan x="0" y="0">TUYẾN METRO SỐ 1 </tspan>
+            <tspan x="2.62" y="3.75">TPM - SUỐI TIÊN</tspan>
+        </text>
+        <text class="st101" transform="translate(388.96 391.14) rotate(-31.05)" style="opacity: 1;">
+            <tspan x="0" y="0">TUYẾN METRO</tspan>
+            <tspan x="-6.64" y="3.75">BẾN THÀNH - SUỐI TIÊN</tspan>
+        </text>
+        <g>
+            <line class="st146" x1="378.79" y1="256.18" x2="378.67" y2="256.09"></line>
+            <path class="st139"
+                d="M377.12,254.82l-22.88-18.72c-6.64-5.28-13.88-9.75-21.58-13.3l-52.09-21.66c-6.47-2.69-11.73-7.69-14.68-14.04-1.17-2.51-2.07-5.07-2.62-7.36l-1.89-7.74c-1.63-6.67-5.35-12.64-10.64-17.03l-43.54-36.17"
+                style="stroke-dashoffset: 21px; stroke-dasharray: 224.995px, 2.01px;"></path>
+            <line class="st146" x1="206.43" y1="118.15" x2="206.31" y2="118.06"></line>
+        </g>
+        <g>
+            <line class="st146" x1="415.53" y1="378.43" x2="415.65" y2="378.35"></line>
+            <path class="st145"
+                d="M417.33,377.26l8.8-5.71,8.48-10.02c2.66-3.14,6.56-4.95,10.67-4.95l15.29,5c1.79,0,3.59-2.57,4.27-3.71l7.94-9.68c2.63-3.21,3.28-7.63,1.62-11.42-2.21-5.04-6.17-10.03-9.77-12.83l-60.66-47.5"
+                style="stroke-dashoffset: 17px; stroke-dasharray: 175.678px, 2px;"></path>
+            <line class="st146" x1="403.18" y1="275.83" x2="403.06" y2="275.73"></line>
+        </g>
+        <path class="st141"
+            d="M237.75,534.74c1.32-18.75,23.15-17.31,23.15-17.31h49.27c15.78,0,20.21-12.75,20.21-12.75l45.5-97.84c1.04-3.21,3.53-6.87,6.36-8.71l.82-.59"
+            style="stroke-dashoffset: 23px; stroke-dasharray: 226.93px, 2px;"></path>
+        <path class="st141" d="M237.55,536.48c-1.37,20.98-15.07,45.32-15.07,45.32"
+            style="stroke-dashoffset: 5px; stroke-dasharray: 48.0859px, 2px;"></path>
+        <line class="st141" x1="206.47" y1="118.19" x2="145.22" y2="66.56"></line>
+        <g>
+            <text class="st7" transform="translate(441.26 348.82)" style="opacity: 1;">
+                <tspan class="st269" x="0" y="0">LÀ</tspan>
+                <tspan class="st223" x="3.1" y="0">N</tspan>
+                <tspan x="4.93" y="0">G</tspan>
+            </text>
+            <text class="st7" transform="translate(439.47 351.7)" style="opacity: 1;">
+                <tspan class="st240" x="0" y="0">Đ</tspan>
+                <tspan class="st269" x="1.76" y="0">ẠI </tspan>
+                <tspan class="st224" x="4.77" y="0">HỌ</tspan>
+                <tspan class="st286" x="8.7" y="0">C</tspan>
+            </text>
+            <path class="st57"
+                d="M441.79,342.54c.04-.09.09-.11.17-.15.88-.36,1.81-.62,2.69-.98.09-.02.17.01.25.04.89.29,1.76.67,2.65.96.14.08.14.25,0,.32-.07.04-.24.07-.29.11-.01,0-.02.01-.02.03v1.54s.01.04.01.04l.46.46c.06.09.05.16-.01.24-.12.15-.33.3-.45.45-.04.17.09.54-.17.57-.27.02-.16-.41-.19-.57-.13-.16-.33-.3-.45-.45-.05-.06-.07-.11-.04-.18.14-.2.34-.35.5-.53v-1.45l-.43.16v1.17c-.02.14-.38.34-.51.39-.71.31-1.98.31-2.66-.07-.12-.06-.35-.22-.37-.36v-1.17s-1.02-.37-1.02-.37c-.06-.02-.08-.07-.11-.12v-.08ZM446.95,342.59l-.03-.02-2.2-.79-2.25.81,2.21.82,2.27-.81ZM446.1,343.26l-1.42.5-1.41-.51v.95c.05.05.11.09.17.13.6.34,1.96.35,2.55-.04.04-.03.08-.05.12-.09v-.94ZM447.05,344.77l-.25.26.26.25.25-.26-.26-.25Z"
+                style="stroke-dashoffset: 4px; stroke-dasharray: 41.3601;"></path>
+        </g>
+        <g>
+            <text class="st6" transform="translate(291.56 221.81)" style="opacity: 1;">
+                <tspan x="0" y="0">TRƯỜNG THCS</tspan>
+            </text>
+            <text class="st6" transform="translate(290.86 224.43)" style="opacity: 1;">
+                <tspan x="0" y="0">TÂN ĐÔNG HIỆP</tspan>
+            </text>
+            <path class="st57"
+                d="M296.67,215.4c.04-.09.09-.12.18-.15.9-.37,1.87-.64,2.78-1.01.09-.02.17.01.26.04.92.3,1.81.69,2.73.99.14.08.14.26,0,.33-.07.04-.25.07-.3.11-.01,0-.02.01-.02.03v1.59s.01.04.01.04l.47.47c.06.09.06.17-.01.25-.12.16-.34.31-.47.47-.04.17.09.56-.17.58-.28.02-.17-.42-.2-.58-.14-.16-.34-.31-.47-.47-.05-.06-.07-.11-.05-.19.14-.2.35-.36.52-.55v-1.5l-.44.16v1.21c-.03.14-.4.35-.52.4-.73.32-2.04.32-2.75-.07-.12-.07-.36-.23-.38-.37v-1.21s-1.06-.38-1.06-.38c-.06-.02-.09-.07-.11-.12v-.08ZM302.01,215.45l-.03-.02-2.27-.82-2.32.84,2.28.84,2.35-.84ZM301.13,216.15l-1.47.52-1.46-.53v.98c.05.05.11.1.18.13.62.35,2.03.36,2.63-.04.04-.03.09-.05.12-.09v-.97ZM302.11,217.7l-.26.27.27.26.26-.27-.27-.26Z"
+                style="stroke-dashoffset: 5px; stroke-dasharray: 42.6898;"></path>
+        </g>
+        <g>
+            <text class="st6" transform="translate(358.34 203.88)" style="opacity: 1;">
+                <tspan x="0" y="0">TRƯỜNG THCS</tspan>
+                <tspan x="2.96" y="2.87">TÂN BÌNH</tspan>
+            </text>
+            <path class="st57"
+                d="M363.46,197.07c.04-.09.09-.12.18-.15.9-.37,1.87-.64,2.78-1.01.09-.02.17.01.26.04.92.3,1.81.69,2.73.99.14.08.14.26,0,.33-.07.04-.25.07-.3.11-.01,0-.02.01-.02.03v1.59s.01.04.01.04l.47.47c.06.09.06.17-.01.25-.12.16-.34.31-.47.47-.04.17.09.56-.17.58-.28.02-.17-.42-.2-.58-.14-.16-.34-.31-.47-.47-.05-.06-.07-.11-.05-.19.14-.2.35-.36.52-.55v-1.5l-.44.16v1.21c-.03.14-.4.35-.52.4-.73.32-2.04.32-2.75-.07-.12-.07-.36-.23-.38-.37v-1.21s-1.06-.38-1.06-.38c-.06-.02-.09-.07-.11-.12v-.08ZM368.79,197.12l-.03-.02-2.27-.82-2.32.84,2.28.84,2.35-.84ZM367.91,197.82l-1.47.52-1.46-.53v.98c.05.05.11.1.18.13.62.35,2.03.36,2.63-.04.04-.03.09-.05.12-.09v-.97ZM368.89,199.37l-.26.27.27.26.26-.27-.27-.26Z"
+                style="stroke-dashoffset: 5px; stroke-dasharray: 42.6898;"></path>
+        </g>
+        <g>
+            <text class="st46" transform="translate(308.36 279.33)" style="opacity: 1;">
+                <tspan x="0" y="0">TRƯỜNG TIỂU HỌC</tspan>
+            </text>
+            <text class="st22" transform="translate(314.16 281.82)" style="opacity: 1;">
+                <tspan class="st152" x="0" y="0">DĨ</tspan>
+                <tspan class="st62" x="2.13" y="0"> </tspan>
+                <tspan class="st255" x="2.58" y="0">AN C</tspan>
+                <tspan x="7.89" y="0"> </tspan>
+            </text>
+            <path class="st57"
+                d="M315.53,273.16c.03-.09.08-.11.16-.14.83-.34,1.71-.59,2.55-.92.08-.02.16.01.24.04.84.27,1.66.63,2.51.91.13.07.13.23,0,.3-.07.03-.23.07-.27.1-.01,0-.02.01-.02.03v1.45s.01.03.01.03l.43.43c.06.08.05.15,0,.23-.11.15-.31.28-.43.43-.04.16.08.51-.16.54-.26.02-.15-.39-.18-.54-.12-.15-.31-.28-.43-.43-.04-.06-.06-.1-.04-.17.13-.19.32-.33.48-.5v-1.37l-.41.15v1.11c-.02.13-.36.32-.48.37-.67.29-1.88.29-2.52-.06-.11-.06-.33-.21-.35-.34v-1.11s-.97-.35-.97-.35c-.05-.02-.08-.06-.1-.11v-.08ZM320.42,273.2l-.03-.02-2.08-.75-2.13.77,2.09.77,2.15-.77ZM319.62,273.84l-1.35.47-1.34-.48v.9c.05.05.11.09.16.12.57.32,1.86.33,2.41-.03.04-.03.08-.05.11-.09v-.89ZM320.52,275.26l-.24.25.25.24.24-.25-.25-.24Z"
+                style="stroke-dashoffset: 5px; stroke-dasharray: 39.1657;"></path>
+        </g>
+        <g>
+            <text class="st22" transform="translate(370.91 228.07)" style="opacity: 1;">
+                <tspan class="st184">
+                    <tspan x="0" y="0">TRƯỜNG TIỂU HỌC</tspan>
+                </tspan>
+                <tspan class="st255" x="2.83" y="2.73">BÙI THỊ XUÂN</tspan>
+                <tspan x="16.65" y="2.73"> </tspan>
+            </text>
+            <text style="opacity: 1;"></text>
+            <path class="st57"
+                d="M378.07,221.94c.03-.09.08-.11.16-.14.83-.34,1.71-.59,2.55-.92.08-.02.16.01.24.04.84.27,1.66.63,2.51.91.13.07.13.23,0,.3-.07.03-.23.07-.27.1-.01,0-.02.01-.02.03v1.45s.01.03.01.03l.43.43c.06.08.05.15,0,.23-.11.15-.31.28-.43.43-.04.16.08.51-.16.54-.26.02-.15-.39-.18-.54-.12-.15-.31-.28-.43-.43-.04-.06-.06-.1-.04-.17.13-.19.32-.33.48-.5v-1.37l-.41.15v1.11c-.02.13-.36.32-.48.37-.67.29-1.88.29-2.52-.06-.11-.06-.33-.21-.35-.34v-1.11s-.97-.35-.97-.35c-.05-.02-.08-.06-.1-.11v-.08ZM382.97,221.98l-.03-.02-2.08-.75-2.13.77,2.09.77,2.15-.77ZM382.16,222.62l-1.35.47-1.34-.48v.9c.05.05.11.09.16.12.57.32,1.86.33,2.41-.03.04-.03.08-.05.11-.09v-.89ZM383.06,224.05l-.24.25.25.24.24-.25-.25-.24Z"
+                style="stroke-dashoffset: 5px; stroke-dasharray: 39.1657;"></path>
+        </g>
+        <g>
+            <text class="st22" transform="translate(392.96 228.86)" style="opacity: 1;">
+                <tspan class="st184">
+                    <tspan x="0" y="0">TRƯỜNG TIỂU HỌC</tspan>
+                </tspan>
+                <tspan class="st152">
+                    <tspan x=".44" y="2.73">TÂN ĐÔNG HIỆP C</tspan>
+                </tspan>
+            </text>
+            <text style="opacity: 1;"></text>
+            <path class="st57"
+                d="M400.13,222.73c.03-.09.08-.11.16-.14.83-.34,1.71-.59,2.55-.92.08-.02.16.01.24.04.84.27,1.66.63,2.51.91.13.07.13.23,0,.3-.07.03-.23.07-.27.1-.01,0-.02.01-.02.03v1.45s.01.03.01.03l.43.43c.06.08.05.15,0,.23-.11.15-.31.28-.43.43-.04.16.08.51-.16.54-.26.02-.15-.39-.18-.54-.12-.15-.31-.28-.43-.43-.04-.06-.06-.1-.04-.17.13-.19.32-.33.48-.5v-1.37l-.41.15v1.11c-.02.13-.36.32-.48.37-.67.29-1.88.29-2.52-.06-.11-.06-.33-.21-.35-.34v-1.11s-.97-.35-.97-.35c-.05-.02-.08-.06-.1-.11v-.08ZM405.02,222.77l-.03-.02-2.08-.75-2.13.77,2.09.77,2.15-.77ZM404.22,223.41l-1.35.47-1.34-.48v.9c.05.05.11.09.16.12.57.32,1.86.33,2.41-.03.04-.03.08-.05.11-.09v-.89ZM405.12,224.83l-.24.25.25.24.24-.25-.25-.24Z"
+                style="stroke-dashoffset: 5px; stroke-dasharray: 39.1657;"></path>
+        </g>
+        <g>
+            <text class="st22" transform="translate(397.43 243.5)" style="opacity: 1;">
+                <tspan class="st184">
+                    <tspan x="0" y="0">TRƯỜNG THCS</tspan>
+                </tspan>
+                <tspan class="st152">
+                    <tspan x="-1.59" y="2.73">TÂN ĐÔNG HIỆP B</tspan>
+                </tspan>
+            </text>
+            <text style="opacity: 1;"></text>
+            <path class="st57"
+                d="M402.41,237.37c.03-.09.08-.11.16-.14.83-.34,1.71-.59,2.55-.92.08-.02.16.01.24.04.84.27,1.66.63,2.51.91.13.07.13.23,0,.3-.07.03-.23.07-.27.1-.01,0-.02.01-.02.03v1.45s.01.03.01.03l.43.43c.06.08.05.15,0,.23-.11.15-.31.28-.43.43-.04.16.08.51-.16.54-.26.02-.15-.39-.18-.54-.12-.15-.31-.28-.43-.43-.04-.06-.06-.1-.04-.17.13-.19.32-.33.48-.5v-1.37l-.41.15v1.11c-.02.13-.36.32-.48.37-.67.29-1.88.29-2.52-.06-.11-.06-.33-.21-.35-.34v-1.11s-.97-.35-.97-.35c-.05-.02-.08-.06-.1-.11v-.08ZM407.3,237.41l-.03-.02-2.08-.75-2.13.77,2.09.77,2.15-.77ZM406.49,238.05l-1.35.47-1.34-.48v.9c.05.05.11.09.16.12.57.32,1.86.33,2.41-.03.04-.03.08-.05.11-.09v-.89ZM407.39,239.47l-.24.25.25.24.24-.25-.25-.24Z"
+                style="stroke-dashoffset: 5px; stroke-dasharray: 39.1657;"></path>
+        </g>
+        <g>
+            <text class="st22" transform="translate(426.51 239.33)" style="opacity: 1;">
+                <tspan class="st184">
+                    <tspan x="0" y="0">TRƯỜNG THPT</tspan>
+                </tspan>
+                <tspan class="st255">
+                    <tspan x="-4.75" y="2.73">NGUYỄN THỊ MINH KHAI</tspan>
+                </tspan>
+            </text>
+            <text style="opacity: 1;"></text>
+            <path class="st57"
+                d="M431.28,233.2c.03-.09.08-.11.16-.14.83-.34,1.71-.59,2.55-.92.08-.02.16.01.24.04.84.27,1.66.63,2.51.91.13.07.13.23,0,.3-.07.03-.23.07-.27.1-.01,0-.02.01-.02.03v1.45s.01.03.01.03l.43.43c.06.08.05.15,0,.23-.11.15-.31.28-.43.43-.04.16.08.51-.16.54-.26.02-.15-.39-.18-.54-.12-.15-.31-.28-.43-.43-.04-.06-.06-.1-.04-.17.13-.19.32-.33.48-.5v-1.37l-.41.15v1.11c-.02.13-.36.32-.48.37-.67.29-1.88.29-2.52-.06-.11-.06-.33-.21-.35-.34v-1.11s-.97-.35-.97-.35c-.05-.02-.08-.06-.1-.11v-.08ZM436.18,233.24l-.03-.02-2.08-.75-2.13.77,2.09.77,2.15-.77ZM435.37,233.88l-1.35.47-1.34-.48v.9c.05.05.11.09.16.12.57.32,1.86.33,2.41-.03.04-.03.08-.05.11-.09v-.89ZM436.27,235.3l-.24.25.25.24.24-.25-.25-.24Z"
+                style="stroke-dashoffset: 5px; stroke-dasharray: 39.1657;"></path>
+        </g>
+        <g>
+            <text class="st46" transform="translate(230.96 432.2)" style="opacity: 1;">
+                <tspan x="0" y="0">ĐẠI HỌC LUẬT</tspan>
+            </text>
+            <text class="st24" transform="translate(232.4 435.38)" style="opacity: 1;">
+                <tspan x="0" y="0">TPHCM CS2</tspan>
+            </text>
+            <path class="st57"
+                d="M235.74,426.68c.03-.09.08-.11.16-.14.83-.34,1.71-.59,2.55-.92.08-.02.16.01.24.04.84.27,1.66.63,2.51.91.13.07.13.23,0,.3-.07.03-.23.07-.27.1-.01,0-.02.01-.02.03v1.45s.01.03.01.03l.43.43c.06.08.05.15,0,.23-.11.15-.31.28-.43.43-.04.16.08.51-.16.54-.26.02-.15-.39-.18-.54-.12-.15-.31-.28-.43-.43-.04-.06-.06-.1-.04-.17.13-.19.32-.33.48-.5v-1.37l-.41.15v1.11c-.02.13-.36.32-.48.37-.67.29-1.88.29-2.52-.06-.11-.06-.33-.21-.35-.34v-1.11s-.97-.35-.97-.35c-.05-.02-.08-.06-.1-.11v-.08ZM240.63,426.73l-.03-.02-2.08-.75-2.13.77,2.09.77,2.15-.77ZM239.82,427.36l-1.35.47-1.34-.48v.9c.05.05.11.09.16.12.57.32,1.86.33,2.41-.03.04-.03.08-.05.11-.09v-.89ZM240.72,428.79l-.24.25.25.24.24-.25-.25-.24Z"
+                style="stroke-dashoffset: 5px; stroke-dasharray: 39.1658;"></path>
+        </g>
+        <g>
+            <text class="st46" transform="translate(191.13 447.42)" style="opacity: 1;">
+                <tspan x="0" y="0">ĐẠI HỌC</tspan>
+            </text>
+            <text class="st46" transform="translate(189.91 449.92)" style="opacity: 1;">
+                <tspan x="0" y="0" xml:space="preserve"> VĂN LANG</tspan>
+            </text>
+            <path class="st57"
+                d="M192.94,441.9c.03-.09.08-.11.16-.14.83-.34,1.71-.59,2.55-.92.08-.02.16.01.24.04.84.27,1.66.63,2.51.91.13.07.13.23,0,.3-.07.03-.23.07-.27.1-.01,0-.02.01-.02.03v1.45s.01.03.01.03l.43.43c.06.08.05.15,0,.23-.11.15-.31.28-.43.43-.04.16.08.51-.16.54-.26.02-.15-.39-.18-.54-.12-.15-.31-.28-.43-.43-.04-.06-.06-.1-.04-.17.13-.19.32-.33.48-.5v-1.37l-.41.15v1.11c-.02.13-.36.32-.48.37-.67.29-1.88.29-2.52-.06-.11-.06-.33-.21-.35-.34v-1.11s-.97-.35-.97-.35c-.05-.02-.08-.06-.1-.11v-.08ZM197.84,441.95l-.03-.02-2.08-.75-2.13.77,2.09.77,2.15-.77ZM197.03,442.59l-1.35.47-1.34-.48v.9c.05.05.11.09.16.12.57.32,1.86.33,2.41-.03.04-.03.08-.05.11-.09v-.89ZM197.93,444.01l-.24.25.25.24.24-.25-.25-.24Z"
+                style="stroke-dashoffset: 6px; stroke-dasharray: 39.1657;"></path>
+        </g>
+        <g>
+            <text class="st25" transform="translate(290.59 156.93)" style="opacity: 1;">
+                <tspan x="0" y="0">BẾN XE</tspan>
+            </text>
+            <text class="st35" transform="translate(290.25 160.22)" style="opacity: 1;">
+                <tspan x="0" y="0">AN PHÚ</tspan>
+            </text>
+            <path class="st57"
+                d="M296.93,152.24h-2.63s0,.47,0,.47c0,.27-.23.46-.48.46-.26,0-.48-.21-.48-.49v-.44s-.53,0-.53,0c0-1.58.01-3.22.21-4.77.04-.35.11-.68.2-1.03-.32,0-.6.26-.6.59.07.06.22.12.22.21v.84c0,.06-.06.17-.12.17h-.35c-.06,0-.13-.1-.13-.17l.07-.74c.04-.49.23-1.04.77-1.16l.27-.06c.06-.12.13-.26.27-.31h3.98c.12,0,.21.14.25.22.04.08.08.11.16.11.36.04.65.24.78.58.07.19.13.39.15.6l.07.74c0,.08-.07.17-.14.17h-.31c-.07,0-.15-.07-.15-.14v-.88c.04-.07.13-.14.22-.2-.01-.32-.28-.57-.6-.58.22.81.35,2.23.37,3.05l.05,2.75h-.52s0,.44,0,.44c0,.27-.2.48-.46.49s-.51-.18-.51-.46v-.47ZM297.99,149.58l-.13-1.87c-.04-.37-.1-.71-.17-1.07-.05-.16-.1-.3-.19-.44h-3.77c-.08.11-.12.23-.17.35-.23.97-.28,2.04-.32,3.02h4.75ZM294.46,151.42s.12-.06.13-.1l-.21-.46h-.98c-.09,0-.16.04-.16.14v.31c0,.06.07.11.13.11h1.08ZM297.88,151.42c.06,0,.11-.08.11-.11v-.33s-.07-.11-.12-.11h-1.02s-.18.41-.18.41c0,.02-.01.08,0,.1s.06.05.09.05h1.12Z"
+                style="stroke-dashoffset: 9px; stroke-dasharray: 58.1792;"></path>
+        </g>
+        <text class="st79" transform="translate(224.15 123.93) rotate(38.86)" style="opacity: 1;">
+            <tspan x="0" y="0">MỸ PHƯỚC - TÂN VẠN</tspan>
+        </text>
+        <path class="st124"
+            d="M436.06,395.81c0,3.51-2.85,6.36-6.36,6.36s-6.36-2.85-6.36-6.36,2.85-6.36,6.36-6.36,6.36,2.85,6.36,6.36"
+            style="stroke-dashoffset: 6px; stroke-dasharray: 39.9624;"></path>
+        <text class="st26" transform="translate(426.01 406.3)" style="opacity: 1;">
+            <tspan class="st290" x="0" y="0">K</tspan>
+            <tspan class="st274" x="2.18" y="0">C</tspan>
+            <tspan class="st112" x="4.85" y="0">N</tspan>
+        </text>
+        <text class="st2" transform="translate(414.29 410.28)" style="opacity: 1;">
+            <tspan x="0" y="0">CÔNG NGHỆ CAO</tspan>
+        </text>
+        <path class="st65"
+            d="M425.72,396.13l.07-.11,1.11-.45v-2.81c.01-.12.09-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.11c.27-.06.77-.49.93-.09v1.13l.93-.34v-2.77c.01-.12.08-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.16l.91-.31c.11-.02.24.06.26.17v4.15c0,.13-.09.21-.22.23h-7.52c-.12-.01-.17-.07-.22-.17v-2.8ZM428.3,393h-.93v.47h.93v-.47ZM432.04,393h-.93v.47h.93v-.47ZM428.3,393.94h-.93v1.43l.93-.36v-1.08ZM432.04,393.94h-.93v1.43l.93-.33v-1.1ZM433.22,398.64v-3.52l-3.69,1.3c-.1.05-.3-.07-.3-.17v-1.11l-3.05,1.21v2.29h.95v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.16.06.01.01.07.11.07.12v.76h.95ZM428.07,398.17h-.47v.47h.47v-.47ZM429.94,398.17h-.47v.47h.47v-.47ZM431.8,398.17h-.47v.47h.47v-.47Z"
+            style="stroke-dashoffset: 13px; stroke-dasharray: 81.6984;"></path>
+        <g>
+            <text class="st9" transform="translate(238.8 547.88)" style="opacity: 1;">
+                <tspan x="0" y="0">LANDMARK 81</tspan>
+            </text>
+            <polygon class="st74"
+                points="251.21 543.65 251.21 543.65 251.21 543.65 251.21 543.65 250.67 543.65 250.67 543.56 250.67 543.56 250.67 543.54 250.67 543.45 250.67 543.43 250.67 543.34 250.67 543.34 250.67 543.32 250.67 543.23 250.67 543.21 250.67 543.12 250.67 543.1 250.67 543.01 250.67 542.99 250.48 542.99 250.48 542.9 250.48 542.88 250.48 542.79 250.48 542.77 250.48 542.68 250.48 542.66 250.48 542.57 250.48 542.55 250.48 542.46 250.48 542.44 250.48 542.35 250.48 542.33 250.48 542.24 250.48 542.22 250.48 542.13 250.48 542.11 250.48 542.02 250.48 542 250.48 541.91 250.48 541.89 250.48 541.8 250.48 541.78 250.48 541.69 250.48 541.67 250.48 541.58 250.48 541.56 250.48 541.47 250.48 541.45 250.48 541.39 250.48 541.36 250.48 541.34 250.48 541.34 250.48 541.25 250.48 541.25 250.48 541.23 250.48 541.14 250.48 541.12 250.48 541.12 250.48 541.03 250.48 541.03 250.48 541.01 250.48 540.98 250.48 540.92 250.48 540.9 250.48 540.81 250.48 540.79 250.48 540.7 250.48 540.68 250.48 540.59 250.48 540.57 250.48 540.48 250.48 540.46 250.48 540.37 250.48 540.35 250.48 540.26 250.48 540.24 250.48 540.15 250.48 540.13 250.48 540.04 250.48 540.02 250.48 539.93 250.48 539.91 250.48 539.91 250.29 539.91 250.29 539.82 250.29 539.8 250.29 539.71 250.29 539.69 250.29 539.6 250.29 539.58 250.29 539.49 250.29 539.49 250.29 539.47 250.29 539.47 250.29 539.38 250.29 539.36 250.29 539.27 250.29 539.25 250.29 539.25 250.29 539.16 250.29 539.16 250.29 539.14 250.29 539.05 250.29 539.03 250.29 539.03 250.29 538.94 250.29 538.92 250.29 538.83 250.29 538.81 250.29 538.72 250.29 538.72 250.29 538.7 250.29 538.61 250.29 538.59 250.29 538.5 250.29 538.5 250.29 538.48 250.29 538.39 250.29 538.37 250.29 538.28 250.29 538.26 250.29 538.17 250.29 538.17 250.29 538.15 250.29 538.15 250.29 538.06 250.29 538.04 250.29 537.95 250.29 537.93 250.29 537.84 250.29 537.84 250.29 537.82 250.29 537.73 250.29 537.71 250.29 537.62 250.29 537.6 250.13 537.6 250.13 537.6 250.08 537.6 250.08 537.6 250.07 537.6 249.9 537.6 249.9 537.51 249.9 537.49 249.9 537.4 249.9 537.38 249.9 537.31 249.9 537.29 249.9 537.27 249.9 537.18 249.9 537.16 249.9 537.07 249.9 537.05 249.9 536.96 249.9 536.94 249.9 536.91 249.9 536.85 249.9 536.83 249.9 536.74 249.9 536.72 249.9 536.63 249.9 536.61 249.9 536.52 249.9 536.5 249.9 536.41 249.9 536.39 249.9 536.3 249.9 536.28 249.9 536.19 249.9 536.17 249.9 536.08 249.9 536.05 249.9 535.97 249.9 535.94 249.9 535.86 249.9 535.83 249.9 535.75 249.9 535.72 249.9 535.64 249.9 535.61 249.9 535.53 249.9 535.5 249.9 535.42 249.9 535.39 249.9 535.31 249.9 535.28 249.9 535.2 249.9 535.17 249.9 535.09 249.9 535.06 249.9 534.98 249.9 534.95 249.9 534.87 249.9 534.84 249.9 534.76 249.9 534.73 249.9 534.65 249.9 534.62 249.9 534.54 249.9 534.51 249.9 534.43 249.9 534.4 249.9 534.32 249.9 534.29 249.9 534.21 249.9 534.18 249.9 534.1 249.9 534.07 249.9 533.99 249.9 533.96 249.9 533.88 249.9 533.85 249.9 533.77 249.9 533.74 249.9 533.66 249.9 533.63 249.9 533.55 249.9 533.52 249.9 533.44 249.9 533.41 249.9 533.33 249.9 533.3 249.9 533.22 249.9 533.19 249.9 533.11 249.9 533.08 249.9 533 249.9 532.97 249.9 532.89 249.9 532.86 249.9 532.8 249.9 532.78 249.9 532.75 249.9 532.75 249.9 532.67 249.9 532.67 249.9 532.64 249.9 532.56 249.9 532.53 249.9 532.53 249.9 532.45 249.9 532.45 249.9 532.42 249.9 532.4 249.9 532.34 249.9 532.31 249.9 532.23 249.9 532.2 249.9 532.12 249.9 532.09 249.9 532.01 249.9 531.98 249.9 531.9 249.9 531.87 249.9 531.79 249.9 531.76 249.9 531.68 249.9 531.65 249.9 531.57 249.9 531.54 249.9 531.46 249.9 531.43 249.9 531.36 249.9 531.36 249.69 531.36 249.69 530.77 249.69 530.77 249.68 530.77 249.64 530.77 249.62 530.77 249.58 530.77 249.55 530.77 249.52 530.77 249.49 530.77 249.48 530.77 249.48 530.69 249.48 530.66 249.48 530.57 249.48 530.55 249.48 530.46 249.48 530.44 249.48 530.35 249.48 530.33 249.48 530.24 249.48 530.22 249.48 530.13 249.48 530.11 249.48 530.02 249.48 530 249.48 529.91 249.48 529.89 249.48 529.8 249.48 529.78 249.48 529.69 249.48 529.67 249.48 529.58 249.48 529.56 249.48 529.47 249.48 529.45 249.26 529.45 249.26 529.36 249.26 529.34 249.26 529.25 249.26 529.23 249.26 529.23 249.26 529.14 249.26 529.12 249.26 529.12 249.26 529.06 249.26 529.03 249.26 529.01 249.26 529.01 249.26 528.92 249.26 528.92 249.26 528.9 249.26 528.81 249.26 528.81 249.26 528.79 249.26 528.7 249.26 528.68 249.26 528.66 249.26 528.59 249.26 528.59 249.26 528.57 249.26 528.48 249.26 528.48 248.84 528.48 248.84 528.46 248.84 528.37 248.84 528.35 248.84 528.26 248.84 528.24 248.84 528.15 248.84 528.13 248.84 528.04 248.84 528.02 248.84 527.93 248.84 527.91 248.84 527.82 248.84 527.8 248.84 527.71 248.84 527.69 248.84 527.63 248.84 527.63 248.84 527.63 248.84 527.58 248.84 527.58 248.84 527.58 248.84 527.49 248.84 527.47 248.84 527.38 248.84 527.36 248.84 527.27 248.84 527.25 248.84 527.16 248.84 527.14 248.84 527.14 248.84 527.14 248.84 527.14 248.81 527.14 248.81 527.14 248.81 527.14 248.78 527.14 248.78 527.14 248.78 527.14 248.75 527.14 248.75 527.14 248.75 527.14 248.72 527.14 248.72 527.14 248.72 527.14 248.69 527.14 248.69 527.14 248.69 527.14 248.65 527.14 248.65 527.14 248.63 527.14 248.63 527.14 248.59 527.14 248.59 527.14 248.56 527.14 248.56 527.14 248.53 527.14 248.53 527.14 248.5 527.14 248.5 527.14 248.46 527.14 248.46 527.14 248.44 527.14 248.44 527.14 248.44 527.14 248.41 527.14 248.41 527.16 248.41 527.25 248.41 527.25 248.41 527.27 248.41 527.3 248.41 527.36 248.41 527.36 248.41 527.38 248.41 527.47 248.41 527.49 248.41 527.49 248.41 527.58 248.41 527.6 248.41 527.69 248.41 527.71 248.41 527.8 248.41 527.82 248.41 527.91 248.41 527.93 248.41 528.02 248.41 528.04 248.41 528.13 248.41 528.15 248.41 528.24 248.41 528.26 248.41 528.35 248.41 528.37 248.41 528.46 248.41 528.48 248.41 528.57 248.41 528.59 248.41 528.59 248.41 528.66 248.41 528.68 248.41 528.7 248.41 528.79 248.41 528.81 248.41 528.81 248.41 528.9 248.41 528.92 248.41 528.92 248.41 529.01 248.41 529.01 248.41 529.03 248.41 529.06 248.41 529.12 248.41 529.12 248.41 529.14 248.41 529.23 248.41 529.23 248.41 529.25 248.41 529.34 248.41 529.36 248.41 529.45 248.41 529.47 248.41 529.56 248.41 529.58 248.41 529.65 248.41 529.67 248.41 529.69 248.41 529.69 248.41 529.7 248.41 529.78 248.41 529.8 248.41 529.87 248.38 529.87 248.38 529.89 248.2 529.89 248.2 529.89 248.2 529.91 248.2 530 248.2 530.02 248.2 530.11 248.2 530.13 248.2 530.2 248.2 530.22 248.2 530.24 248.2 530.25 248.2 530.33 248.2 530.35 248.2 530.44 248.2 530.46 248.2 530.55 248.2 530.57 248.2 530.66 248.2 530.69 248.2 530.77 248.2 530.8 248.2 530.86 248.2 530.88 248.2 530.91 248.2 530.91 248.2 530.99 248.2 531.02 248.2 531.1 248.2 531.13 248.2 531.21 248.2 531.24 248.2 531.32 248.2 531.35 248.2 531.43 248.2 531.46 248.2 531.54 248.2 531.54 248.2 531.57 248.2 531.59 248.2 531.65 248.2 531.68 248.2 531.76 248.2 531.79 248.2 531.87 248.2 531.9 248.2 531.98 248.2 532.01 248.2 532.09 248.2 532.12 248.2 532.2 248.2 532.2 248.2 532.23 248.2 532.25 248.2 532.31 248.2 532.34 248.2 532.4 248.2 532.42 248.2 532.45 248.2 532.45 248.2 532.53 248.2 532.53 248.2 532.56 248.2 532.64 248.2 532.67 248.2 532.67 248.2 532.75 248.2 532.75 248.2 532.78 248.2 532.8 248.2 532.86 248.2 532.89 248.2 532.97 248.2 533 248.2 533.08 248.2 533.11 248.2 533.17 248.2 533.19 248.2 533.21 248.2 533.22 248.2 533.3 248.2 533.33 248.2 533.41 248.2 533.44 248.2 533.52 248.2 533.55 248.2 533.61 248.2 533.63 248.2 533.65 248.2 533.66 248.2 533.74 248.2 533.77 248.2 533.85 248.2 533.88 248.2 533.96 248.2 533.99 248.2 534.07 248.2 534.1 248.2 534.18 248.2 534.21 248.2 534.29 248.2 534.32 248.2 534.4 248.2 534.43 248.2 534.51 248.2 534.54 248.2 534.62 248.2 534.65 248.2 534.73 248.2 534.76 248.2 534.84 248.2 534.87 248.2 534.95 248.2 534.98 248.2 535.06 247.88 535.06 247.88 535.06 247.88 535.09 247.88 535.17 247.88 535.17 247.88 535.2 247.88 535.22 247.88 535.28 247.88 535.31 247.88 535.39 247.88 535.42 247.88 535.5 247.88 535.53 247.88 535.61 247.88 535.64 247.88 535.72 247.88 535.75 247.88 535.81 247.88 535.83 247.88 535.86 247.88 535.86 247.88 535.94 247.88 535.97 247.88 536.05 247.88 536.08 247.88 536.15 247.88 536.17 247.88 536.19 247.88 536.19 247.88 536.28 247.88 536.3 247.88 536.37 247.88 536.39 247.88 536.41 247.88 536.42 247.88 536.5 247.88 536.52 247.88 536.61 247.88 536.63 247.88 536.72 247.88 536.74 247.88 536.83 247.88 536.85 247.88 536.91 247.88 536.91 247.88 536.96 247.88 536.96 247.88 537.05 247.88 537.05 247.88 537.18 247.88 537.18 247.88 537.18 247.88 537.27 247.88 537.27 247.88 537.31 247.88 537.31 247.88 537.38 247.88 537.4 247.88 537.49 247.88 537.51 247.88 537.6 247.88 537.62 247.88 537.68 247.88 537.68 247.88 537.73 247.88 537.73 247.88 537.82 247.88 537.84 247.88 537.9 247.88 537.9 247.88 537.95 247.88 537.95 247.88 538.04 247.88 538.06 247.88 538.12 247.88 538.15 247.88 538.17 247.88 538.17 247.88 538.26 247.88 538.28 247.88 538.34 247.88 538.37 247.88 538.39 247.88 538.39 247.88 538.48 247.88 538.5 247.88 538.56 247.88 538.59 247.88 538.61 247.88 538.7 247.88 538.72 247.88 538.78 247.88 538.81 247.88 538.83 247.88 538.83 247.88 538.92 247.88 538.94 247.88 539 247.88 539.03 247.88 539.05 247.88 539.05 247.88 539.14 247.88 539.16 247.88 539.22 247.88 539.25 247.88 539.27 247.88 539.27 247.88 539.36 247.88 539.38 247.88 539.47 247.88 539.49 247.88 539.58 247.88 539.6 247.88 539.69 247.88 539.71 247.88 539.8 247.88 539.82 247.88 539.91 247.87 539.91 247.84 539.91 247.8 539.91 247.78 539.91 247.74 539.91 247.74 539.91 247.74 539.91 247.74 539.93 247.74 540.02 247.74 540.04 247.74 540.1 247.74 540.13 247.74 540.15 247.74 540.15 247.74 540.24 247.74 540.26 247.74 540.33 247.74 540.35 247.74 540.37 247.74 540.37 247.74 540.46 247.74 540.48 247.74 540.54 247.74 540.57 247.74 540.59 247.74 540.59 247.74 540.68 247.74 540.7 247.74 540.76 247.74 540.79 247.74 540.81 247.74 540.81 247.74 540.9 247.74 540.92 247.74 540.98 247.74 541.01 247.74 541.03 247.74 541.03 247.74 541.12 247.74 541.12 247.74 541.14 247.74 541.23 247.74 541.25 247.74 541.25 247.74 541.34 247.74 541.34 247.74 541.36 247.74 541.39 247.74 541.45 247.74 541.47 247.74 541.56 247.74 541.58 247.74 541.67 247.74 541.69 247.74 541.78 247.74 541.8 247.74 541.89 247.71 541.89 247.71 541.89 247.27 541.89 247.27 541.89 247.27 541.91 247.27 542 247.27 542.02 247.27 542.11 247.27 542.13 247.27 542.22 247.27 542.24 247.27 542.33 247.27 542.35 247.27 542.44 247.27 542.46 247.27 542.55 247.27 542.57 247.27 542.66 247.27 542.68 247.27 542.77 247.27 542.79 247.27 542.88 247.27 542.9 247.27 542.99 247.27 543.01 247.27 543.1 247.27 543.12 247.27 543.17 246.86 543.17 246.86 543.17 246.86 543.21 246.86 543.23 246.86 543.32 246.86 543.34 246.86 543.34 246.86 543.43 246.86 543.45 246.86 543.54 246.86 543.56 246.86 543.56 246.86 543.65 246.46 543.65 246.46 543.65 246.46 543.67 246.46 543.67 246.46 543.76 246.46 543.78 246.46 543.87 246.46 543.89 246.46 543.98 246.46 543.98 246.46 544 246.46 544.09 246.46 544.11 246.46 544.11 246.86 544.11 246.92 544.11 247.27 544.11 247.32 544.11 247.74 544.11 247.88 544.11 248.2 544.11 248.44 544.11 248.44 544.11 248.46 544.11 248.5 544.11 248.53 544.11 248.56 544.11 248.59 544.11 248.63 544.11 248.65 544.11 248.69 544.11 248.69 544.11 248.72 544.11 248.72 544.11 248.75 544.11 248.75 544.11 248.78 544.11 248.78 544.11 248.81 544.11 248.81 544.11 248.84 544.11 248.84 544.11 249.05 544.11 249.46 544.11 249.48 544.11 249.66 544.11 249.9 544.11 250.07 544.11 250.08 544.11 250.18 544.11 250.26 544.11 250.29 544.11 250.46 544.11 250.48 544.11 250.67 544.11 251.21 544.11 251.21 544.11 251.21 544.11 251.21 544.11 251.21 544.11 251.21 543.65 251.21 543.65"
+                style="opacity: 1;"></polygon>
+        </g>
+        <text class="st9" transform="translate(159.2 559.92)" style="opacity: 1;">
+            <tspan x="0" y="0">TRUNG TÂM</tspan>
+            <tspan x="-2.89" y="3.76">TP HỒ CHÍ MINH</tspan>
+        </text>
+        <g>
+            <path class="st74"
+                d="M169.87,552.27c0-1.08-.99-1.86-1.99-1.87s-2.02.74-2.04,1.8l-.04,3.52h-1.29s0-3.36,0-3.36h-2.04s0,3.36,0,3.36h-1.29s-.02-2.43-.02-2.43c0-.54-.54-.9-1.03-.9-.45,0-1,.37-1.01.9l-.02,2.42h-.6s0-5.21,0-5.21h3.38s.01-1.43.01-1.43l2.67-1.39v-4.04s-.65-.02-.65-.02c-.05,0-.12-.16-.09-.2.03-.05.11-.13.17-.16l.61-.28v-.7s-.98-.06-.98-.06l4.23-1.25,4.23,1.25-.95.06v.7s.66.32.66.32c.08.04.11.31.02.32l-.68.04v4.03s2.71,1.42,2.71,1.42v1.41s3.36,0,3.36,0v5.21s-.58,0-.58,0l-.03-2.42c0-.52-.5-.87-.98-.91-.44-.03-1.05.33-1.05.85l-.03,2.49h-1.3s0-3.36,0-3.36h-2.04s0,3.36,0,3.36h-1.29s-.03-3.45-.03-3.45ZM169.82,543v-.74s-3.96,0-3.96,0c0,.27,0,.47.02.74h3.95ZM168.77,547.3c.83-.47,1.13-1.41.83-2.29-.26-.77-1.09-1.33-1.96-1.22-1.21.15-1.93,1.33-1.58,2.45s1.63,1.67,2.7,1.06Z"
+                style="stroke-dashoffset: 20px; stroke-dasharray: 123.692;"></path>
+            <path class="st74"
+                d="M167,546.15c.22-.3.51-.38.77-.55v-.86s.02-.1.03-.11l.06-.05s.08.11.08.15v.94c-.29.2-.56.45-.95.48Z"
+                style="stroke-dashoffset: 1px; stroke-dasharray: 4.20869;"></path>
+        </g>
+        <line class="st133" x1="506.05" y1="422.47" x2="513.17" y2="479.28"></line>
+        <path class="st141" d="M574.46,339.64c3.87,20.68,6.75,36.27,6.75,36.27,0,0,3.97,20.67,28.82,17.17"
+            style="stroke-dashoffset: 13px; stroke-dasharray: 74.0745px, 2px;"></path>
+        <path class="st141"
+            d="M469.11,324.58l64.86-73.01s5.47-4.58,14.67-8.27c3.51-1.41,7.44.66,8.23,4.35,2.35,10.98,6.34,30.54,10.13,50.51"
+            style="stroke-dashoffset: 31px; stroke-dasharray: 176.675px, 2px;"></path>
+        <circle class="st210" cx="467.1" cy="326.08" r="3.37"></circle>
+        <line class="st141" x1="611.39" y1="392.81" x2="641.4" y2="387.06"></line>
+        <text class="st101" transform="translate(568.71 308.45) rotate(78.93)" style="opacity: 1;">
+            <tspan x="0" y="0">TUYẾN METRO</tspan>
+            <tspan x="-8.13" y="3.75">SUỐI TIÊN - LONG THÀNH</tspan>
+        </text>
+        <g>
+            <path class="st141"
+                d="M168.06,169.65c-13.52-16.28-27.47-27.32-37-33.81-8.07-5.5-13.85-13.73-16.28-23.19l-4.97-19.36c-1.61-6.26-5.51-11.6-10.97-15.04l-14.9-9.37c-7.52-4.73-13.35-11.75-16.43-19.76-4.1-10.69-21.69-31-21.78-31.09l-2.71-2.92"
+                style="stroke-dashoffset: 37px; stroke-dasharray: 204.109px, 2px;"></path>
+            <path class="st141"
+                d="M263.85,392.34c3.33-12.23-9.03-25.23-17.86-27.8l-24.13-6.74-.16-.06c-11.84-4.43-15.43-12.59-16.35-18.66-1.04-6.82.79-13.28,1.78-16.75l.26-.91c.32-1.16.56-2.33.71-3.49l.87-6.58c4.18-45.79-5.25-81.76-19.39-109.23"
+                style="stroke-dashoffset: 43px; stroke-dasharray: 227.86px, 2px;"></path>
+            <line class="st141" x1="217.85" y1="538.26" x2="252.25" y2="430.28"></line>
+            <line class="st141" x1="205.96" y1="575.6" x2="217.85" y2="538.26"></line>
+        </g>
+        <text class="st52" transform="translate(190.24 260.42)" style="opacity: 1;">
+            <tspan x="0" y="0">SÂN GOLF</tspan>
+            <tspan x=".85" y="3.85">SÔNG BÉ</tspan>
+        </text>
+        <g>
+            <path class="st57"
+                d="M201.59,247.76c0,2.19-1.77,3.96-3.96,3.96s-3.96-1.77-3.96-3.96,1.77-3.96,3.96-3.96,3.96,1.77,3.96,3.96ZM201.17,247.76c0-1.96-1.59-3.54-3.54-3.54s-3.54,1.59-3.54,3.54,1.59,3.54,3.54,3.54,3.54-1.59,3.54-3.54Z"
+                style="stroke-dashoffset: 9px; stroke-dasharray: 47.1293;"></path>
+            <path class="st57"
+                d="M199.56,251.73c.2.62-.36.64-.69,1.01-.78.89-.9,2.41-.95,3.54-.06.18-.55.19-.58-.04-.05-1.14-.17-2.67-.99-3.55-.31-.33-.86-.37-.64-.96,1.25.55,2.59.54,3.85,0Z"
+                style="stroke-dashoffset: 3px; stroke-dasharray: 14.7965;"></path>
+            <circle class="st57" cx="195.23" cy="247.38" r=".32"></circle>
+            <circle class="st57" cx="197.03" cy="249.28" r=".32"></circle>
+            <circle class="st57" cx="194.82" cy="248.2" r=".31"></circle>
+            <circle class="st57" cx="195.68" cy="248.21" r=".31"></circle>
+            <circle class="st57" cx="195.14" cy="249.06" r=".31"></circle>
+            <circle class="st57" cx="196.07" cy="249.13" r=".31"></circle>
+            <circle class="st57" cx="196.61" cy="248.43" r=".31"></circle>
+            <circle class="st57" cx="196.61" cy="250.04" r=".31"></circle>
+            <circle class="st57" cx="195.76" cy="249.91" r=".31"></circle>
+        </g>
+        <text class="st101" transform="translate(173.88 176.82) rotate(56.75)" style="opacity: 1;">
+            <tspan x="0" y="0">TUYẾN METRO</tspan>
+            <tspan x="-6.96" y="3.75">THỦ DẦU MỘT - TP.HCM</tspan>
+        </text>
+        <text class="st101" transform="translate(253.64 421.04) rotate(-72.8)" style="opacity: 1;">
+            <tspan x="0" y="0">TUYẾN METRO</tspan>
+            <tspan x="-6.96" y="3.75">THỦ DẦU MỘT - TP.HCM</tspan>
+        </text>
+        <g>
+            <text class="st39" transform="translate(217.08 369.16)" style="opacity: 1;">
+                <tspan class="st176" x="0" y="0">BỆNH</tspan>
+                <tspan class="st260" x="7.57" y="0"> </tspan>
+                <tspan class="st111" x="8.12" y="0">VIỆN</tspan>
+                <tspan class="st159" x="14.47" y="0"> </tspan>
+                <tspan class="st150" x="15.09" y="0">Q</tspan>
+                <tspan x="17.44" y="0">T</tspan>
+            </text>
+            <text class="st17" transform="translate(219.38 372.99)" style="opacity: 1;">
+                <tspan x="0" y="0">HẠNH PHÚC</tspan>
+            </text>
+            <rect class="st175" x="240.21" y="366.27" width="2.16" height="5.77"></rect>
+            <rect class="st175" x="238.4" y="368.08" width="5.77" height="2.16"></rect>
+        </g>
+        <text class="st47" transform="translate(351.38 150.49) rotate(88.99)" style="opacity: 1;">
+            <tspan x="0" y="0">NGUYỄN THỊ TƯƠI</tspan>
+        </text>
+        <polygon class="st175" points="316.48 170.86 318.14 182.44 342.39 179.29 340.65 167.61 316.48 170.86"
+            style="opacity: 1;"></polygon>
+        <g>
+            <text class="st44" transform="translate(187.45 306.95)" style="opacity: 1;">
+                <tspan class="st176" x="0" y="0">BỆNH</tspan>
+                <tspan class="st260" x="7.57" y="0"> </tspan>
+                <tspan class="st111" x="8.12" y="0">VIỆN</tspan>
+                <tspan class="st159" x="14.47" y="0"> </tspan>
+                <tspan class="st150" x="15.09" y="0">Q</tspan>
+                <tspan x="17.44" y="0">T</tspan>
+            </text>
+            <text class="st44" transform="translate(190.18 310.21)" style="opacity: 1;">
+                <tspan class="st176" x="0" y="0">B</tspan>
+                <tspan class="st110" x="1.79" y="0">E</tspan>
+                <tspan class="st219" x="3.36" y="0">CAME</tspan>
+                <tspan class="st179" x="11.69" y="0">X</tspan>
+            </text>
+            <rect class="st57" x="195.89" y="297.29" width="2.16" height="5.77"></rect>
+            <rect class="st57" x="194.08" y="299.1" width="5.77" height="2.16"></rect>
+        </g>
+        <rect class="st196" x="699.26" y="238.1" width="35.44" height="13" rx="2.33" ry="2.33"></rect>
+        <g>
+            <polyline class="st144" points="252.43 203.57 252.43 194.5 271.24 194.5"></polyline>
+            <circle class="st196" cx="271.24" cy="194.5" r="2.97"></circle>
+            <circle class="st210" cx="271.24" cy="194.5" r="2.97"></circle>
+        </g>
+        <g>
+            <polyline class="st144" points="319.75 235.12 319.75 222.61 334.37 222.61"></polyline>
+            <circle class="st196" cx="334.37" cy="222.61" r="2.97"></circle>
+            <circle class="st210" cx="334.37" cy="222.61" r="2.97"></circle>
+        </g>
+        <rect class="st106" x="-3500.49" y="-221.17" width="1920" height="1080"></rect>
+        <g>
+            <polygon class="st175"
+                points="-2971.35 255.05 -2971.35 218.27 -3118.44 218.27 -3118.44 418.59 -3078.53 418.59 -3078.53 337.47 -2978.08 337.47 -2978.08 300.69 -3078.53 300.69 -3078.53 255.05 -2971.35 255.05"
+                style="opacity: 1;"></polygon>
+            <polygon class="st175"
+                points="-2880.51 381.96 -2880.51 335.9 -2776.91 335.9 -2776.91 299.27 -2880.51 299.27 -2880.51 254.92 -2771.91 254.92 -2771.91 218.27 -2920.43 218.27 -2920.43 418.59 -2770.76 418.59 -2770.76 381.96 -2880.51 381.96"
+                style="opacity: 1;"></polygon>
+            <rect class="st175" x="-2476.04" y="218.27" width="39.93" height="200.31"></rect>
+            <path class="st175"
+                d="M-2280.74,383.97c-35.34,0-63.1-25.33-63.25-65.54,0-38.92,26.9-65.53,63.25-65.53,22.31,0,40.49,10.31,51.79,27.62l34.34-21.04c-16.31-28.03-48.93-44.92-85.85-44.92-61.67,0-105.17,43.64-105.17,103.87s43.5,103.88,105.17,103.88c36.63,0,66.83-16.31,84.57-42.35l-32.63-23.47c-12.02,17.47-30.05,27.48-52.22,27.48Z"
+                style="stroke-dashoffset: 192px; stroke-dasharray: 938.649;"></path>
+            <path class="st175"
+                d="M-2040.51,218.27h-48.66l-77.97,200.31h41.64l17.45-46.64h85.42l17.45,46.64h42.64l-77.97-200.31ZM-2094.31,335.18l29.04-77.41,28.9,77.41h-57.94Z"
+                style="stroke-dashoffset: 204px; stroke-dasharray: 971.101;"></path>
+            <path class="st175"
+                d="M-2563.14,217.18h-11.41c-.73,0-1.32.59-1.32,1.32v82.92c-.02.97-1.08,1.56-1.91,1.05l-136.29-83.97c-.88-.44-1.32,0-1.32.88v25.88c0,9.21,5.7,19.3,14.04,24.57l161.36,95.87c.83.49,1.88-.11,1.88-1.07l-.04-119.37c0-16.67-10.53-28.08-25.01-28.08ZM-2687.74,418.11h10.6c.69,0,1.24-.56,1.24-1.24v-75.53c0-1.32.88-1.75,2.63-.88l132.93,82.48c1.32.44,2.19,0,2.19-1.32v-25.45c0-10.09-5.7-20.18-13.6-24.57l-161.76-95.31c-.83-.49-1.88.11-1.88,1.07v112.66c0,16.67,11.41,28.08,27.64,28.08Z"
+                style="stroke-dashoffset: 285px; stroke-dasharray: 1321.68;"></path>
+        </g>
+        <image width="706" height="497" transform="translate(834.74 62.92)"
+            href="/assets/map-bg-1.png">
+        </image>
+        <rect class="st177" x="127.7" y="-546.14" width="83.48" height="83.48"></rect>
+        <rect class="st279" x="699.26" y="311.42" width="28.22" height="28.22"></rect>
+        <rect class="st205" x="699.26" y="375.83" width="28.22" height="28.22"></rect>
+        <rect class="st210" x="699.26" y="418.54" width="28.22" height="28.22"></rect>
+        <rect class="st121" x="456.58" y="275.24" width="20.94" height="18.15"></rect>
+        <g>
+            <g>
+                <path class="st210"
+                    d="M464.08,284.22c-.08-.05-.14-.12-.07-.21l.97-.96c-.36-.03-.66-.29-.7-.64.01-1.44-.03-2.88.02-4.31.18-.85,1.28-.85,2-.88.83-.04,1.84-.05,2.65.13.47.1.79.42.84.88-.02,1.43.03,2.87-.02,4.3-.08.3-.35.49-.67.53l.97.96c.06.09,0,.16-.07.21h-1.12c-.2-.18-.33-.43-.52-.63h-2.64c-.19.2-.32.45-.52.63h-1.13ZM466.37,277.48c-.26,0-.53.03-.79.07-.51.07-.96.15-1.01.73v4.07c0,.23.17.4.41.42h4.11c.23-.02.39-.18.41-.39v-4.13c-.07-.56-.51-.64-1.01-.7-.68-.09-1.44-.09-2.13-.07M465.77,283.04h-.38l-.92.91h.62l.69-.91ZM468.15,283.32c-.04-.05-.17-.26-.23-.27h-1.8s-.19.27-.19.27h2.22ZM469.61,283.95l-.91-.91h-.38l.69.91h.6Z"
+                    style="stroke-dashoffset: 13px; stroke-dasharray: 57.4648;"></path>
+                <path class="st210"
+                    d="M469.18,278.34s.03.07.03.1v2.26c0,.06-.03.11-.09.13h-4.1c-.1.01-.17-.05-.17-.15v-2.24c0-.09.07-.16.17-.16h4.09s.05.03.07.05M466.89,278.57h-1.74v2h1.74v-2ZM468.92,278.57h-1.74v2h1.74v-2Z"
+                    style="stroke-dashoffset: 7px; stroke-dasharray: 28.5322;"></path>
+                <path class="st210"
+                    d="M465.38,281.26c.77-.08.87,1.05.1,1.09-.74.04-.84-1.02-.1-1.09M465.39,281.54c-.36.05-.3.58.08.54.38-.03.31-.6-.08-.54"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 5.31308;"></path>
+                <path class="st210"
+                    d="M468.57,281.26c.77-.08.87,1.05.1,1.09-.74.04-.84-1.02-.1-1.09M468.59,281.54c-.36.05-.3.58.08.54.38-.03.31-.6-.08-.54"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 5.31307;"></path>
+                <path class="st210"
+                    d="M467.73,277.8c.08.09.02.22-.1.23-.36.04-.81-.03-1.17,0-.19-.03-.18-.25.01-.27.36-.04.79.03,1.16,0,.03,0,.09.03.1.05"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 3.19187;"></path>
+                <path class="st210"
+                    d="M467.73,281.44c.08.09.02.22-.1.23-.36.04-.81-.03-1.17,0-.19-.03-.18-.25.01-.27.36-.04.79.03,1.16,0,.03,0,.09.03.1.05"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 3.19187;"></path>
+                <path class="st210"
+                    d="M467.73,281.99c.08.09.02.22-.1.23-.36.04-.81-.03-1.17,0-.19-.03-.18-.25.01-.27.36-.04.79.03,1.16,0,.03,0,.09.03.1.05"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 3.19187;"></path>
+                <path class="st210" d="M465.99,277.8c.13.14-.11.33-.23.17-.1-.14.12-.29.23-.17"
+                    style="stroke-dashoffset: 0px; stroke-dasharray: 0.885418;"></path>
+                <path class="st210" d="M468.31,277.8c.13.14-.11.33-.23.17-.1-.14.12-.29.23-.17"
+                    style="stroke-dashoffset: 0px; stroke-dasharray: 0.885418;"></path>
+            </g>
+            <text class="st49" transform="translate(458.94 287.68)" style="opacity: 1;">
+                <tspan x="0" y="0">GA METRO</tspan>
+            </text>
+            <text class="st29" transform="translate(457.5 291.36)" style="opacity: 1;">
+                <tspan x="0" y="0">BÌNH THẮNG</tspan>
+            </text>
+        </g>
+        <rect class="st121" x="409.24" y="332.59" width="19.57" height="18.15"></rect>
+        <polyline class="st144" points="419.55 350.73 419.55 362.54 431.71 362.54"></polyline>
+        <circle class="st210" cx="433.27" cy="362.54" r="3.37"></circle>
+        <g>
+            <g>
+                <path class="st210"
+                    d="M416.59,341.09c-.08-.05-.14-.12-.07-.21l.97-.96c-.36-.03-.66-.29-.7-.64.01-1.44-.03-2.88.02-4.31.18-.85,1.28-.85,2-.88.83-.04,1.84-.05,2.65.13.47.1.79.42.84.88-.02,1.43.03,2.87-.02,4.3-.08.3-.35.49-.67.53l.97.96c.06.09,0,.16-.07.21h-1.12c-.2-.18-.33-.43-.52-.63h-2.64c-.19.2-.32.45-.52.63h-1.13ZM418.88,334.34c-.26,0-.53.03-.79.07-.51.07-.96.15-1.01.73v4.07c0,.23.17.4.41.42h4.11c.23-.02.39-.18.41-.39v-4.13c-.07-.56-.51-.64-1.01-.7-.68-.09-1.44-.09-2.13-.07M418.29,339.91h-.38l-.92.91h.62l.69-.91ZM420.67,340.18c-.04-.05-.17-.26-.23-.27h-1.8s-.19.27-.19.27h2.22ZM422.12,340.81l-.91-.91h-.38l.69.91h.6Z"
+                    style="stroke-dashoffset: 16px; stroke-dasharray: 57.4648;"></path>
+                <path class="st210"
+                    d="M421.7,335.21s.03.07.03.1v2.26c0,.06-.03.11-.09.13h-4.1c-.1.01-.17-.05-.17-.15v-2.24c0-.09.07-.16.17-.16h4.09s.05.03.07.05M419.41,335.44h-1.74v2h1.74v-2ZM421.44,335.44h-1.74v2h1.74v-2Z"
+                    style="stroke-dashoffset: 8px; stroke-dasharray: 28.5322;"></path>
+                <path class="st210"
+                    d="M417.89,338.13c.77-.08.87,1.05.1,1.09-.74.04-.84-1.02-.1-1.09M417.91,338.4c-.36.05-.3.58.08.54.38-.03.31-.6-.08-.54"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 5.31306;"></path>
+                <path class="st210"
+                    d="M421.09,338.13c.77-.08.87,1.05.1,1.09-.74.04-.84-1.02-.1-1.09M421.1,338.4c-.36.05-.3.58.08.54.38-.03.31-.6-.08-.54"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 5.31298;"></path>
+                <path class="st210"
+                    d="M420.24,334.66c.08.09.02.22-.1.23-.36.04-.81-.03-1.17,0-.19-.03-.18-.25.01-.27.36-.04.79.03,1.16,0,.03,0,.09.03.1.05"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 3.19186;"></path>
+                <path class="st210"
+                    d="M420.24,338.31c.08.09.02.22-.1.23-.36.04-.81-.03-1.17,0-.19-.03-.18-.25.01-.27.36-.04.79.03,1.16,0,.03,0,.09.03.1.05"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 3.19187;"></path>
+                <path class="st210"
+                    d="M420.24,338.86c.08.09.02.22-.1.23-.36.04-.81-.03-1.17,0-.19-.03-.18-.25.01-.27.36-.04.79.03,1.16,0,.03,0,.09.03.1.05"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 3.19187;"></path>
+                <path class="st210" d="M418.5,334.66c.13.14-.11.33-.23.17-.1-.14.12-.29.23-.17"
+                    style="stroke-dashoffset: 0px; stroke-dasharray: 0.885429;"></path>
+                <path class="st210" d="M420.82,334.66c.13.14-.11.33-.23.17-.1-.14.12-.29.23-.17"
+                    style="stroke-dashoffset: 0px; stroke-dasharray: 0.885429;"></path>
+            </g>
+            <text class="st49" transform="translate(410.92 344.55)" style="opacity: 1;">
+                <tspan x="0" y="0">GA METRO</tspan>
+                <tspan class="st209">
+                    <tspan x=".76" y="3.9">SUỐI TIÊN</tspan>
+                </tspan>
+            </text>
+        </g>
+        <rect class="st121" x="242.65" y="203.57" width="19.57" height="18.15"></rect>
+        <g>
+            <g>
+                <path class="st210"
+                    d="M249.6,212.6c-.08-.05-.14-.12-.07-.21l.97-.96c-.36-.03-.66-.29-.7-.64.01-1.44-.03-2.88.02-4.31.18-.85,1.28-.85,2-.88.83-.04,1.84-.05,2.65.13.47.1.79.42.84.88-.02,1.43.03,2.87-.02,4.3-.08.3-.35.49-.67.53l.97.96c.06.09,0,.16-.07.21h-1.12c-.2-.18-.33-.43-.52-.63h-2.64c-.19.2-.32.45-.52.63h-1.13ZM251.89,205.86c-.26,0-.53.03-.79.07-.51.07-.96.15-1.01.73v4.07c0,.23.17.4.41.42h4.11c.23-.02.39-.18.41-.39v-4.13c-.07-.56-.51-.64-1.01-.7-.68-.09-1.44-.09-2.13-.07M251.3,211.42h-.38l-.92.91h.62l.69-.91ZM253.68,211.69c-.04-.05-.17-.26-.23-.27h-1.8s-.19.27-.19.27h2.22ZM255.13,212.33l-.91-.91h-.38l.69.91h.6Z"
+                    style="stroke-dashoffset: 20px; stroke-dasharray: 57.4646;"></path>
+                <path class="st210"
+                    d="M254.7,206.72s.03.07.03.1v2.26c0,.06-.03.11-.09.13h-4.1c-.1.01-.17-.05-.17-.15v-2.24c0-.09.07-.16.17-.16h4.09s.05.03.07.05M252.42,206.95h-1.74v2h1.74v-2ZM254.45,206.95h-1.74v2h1.74v-2Z"
+                    style="stroke-dashoffset: 10px; stroke-dasharray: 28.5322;"></path>
+                <path class="st210"
+                    d="M250.9,209.64c.77-.08.87,1.05.1,1.09-.74.04-.84-1.02-.1-1.09M250.92,209.92c-.36.05-.3.58.08.54.38-.03.31-.6-.08-.54"
+                    style="stroke-dashoffset: 2px; stroke-dasharray: 5.31307;"></path>
+                <path class="st210"
+                    d="M254.1,209.64c.77-.08.87,1.05.1,1.09-.74.04-.84-1.02-.1-1.09M254.11,209.92c-.36.05-.3.58.08.54.38-.03.31-.6-.08-.54"
+                    style="stroke-dashoffset: 2px; stroke-dasharray: 5.31307;"></path>
+                <path class="st210"
+                    d="M253.25,206.17c.08.09.02.22-.1.23-.36.04-.81-.03-1.17,0-.19-.03-.18-.25.01-.27.36-.04.79.03,1.16,0,.03,0,.09.03.1.05"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 3.19187;"></path>
+                <path class="st210"
+                    d="M253.25,209.82c.08.09.02.22-.1.23-.36.04-.81-.03-1.17,0-.19-.03-.18-.25.01-.27.36-.04.79.03,1.16,0,.03,0,.09.03.1.05"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 3.19187;"></path>
+                <path class="st210"
+                    d="M253.25,210.37c.08.09.02.22-.1.23-.36.04-.81-.03-1.17,0-.19-.03-.18-.25.01-.27.36-.04.79.03,1.16,0,.03,0,.09.03.1.05"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 3.19187;"></path>
+                <path class="st210" d="M251.51,206.17c.13.14-.11.33-.23.17-.1-.14.12-.29.23-.17"
+                    style="stroke-dashoffset: 0px; stroke-dasharray: 0.885339;"></path>
+                <path class="st210" d="M253.83,206.17c.13.14-.11.33-.23.17-.1-.14.12-.29.23-.17"
+                    style="stroke-dashoffset: 0px; stroke-dasharray: 0.885339;"></path>
+            </g>
+            <text class="st49" transform="translate(243.93 216.06)" style="opacity: 1;">
+                <tspan x="0" y="0">GA METRO</tspan>
+            </text>
+            <text class="st29" transform="translate(247.1 219.73)" style="opacity: 1;">
+                <tspan x="0" y="0">AN PHÚ</tspan>
+            </text>
+        </g>
+        <rect class="st121" x="309.84" y="235.12" width="19.57" height="18.15"></rect>
+        <g>
+            <g>
+                <path class="st210"
+                    d="M316.79,244.15c-.08-.05-.14-.12-.07-.21l.97-.96c-.36-.03-.66-.29-.7-.64.01-1.44-.03-2.88.02-4.31.18-.85,1.28-.85,2-.88.83-.04,1.84-.05,2.65.13.47.1.79.42.84.88-.02,1.43.03,2.87-.02,4.3-.08.3-.35.49-.67.53l.97.96c.06.09,0,.16-.07.21h-1.12c-.2-.18-.33-.43-.52-.63h-2.64c-.19.2-.32.45-.52.63h-1.13ZM319.08,237.41c-.26,0-.53.03-.79.07-.51.07-.96.15-1.01.73v4.07c0,.23.17.4.41.42h4.11c.23-.02.39-.18.41-.39v-4.13c-.07-.56-.51-.64-1.01-.7-.68-.09-1.44-.09-2.13-.07M318.49,242.97h-.38l-.92.91h.62l.69-.91ZM320.87,243.25c-.04-.05-.17-.26-.23-.27h-1.8s-.19.27-.19.27h2.22ZM322.32,243.88l-.91-.91h-.38l.69.91h.6Z"
+                    style="stroke-dashoffset: 24px; stroke-dasharray: 57.4647;"></path>
+                <path class="st210"
+                    d="M321.89,238.27s.03.07.03.1v2.26c0,.06-.03.11-.09.13h-4.1c-.1.01-.17-.05-.17-.15v-2.24c0-.09.07-.16.17-.16h4.09s.05.03.07.05M319.6,238.5h-1.74v2h1.74v-2ZM321.64,238.5h-1.74v2h1.74v-2Z"
+                    style="stroke-dashoffset: 12px; stroke-dasharray: 28.5322;"></path>
+                <path class="st210"
+                    d="M318.09,241.2c.77-.08.87,1.05.1,1.09-.74.04-.84-1.02-.1-1.09M318.11,241.47c-.36.05-.3.58.08.54.38-.03.31-.6-.08-.54"
+                    style="stroke-dashoffset: 2px; stroke-dasharray: 5.31296;"></path>
+                <path class="st210"
+                    d="M321.29,241.2c.77-.08.87,1.05.1,1.09-.74.04-.84-1.02-.1-1.09M321.3,241.47c-.36.05-.3.58.08.54.38-.03.31-.6-.08-.54"
+                    style="stroke-dashoffset: 2px; stroke-dasharray: 5.31296;"></path>
+                <path class="st210"
+                    d="M320.44,237.73c.08.09.02.22-.1.23-.36.04-.81-.03-1.17,0-.19-.03-.18-.25.01-.27.36-.04.79.03,1.16,0,.03,0,.09.03.1.05"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 3.19189;"></path>
+                <path class="st210"
+                    d="M320.44,241.37c.08.09.02.22-.1.23-.36.04-.81-.03-1.17,0-.19-.03-.18-.25.01-.27.36-.04.79.03,1.16,0,.03,0,.09.03.1.05"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 3.19188;"></path>
+                <path class="st210"
+                    d="M320.44,241.92c.08.09.02.22-.1.23-.36.04-.81-.03-1.17,0-.19-.03-.18-.25.01-.27.36-.04.79.03,1.16,0,.03,0,.09.03.1.05"
+                    style="stroke-dashoffset: 1px; stroke-dasharray: 3.19189;"></path>
+                <path class="st210" d="M318.7,237.73c.13.14-.11.33-.23.17-.1-.14.12-.29.23-.17"
+                    style="stroke-dashoffset: 0px; stroke-dasharray: 0.885418;"></path>
+                <path class="st210" d="M321.02,237.73c.13.14-.11.33-.23.17-.1-.14.12-.29.23-.17"
+                    style="stroke-dashoffset: 0px; stroke-dasharray: 0.885399;"></path>
+            </g>
+            <text class="st49" transform="translate(311.12 247.61)" style="opacity: 1;">
+                <tspan x="0" y="0">GA METRO</tspan>
+            </text>
+            <text class="st29" transform="translate(317.59 251.29)" style="opacity: 1;">
+                <tspan x="0" y="0">S12</tspan>
+            </text>
+        </g>
+        <line class="st144" x1="467.18" y1="293.39" x2="467.18" y2="326.06"></line>
+        <path class="st124"
+            d="M232.07,217.39c0,3.51-2.85,6.36-6.36,6.36s-6.36-2.85-6.36-6.36,2.85-6.36,6.36-6.36,6.36,2.85,6.36,6.36"
+            style="stroke-dashoffset: 20px; stroke-dasharray: 39.9625;"></path>
+        <path class="st65"
+            d="M221.72,217.71l.07-.11,1.11-.45v-2.81c.01-.12.09-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.11c.27-.06.77-.49.93-.09v1.13l.93-.34v-2.77c.01-.12.08-.2.21-.23.46.04,1.01-.05,1.45,0,.04,0,.11.04.14.06.01.01.07.11.07.12v2.16l.91-.31c.11-.02.24.06.26.17v4.15c0,.13-.09.21-.22.23h-7.52c-.12-.01-.17-.07-.22-.17v-2.8ZM224.31,214.58h-.93v.47h.93v-.47ZM228.04,214.58h-.93v.47h.93v-.47ZM224.31,215.51h-.93v1.43l.93-.36v-1.08ZM228.04,215.51h-.93v1.43l.93-.33v-1.1ZM229.23,220.21v-3.52l-3.69,1.3c-.1.05-.3-.07-.3-.17v-1.11l-3.05,1.21v2.29h.95v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.15.06.01.01.07.11.07.12v.76h.47v-.76s.06-.1.07-.12c.02-.02.1-.06.13-.06.31.02.67-.03.98,0,.05,0,.12.03.16.06.01.01.07.11.07.12v.76h.95ZM224.07,219.75h-.47v.47h.47v-.47ZM225.94,219.75h-.47v.47h.47v-.47ZM227.81,219.75h-.47v.47h.47v-.47Z"
+            style="stroke-dashoffset: 42px; stroke-dasharray: 81.6982;"></path>
+        <g>
+            <text class="st40" transform="translate(475.8 367.01)" style="opacity: 1;">
+                <tspan class="st271" x="0" y="0">BẾN</tspan>
+                <tspan class="st283" x="6.02" y="0"> </tspan>
+                <tspan class="st271" x="6.69" y="0">X</tspan>
+                <tspan class="st103" x="8.77" y="0">E</tspan>
+            </text>
+            <text class="st40" transform="translate(472.02 370.57)" style="opacity: 1;">
+                <tspan class="st271" x="0" y="0">MIỀN ĐÔ</tspan>
+                <tspan class="st173" x="13.23" y="0">N</tspan>
+                <tspan x="15.48" y="0">G</tspan>
+            </text>
+            <path class="st57"
+                d="M482.34,361.88h-2.63s0,.47,0,.47c0,.27-.23.46-.48.46-.26,0-.48-.21-.48-.49v-.44s-.53,0-.53,0c0-1.58.01-3.22.21-4.77.04-.35.11-.68.2-1.03-.32,0-.6.26-.6.59.07.06.22.12.22.21v.84c0,.06-.06.17-.12.17h-.35c-.06,0-.13-.1-.13-.17l.07-.74c.04-.49.23-1.04.77-1.16l.27-.06c.06-.12.13-.26.27-.31h3.98c.12,0,.21.14.25.22.04.08.08.11.16.11.36.04.65.24.78.58.07.19.13.39.15.6l.07.74c0,.08-.07.17-.14.17h-.31c-.07,0-.15-.07-.15-.14v-.88c.04-.07.13-.14.22-.2-.01-.32-.28-.57-.6-.58.22.81.35,2.23.37,3.05l.05,2.75h-.52s0,.44,0,.44c0,.27-.2.48-.46.49s-.51-.18-.51-.46v-.47ZM483.41,359.22l-.13-1.87c-.04-.37-.1-.71-.17-1.07-.05-.16-.1-.3-.19-.44h-3.77c-.08.11-.12.23-.17.35-.23.97-.28,2.04-.32,3.02h4.75ZM479.87,361.06s.12-.06.13-.1l-.21-.46h-.98c-.09,0-.16.04-.16.14v.31c0,.06.07.11.13.11h1.08ZM483.29,361.06c.06,0,.11-.08.11-.11v-.33s-.07-.11-.12-.11h-1.02s-.18.41-.18.41c0,.02-.01.08,0,.1s.06.05.09.05h1.12Z"
+                style="stroke-dashoffset: 30px; stroke-dasharray: 58.1791;"></path>
+        </g>
+        <g>
+            <text class="st1" transform="translate(332.15 271.6)" style="opacity: 1;">
+                <tspan class="st191" x="0" y="0">G</tspan>
+                <tspan class="st98" x="1.88" y="0">A DĨ</tspan>
+                <tspan class="st295" x="6.2" y="0"> </tspan>
+                <tspan class="st98" x="6.66" y="0">AN</tspan>
+                <tspan x="9.9" y="0"> </tspan>
+            </text>
+            <path class="st57"
+                d="M337.24,268.37c-.2.13-.35.29-.51.45h-1.03c.38-.46.86-.75,1.39-1.02-.9,0-2.1.16-2.9.56-.27.13-.5.29-.75.46h-1.18c.19-.17.38-.3.58-.43.4-.24.82-.43,1.27-.59l-.26-.61c-.27-.04-.5-.16-.66-.38-.16-.31-.3-.64-.3-1v-1.55c.08-.45.15-.89.28-1.33l.32-1.03c.05-.17.15-.32.25-.47.08-.12.19-.2.32-.26.24-.1.48-.18.75-.18h2.01c.22,0,.42.02.63.09.32.1.58.34.67.67l.41,1.54c.1.38.24.74.39,1.1.07.16.15.3.25.44.21.32.61.65.96.79.33.13.67.23,1.03.29.15.03.29.05.43.09.05.01.1.07.1.13v1.1c0,.06-.06.09-.11.11v.23s.89,0,.89,0v.2s-3.25.01-3.25.01c-.7,0-1.38.2-1.97.58ZM335.59,261.25c-.23.06-.34.28-.28.49s.27.32.47.27.33-.26.28-.47-.25-.34-.47-.28ZM335.4,263.5l.11-1.22h-1.8s-.33,1.22-.33,1.22h2.02ZM337.69,263.5l-.1-1.22h-1.79s-.12,1.22-.12,1.22h2.01ZM341.36,266.16c-.47-.04-.9-.16-1.33-.32-.3-.1-.55-.26-.77-.49-.26-.26-.44-.56-.6-.91v1.34c.43.35.93.57,1.47.68.41.08.8.11,1.23.12v-.42ZM333.83,265.15c-.27.01-.45.24-.43.5.02.24.23.43.49.41.24-.02.44-.23.42-.49-.02-.23-.22-.43-.48-.42ZM337.16,265.17c-.26.06-.4.32-.33.57.07.23.31.37.55.32s.39-.3.34-.55-.29-.4-.55-.34Z"
+                style="stroke-dashoffset: 35px; stroke-dasharray: 65.415;"></path>
+        </g>
+        <polyline class="st140" points="344.55 181.09 341.95 165.12 315.3 168.32"></polyline>
+        <g id="special-logo" style="translate: none; rotate: none; scale: none; transform-origin: 0px 0px;"
+            data-svg-origin="330.3350067138672 153.3800048828125"
+            transform="matrix(1.0002,0,0,1.0002,-0.06607,-0.03068)">
+            <polygon class="st65"
+                points="318.72 131.08 318.72 161.11 327.42 161.11 330.34 175.74 333.25 161.11 341.95 161.11 341.95 131.08 318.72 131.08"
+                style="opacity: 1;"></polygon>
+            <polygon class="st142"
+                points="327.42 161.16 318.72 161.16 318.72 131.02 341.95 131.02 341.95 161.16 333.25 161.16 330.34 175.64 327.42 161.16"
+                style="opacity: 1;"></polygon>
+            <path class="st106"
+                d="M336.07,136.91h-1.03c-.07,0-.12.05-.12.12v7.47c0,.09-.1.14-.17.09l-12.28-7.57c-.08-.04-.12,0-.12.08v2.33c0,.83.51,1.74,1.26,2.21l14.54,8.64c.07.04.17,0,.17-.1v-10.75c0-1.5-.95-2.53-2.26-2.53M324.84,155.02h.96c.06,0,.11-.05.11-.11v-6.8c0-.12.08-.16.24-.08l11.98,7.43c.12.04.2,0,.2-.12v-2.29c0-.91-.51-1.82-1.23-2.21l-14.57-8.59c-.07-.04-.17,0-.17.1v10.15c0,1.5,1.03,2.53,2.49,2.53"
+                style="stroke-dashoffset: 64px; stroke-dasharray: 119.092;"></path>
+        </g>
+    </g>
+</svg>

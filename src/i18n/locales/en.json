@@ -1,0 +1,61 @@
+{
+  "menu": {
+    "toggle_open": "Open Menu",
+    "toggle_close": "Close Menu",
+    "current_view": "Current View",
+    "overview": "Project Overview",
+    "floor_plan": "Floor Plan",
+    "gallery": "Gallery",
+    "map": "Location Map",
+    "news": "Latest News",
+    "video": "Project Videos"
+  },
+  "overview": {
+    "title": "Project Overview",
+    "location": "Location",
+    "scale": "Scale",
+    "total_units": "Total Units",
+    "blocks": "Blocks",
+    "handover": "Handover",
+    "legal": "Legal",
+    "investor": "Investor",
+    "about": "About",
+    "description": "A masterpiece of architecture offering unparalleled luxury living in the heart of the city. Designed with state-of-the-art amenities and breathtaking panoramic views, every detail is crafted to elevate your lifestyle to new heights."
+  },
+  "floorplan": {
+    "title": "Floor Plans",
+    "select_block": "Select Block",
+    "select_floor": "Select Floor",
+    "level": "Level",
+    "available": "Available",
+    "booking": "Booking",
+    "sold": "Sold",
+    "select_unit": "Select Unit",
+    "unit": "Unit",
+    "view": "View",
+    "direction": "Direction",
+    "area": "Area",
+    "price": "Est. Price",
+    "request_quote": "Request Quote"
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "tab_all": "All",
+    "tab_perspective": "3D Perspective",
+    "tab_sample_1pn": "1 Bedroom",
+    "tab_sample_2pn": "2 Bedroom"
+  },
+  "map": {
+    "title": "Location & Surroundings"
+  },
+  "news": {
+    "title": "Latest Updates",
+    "back": "Back to News",
+    "read_more": "Read Full Story",
+    "error": "Failed to load news",
+    "no_image": "No Image",
+    "label": "News"
+  },
+  "Exterior View": "Exterior View",
+  "High Floor View (Level 22)": "High Floor View (Level 22)"
+}

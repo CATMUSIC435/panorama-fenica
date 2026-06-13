@@ -1,0 +1,61 @@
+{
+  "menu": {
+    "toggle_open": "Mở Menu",
+    "toggle_close": "Đóng Menu",
+    "current_view": "Góc nhìn",
+    "overview": "Tổng quan dự án",
+    "floor_plan": "Mặt bằng tầng",
+    "gallery": "Thư viện ảnh",
+    "map": "Bản đồ vị trí",
+    "news": "Tin tức",
+    "video": "Video dự án"
+  },
+  "overview": {
+    "title": "Tổng quan dự án",
+    "location": "Vị trí",
+    "scale": "Quy mô",
+    "total_units": "Tổng số căn",
+    "blocks": "Số Block",
+    "handover": "Bàn giao",
+    "legal": "Pháp lý",
+    "investor": "Chủ đầu tư",
+    "about": "Giới thiệu về",
+    "description": "Một kiệt tác kiến trúc mang đến trải nghiệm sống sang trọng bậc nhất giữa lòng thành phố. Được thiết kế với các tiện ích hiện đại và tầm nhìn toàn cảnh ngoạn mục, mọi chi tiết đều được chăm chút để nâng tầm phong cách sống của bạn."
+  },
+  "floorplan": {
+    "title": "Mặt bằng",
+    "select_block": "Chọn Toà",
+    "select_floor": "Chọn Tầng",
+    "level": "Tầng",
+    "available": "Đang trống",
+    "booking": "Giữ chỗ",
+    "sold": "Đã bán",
+    "select_unit": "Chọn Căn",
+    "unit": "Căn số",
+    "view": "Hướng nhìn",
+    "direction": "Hướng cửa",
+    "area": "Diện tích",
+    "price": "Giá dự kiến",
+    "request_quote": "Nhận báo giá"
+  },
+  "gallery": {
+    "title": "Thư viện ảnh",
+    "tab_all": "Tất cả",
+    "tab_perspective": "Phối cảnh 3D",
+    "tab_sample_1pn": "Căn mẫu 1PN",
+    "tab_sample_2pn": "Căn mẫu 2PN"
+  },
+  "map": {
+    "title": "Vị trí & Tiện ích"
+  },
+  "news": {
+    "title": "Tin tức",
+    "back": "Quay lại",
+    "read_more": "Đọc tiếp",
+    "error": "Lỗi khi tải tin tức",
+    "no_image": "Không có ảnh",
+    "label": "Tin tức"
+  },
+  "Exterior View": "Phối cảnh tổng thể",
+  "High Floor View (Level 22)": "Góc nhìn trên cao (Tầng 22)"
+}
