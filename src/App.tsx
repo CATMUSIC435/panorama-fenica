@@ -18,7 +18,7 @@ function App() {
   const { activeModal } = useUIStore();
 
   return (
-    <div className="w-screen h-screen overflow-hidden relative bg-gray-950 text-white font-sans selection:bg-gold-500/30">
+    <div className="w-screen h-screen overflow-hidden relative bg-gray-950 text-white font-sans selection:bg-gold-500/30 select-none">
       {/* 360 Viewer Background layer */}
       <PanoramaViewer />
 
