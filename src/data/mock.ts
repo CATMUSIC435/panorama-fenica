@@ -74,7 +74,6 @@ export const mockScenes: Scene[] = [
       { id: 'h21', type: 'info', position: [-8.88, -3.24, 51.69], title: 'KĐT Đông Bình Dương', description: '7 phút', lineHeight: 130 },
       { id: 'h22', type: 'info', position: [-30.11, -2.99, 34.41], title: 'THCS Tân Bình', description: '4 phút', lineHeight: 80 },
       { id: 'h23', type: 'info', position: [-46.44, -1.29, 26.13], title: 'Chợ Tân Bình', description: '5 phút', lineHeight: 200 },
-      { id: 'h24', type: 'info', position: [-71.05, -1.08, 24.98], title: 'THPT Nguyễn Thị Minh Khai & THCS Tân Đông Hiệp B', description: '7 phút', lineHeight: 350 },
       { id: 'h25', type: 'info', position: [-92.91, -4.11, 29.93], title: 'KCN Tân Đông Hiệp', description: '8 phút', lineHeight: 150 },
       { id: 'h26', type: 'info', position: [-113.32, 0.62, 28.00], title: 'Làng Đại học', description: '16 phút', lineHeight: 240 },
       { id: 'h27', type: 'info', position: [-104.87, -12.04, 64.50], title: 'VÀNH ĐAI 3 TP.HCM', description: '8 LÀN XE CAO TỐC TRÊN CAO', lineHeight: 180 },
@@ -83,6 +82,7 @@ export const mockScenes: Scene[] = [
       { id: 'h30', type: 'info', position: [90.01, -39.13, -157.22], title: 'DT743', description: 'LỘ GIỚI 60 MÉT - 10 LÀN XE', lineHeight: 180 },
       { id: 'h31', type: 'info', position: [173.62, -40.00, -96.03], title: 'CAO TỐC TPHCM – TDM - CT', description: 'LỘ GIỚI 60 MÉT - 10 LÀN XE', lineHeight: 160 },
       { id: 'h32', type: 'info', position: [-31.34, -0.34, 33.43], title: 'Cụm công nghiệp', description: '10 phút', lineHeight: 140 },
+      { id: 'h24', type: 'info', position: [-71.05, -1.08, 24.98], title: 'THPT Nguyễn Thị Minh Khai & THCS Tân Đông Hiệp B', description: '7 phút', lineHeight: 350 },
     ],
   },
   {
@@ -97,13 +97,6 @@ export const mockScenes: Scene[] = [
         targetSceneId: 'scene-1',
         title: 'Go back to Exterior',
       },
-      {
-        id: 'h4',
-        type: 'unit',
-        position: [0, 2, -25],
-        title: 'View Unit A-2201',
-        unitCode: 'A-2201',
-      }
     ],
   }
 ];
