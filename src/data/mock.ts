@@ -79,7 +79,7 @@ export const mockScenes: Scene[] = [
       { id: 'h26', type: 'info', position: [-113.32, 0.62, 28.00], title: 'Làng Đại học', description: '16 phút', lineHeight: 240 },
       { id: 'h27', type: 'info', position: [-104.87, -12.04, 64.50], title: 'VÀNH ĐAI 3 TP.HCM', description: '8 LÀN XE CAO TỐC TRÊN CAO', lineHeight: 180 },
       { id: 'h28', type: 'info', position: [-133.70, -40.27, 19.07], title: 'MỸ PHƯỚC – TÂN VẠN', description: 'LỘ GIỚI 64 MÉT - 10 LÀN XE', lineHeight: 180 },
-      { id: 'h29', type: 'info', position: [-63.90, -126.57, -74.81], title: 'TRẦN QUANG DIỆU', description: 'LỘ GIỚI 22 MÉT - 4 LÀN XE', lineHeight: 240 },
+      { id: 'h29', type: 'info', position: [-70, -126.57, -70], title: 'TRẦN QUANG DIỆU', description: 'LỘ GIỚI 22 MÉT - 4 LÀN XE', lineHeight: 240 },
       { id: 'h30', type: 'info', position: [90.01, -39.13, -157.22], title: 'DT743', description: 'LỘ GIỚI 60 MÉT - 10 LÀN XE', lineHeight: 180 },
       { id: 'h31', type: 'info', position: [173.62, -40.00, -96.03], title: 'CAO TỐC TPHCM – TDM - CT', description: 'LỘ GIỚI 60 MÉT - 10 LÀN XE', lineHeight: 160 },
       { id: 'h32', type: 'info', position: [-31.34, -0.34, 33.43], title: 'Cụm công nghiệp', description: '10 phút', lineHeight: 140 },
