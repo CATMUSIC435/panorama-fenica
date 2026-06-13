@@ -4,7 +4,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import { playClick, playPop } from '../../utils/sound';
 
-const MAPBOX_TOKEN = 'pk.eyJ1Ijoiam9obmRvbmc0NzUiLCJhIjoiY204a29zODNmMHIzdDJpc2V6ZDJyNTNqeiJ9.Ax7eylJQEynCUV8UE_LXvQ';
+const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN || '';
 
 const MAP_STYLES = [
   { id: 'light', name: 'Bản đồ Sáng', url: 'mapbox://styles/mapbox/light-v11' },

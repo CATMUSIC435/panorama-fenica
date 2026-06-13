@@ -150,7 +150,7 @@ const PanoramaSphere = React.memo(({ image }: { image: string }) => {
             map={prevTex} 
             side={THREE.BackSide} 
             depthWrite={false}
-            color={[1.05, 1.05, 1.05]} 
+            color={[1.02, 1.02, 1.02]} 
           />
         </mesh>
       )}
