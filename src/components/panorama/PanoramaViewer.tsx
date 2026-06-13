@@ -111,7 +111,7 @@ const PanoramaSphere = React.memo(({ image }: { image: string }) => {
     [currentTex, prevTex].forEach(t => {
       if (t) {
         t.colorSpace = THREE.SRGBColorSpace;
-        t.anisotropy = 4; // Khôi phục lại mức 4
+        t.anisotropy = 16; // Tăng độ nét tối đa
         t.minFilter = THREE.LinearMipmapLinearFilter;
         t.magFilter = THREE.LinearFilter;
         t.generateMipmaps = true;
@@ -150,7 +150,8 @@ const PanoramaSphere = React.memo(({ image }: { image: string }) => {
             map={prevTex} 
             side={THREE.BackSide} 
             depthWrite={false}
-            color={[1.02, 1.02, 1.02]} 
+            toneMapped={false}
+            color={[1.1, 1.1, 1.1]} 
           />
         </mesh>
       )}
@@ -165,7 +166,8 @@ const PanoramaSphere = React.memo(({ image }: { image: string }) => {
           transparent={true}
           opacity={0}
           depthWrite={false}
-          color={[1.05, 1.05, 1.05]} 
+          toneMapped={false}
+          color={[1.1, 1.1, 1.1]} 
         />
       </mesh>
     </group>
