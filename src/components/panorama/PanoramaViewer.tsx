@@ -3,8 +3,8 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, useTexture, AdaptiveDpr, AdaptiveEvents, Html } from '@react-three/drei';
 import * as THREE from 'three';
 import { usePanoramaStore } from '../../store/usePanoramaStore';
+import { motion, AnimatePresence } from 'framer-motion';
 import { mockScenes } from '../../data/mock';
-
 import { HotspotNode } from './HotspotNode';
 import { ErrorBoundary } from '../ErrorBoundary';
 import { mapData } from '../../data/mock';
@@ -258,40 +258,68 @@ const Controls = () => {
   );
 };
 
+const TexturePreloader = ({ sceneId, onLoaded }: { sceneId: string, onLoaded: () => void }) => {
+  const scene = mockScenes.find(s => s.id === sceneId);
+  useTexture(scene?.image || mockScenes[0].image);
+  
+  useEffect(() => {
+    onLoaded();
+  }, [sceneId, onLoaded]);
+
+  return null;
+};
+
 export const PanoramaViewer: React.FC = () => {
   const currentSceneId = usePanoramaStore(state => state.currentSceneId);
   const setAutoRotate = usePanoramaStore(state => state.setAutoRotate);
   
-  const [isPending, startTransition] = useTransition();
   const [deferredSceneId, setDeferredSceneId] = useState(currentSceneId);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const [showHotspots, setShowHotspots] = useState(false);
 
   useEffect(() => {
     if (currentSceneId !== deferredSceneId) {
       setShowHotspots(false);
-      startTransition(() => {
-        setDeferredSceneId(currentSceneId);
-      });
+      setIsTransitioning(true);
     }
   }, [currentSceneId, deferredSceneId]);
 
-  useEffect(() => {
-    if (!isPending) {
-      const timer = setTimeout(() => {
-        setShowHotspots(true);
-      }, 300); // Đợi WebGL crossfade chạy một chút rồi mới hiện hotspot
-      return () => clearTimeout(timer);
+  const handleTextureLoaded = React.useCallback(() => {
+    if (isTransitioning) {
+      setDeferredSceneId(currentSceneId);
+      // Giữ blur overlay một khoảnh khắc rất ngắn để che lúc WebGL bắt đầu swap texture
+      setTimeout(() => setIsTransitioning(false), 50);
+      setTimeout(() => setShowHotspots(true), 300);
     }
-  }, [isPending]);
+  }, [isTransitioning, currentSceneId]);
+
+  // Hiện hotspot khi load lần đầu tiên
+  useEffect(() => {
+    if (currentSceneId === deferredSceneId && !isTransitioning && !showHotspots) {
+      setShowHotspots(true);
+    }
+  }, [currentSceneId, deferredSceneId, isTransitioning, showHotspots]);
 
   const currentScene = mockScenes.find((s) => s.id === deferredSceneId) || mockScenes[0];
 
   return (
     <div className="absolute inset-0 w-full h-full z-0 bg-gray-950 cursor-grab active:cursor-grabbing">
-      {/* 
-        Đã gỡ bỏ thẻ AnimatePresence và motion.div blur overlay.
-        Hiệu ứng chuyển cảnh bây giờ được xử lý trực tiếp mượt mà bằng WebGL crossfade bên trong PanoramaSphere.
-      */}
+      {/* Smooth Transition Overlay (Màn hình chờ tải dạng kính mờ) */}
+      <AnimatePresence>
+        {isTransitioning && (
+          <motion.div 
+            initial={{ opacity: 0, backdropFilter: 'blur(0px)' }}
+            animate={{ opacity: 1, backdropFilter: 'blur(40px)' }}
+            exit={{ opacity: 0, backdropFilter: 'blur(0px)' }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+            className="absolute inset-0 z-50 pointer-events-none bg-white/5"
+          >
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full border-4 border-white/20 border-t-white animate-spin shadow-[0_0_20px_rgba(255,255,255,0.5)]"></div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <ErrorBoundary>
         <Canvas 
@@ -313,6 +341,13 @@ export const PanoramaViewer: React.FC = () => {
             ))}
             
             <Controls />
+
+            {/* Trình tải trước Texture chạy ngầm để không làm đen màn hình */}
+            {isTransitioning && currentSceneId !== deferredSceneId && (
+              <Suspense fallback={null}>
+                <TexturePreloader sceneId={currentSceneId} onLoaded={handleTextureLoaded} />
+              </Suspense>
+            )}
           </Suspense>
 
           <AdaptiveDpr pixelated />
