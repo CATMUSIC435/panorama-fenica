@@ -52,7 +52,7 @@ export const mockScenes: Scene[] = [
     name: 'Exterior View',
     image: './assets/mat-bang-tang-360-6mb.jpg', // Using the asset provided
     hotspots: [
-      { id: 'h18', type: 'info', position: [-142.72, -13.26, -33.25], title: 'Ga S12', description: '5 phút', lineHeight: 120 },
+      { id: 'h18', type: 'info', position: [-142.11, -28.85, -24.94], title: 'Ga S12', description: '5 phút', lineHeight: 220 },
       { id: 'h6', type: 'info', position: [-117.42, -0.84, -59.17], title: 'Vincom Plaza', description: '8 phút', lineHeight: 250 },
       { id: 'h5', type: 'info', position: [-68.54, -0.98, -46.55], title: 'KCN Sóng Thần 2', description: '7 phút', lineHeight: 160 },
       { id: 'h4', type: 'info', position: [-79.54, -3.55, -68.90], title: 'ICD Sóng Thần', description: '7 phút', lineHeight: 90 },

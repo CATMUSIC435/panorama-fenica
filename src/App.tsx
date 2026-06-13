@@ -4,6 +4,7 @@ import { FloatingMenu } from './components/ui/FloatingMenu';
 import { RightToolbar } from './components/ui/RightToolbar';
 import { useUIStore } from './store/useUIStore';
 import { AnimatePresence } from 'framer-motion';
+// const DebugPanel = React.lazy(() => import('./components/panorama/DebugPanel').then(module => ({ default: module.DebugPanel })));
 const OverviewModal = React.lazy(() => import('./components/modals/OverviewModal').then(module => ({ default: module.OverviewModal })));
 const FloorPlanModal = React.lazy(() => import('./components/modals/FloorPlanModal').then(module => ({ default: module.FloorPlanModal })));
 const GalleryModal = React.lazy(() => import('./components/modals/GalleryModal').then(module => ({ default: module.GalleryModal })));
@@ -41,7 +42,10 @@ function App() {
         <LeadForm />
       </Suspense>
       
-      {/* Debug Layer (Removed for production) */}
+      {/* Debug Layer */}
+      {/* <Suspense fallback={null}>
+        <DebugPanel />
+      </Suspense> */}
     </div>
   );
 }
