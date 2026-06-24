@@ -86,7 +86,7 @@ export const RightToolbar: React.FC = () => {
   };
 
   return (
-    <div className="fixed right-4 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center gap-3">
+    <div className="fixed right-4 bottom-4 md:right-8 md:bottom-8 z-40 flex flex-col items-center gap-3">
       <AnimatePresence>
         {isOpen && (
           <motion.div 

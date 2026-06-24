@@ -1,9 +1,8 @@
-import React, { Suspense, useRef, useState, useEffect, useMemo } from 'react';
+import React, { Suspense, useRef, useState, useEffect, useMemo, useTransition } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, useTexture, AdaptiveDpr, AdaptiveEvents, Html } from '@react-three/drei';
 import * as THREE from 'three';
 import { usePanoramaStore } from '../../store/usePanoramaStore';
-import { motion, AnimatePresence } from 'framer-motion';
 import { mockScenes } from '../../data/mock';
 import { HotspotNode } from './HotspotNode';
 import { ErrorBoundary } from '../ErrorBoundary';
@@ -76,17 +75,7 @@ const PanoramaSphere = React.memo(({ image }: { image: string }) => {
   const setDraggedHotspotId = usePanoramaStore(state => state.setDraggedHotspotId);
   const updateHotspotPosition = usePanoramaStore(state => state.updateHotspotPosition);
   
-  const [prevImage, setPrevImage] = useState<string | null>(null);
-  const [currentImage, setCurrentImage] = useState(image);
-  
-  if (image !== currentImage) {
-    setPrevImage(currentImage);
-    setCurrentImage(image);
-  }
 
-  const currentTex = useTexture(currentImage);
-  const prevTex = useTexture(prevImage || currentImage);
-  const materialRef = useRef<THREE.MeshBasicMaterial>(null);
 
   const handlePointerMove = (e: any) => {
     if (isDebugMode && draggedHotspotId) {
@@ -107,9 +96,36 @@ const PanoramaSphere = React.memo(({ image }: { image: string }) => {
     }
   };
 
+  const [prevImage, setPrevImage] = useState<string | null>(null);
+  const [currentImage, setCurrentImage] = useState(image);
+  const materialRef = useRef<THREE.MeshBasicMaterial>(null);
+  const meshRef = useRef<THREE.Mesh>(null);
+
+  if (image !== currentImage) {
+    setPrevImage(currentImage);
+    setCurrentImage(image);
+  }
+
+  // Cực kỳ quan trọng: Đặt lại opacity bằng 0 trong useLayoutEffect (chạy đồng bộ khi frame mới bắt đầu vẽ).
+  // Tuyệt đối không set opacity trong thân hàm (Render Phase) vì useTransition sẽ tạo ra một frame render tạm (WIP).
+  // Việc sửa đổi trực tiếp ref trong render tạm sẽ làm cho ảnh hiện tại bị tàng hình ngay lập tức, gây ra chớp đen màn hình!
+  React.useLayoutEffect(() => {
+    if (materialRef.current) {
+      materialRef.current.opacity = 0;
+    }
+    // Khởi tạo góc xoay nhẹ để tạo hiệu ứng "Camera xoay mờ xuất hiện"
+    if (meshRef.current) {
+      meshRef.current.rotation.y = -0.5; // Xoay khoảng 28 độ
+    }
+  }, [currentImage]);
+
+  const currentTex = useTexture(currentImage);
+  const prevTex = useTexture(prevImage || currentImage);
+
   useMemo(() => {
     [currentTex, prevTex].forEach(t => {
-      if (t) {
+      // Chỉ gán và update nếu chưa được cấu hình, tránh GPU update lại mỗi lần chuyển cảnh gây khựng 1s
+      if (t && t.anisotropy !== 16) {
         t.colorSpace = THREE.SRGBColorSpace;
         t.anisotropy = 16; // Tăng độ nét tối đa
         t.minFilter = THREE.LinearMipmapLinearFilter;
@@ -120,19 +136,18 @@ const PanoramaSphere = React.memo(({ image }: { image: string }) => {
     });
   }, [currentTex, prevTex]);
 
-  // Đặt lại opacity = 0 ngay trước khi trình duyệt vẽ frame đầu tiên của ảnh mới
-  React.useLayoutEffect(() => {
-    if (materialRef.current) {
-      materialRef.current.opacity = 0;
-    }
-  }, [currentImage]);
-
   useFrame((_, delta) => {
-    if (materialRef.current) {
-      if (materialRef.current.opacity < 1) {
-        // Tốc độ crossfade (delta * 2 = 0.5s)
-        materialRef.current.opacity = THREE.MathUtils.lerp(materialRef.current.opacity, 1, delta * 2);
-      }
+    const safeDelta = Math.min(delta, 0.1);
+    
+    if (materialRef.current && materialRef.current.opacity < 1) {
+      // Tốc độ crossfade (giới hạn an toàn delta để nếu bị lag nhẹ cũng không bị nhảy khung hình mất hiệu ứng)
+      materialRef.current.opacity += safeDelta * 1.5; // Dùng cộng tuyến tính cho mượt thay vì lerp
+      if (materialRef.current.opacity > 1) materialRef.current.opacity = 1;
+    }
+
+    if (meshRef.current && Math.abs(meshRef.current.rotation.y) > 0.001) {
+      // Hiệu ứng xoay mượt (lerp) về 0
+      meshRef.current.rotation.y = THREE.MathUtils.lerp(meshRef.current.rotation.y, 0, safeDelta * 4);
     }
   });
 
@@ -143,21 +158,19 @@ const PanoramaSphere = React.memo(({ image }: { image: string }) => {
       onPointerOut={isDebugMode ? handlePointerUp : undefined}
     >
       {/* Background Sphere (Ảnh cũ) */}
-      {prevImage && (
-        <mesh renderOrder={-101} scale={[-1, 1, 1]}>
-          <sphereGeometry args={[500, 128, 128]} />
-          <meshBasicMaterial 
-            map={prevTex} 
-            side={THREE.BackSide} 
-            depthWrite={false}
-            toneMapped={false}
-            color={[1.1, 1.1, 1.1]} 
-          />
-        </mesh>
-      )}
+      <mesh renderOrder={-101} scale={[-1, 1, 1]} visible={!!prevImage}>
+        <sphereGeometry args={[500, 128, 128]} />
+        <meshBasicMaterial 
+          map={prevTex || currentTex} 
+          side={THREE.BackSide} 
+          depthWrite={false}
+          toneMapped={false}
+          color={[1.1, 1.1, 1.1]} 
+        />
+      </mesh>
 
-      {/* Foreground Sphere (Ảnh mới - Fading in) */}
-      <mesh renderOrder={-100} scale={[-1, 1, 1]}>
+      {/* Foreground Sphere (Ảnh mới - Fading in & Spinning) */}
+      <mesh ref={meshRef} renderOrder={-100} scale={[-1, 1, 1]}>
         <sphereGeometry args={[500, 128, 128]} />
         <meshBasicMaterial 
           ref={materialRef}
@@ -233,8 +246,7 @@ const Controls = () => {
 
   useFrame(() => {
     if (controlsRef.current) {
-      controlsRef.current.autoRotate = autoRotate;
-      controlsRef.current.autoRotateSpeed = 0.5;
+      controlsRef.current.update();
     }
     const perspectiveCamera = camera as THREE.PerspectiveCamera;
     if (Math.abs(perspectiveCamera.fov - targetFov.current) > 0.01) {
@@ -244,84 +256,120 @@ const Controls = () => {
   });
 
   return (
-    <OrbitControls
+    <OrbitControls 
       ref={controlsRef}
-      enableZoom={false}
+      enableZoom={false} 
       enablePan={false}
       enableDamping={true}
       dampingFactor={0.05}
-      rotateSpeed={-0.6}
+      rotateSpeed={-0.5}
+      autoRotate={autoRotate}
+      autoRotateSpeed={0.5}
       minPolarAngle={0} 
-      maxPolarAngle={Math.PI} 
+      maxPolarAngle={Math.PI}
+      makeDefault
       enabled={!draggedHotspotId}
     />
   );
 };
 
-const TexturePreloader = ({ sceneId, onLoaded }: { sceneId: string, onLoaded: () => void }) => {
-  const scene = mockScenes.find(s => s.id === sceneId);
-  useTexture(scene?.image || mockScenes[0].image);
+const PreloadMesh = ({ url }: { url: string }) => {
+  const tex = useTexture(url);
+  const { gl } = useThree();
   
   useEffect(() => {
-    onLoaded();
-  }, [sceneId, onLoaded]);
-
-  return null;
+    if (tex && tex.anisotropy !== 16) {
+      tex.colorSpace = THREE.SRGBColorSpace;
+      tex.anisotropy = 16;
+      tex.minFilter = THREE.LinearMipmapLinearFilter;
+      tex.magFilter = THREE.LinearFilter;
+      tex.generateMipmaps = true;
+      tex.needsUpdate = true;
+      gl.initTexture(tex);
+    }
+  }, [gl, tex]);
+  
+  return (
+    <mesh visible={false}>
+      <planeGeometry args={[0.1, 0.1]} />
+      <meshBasicMaterial map={tex} />
+    </mesh>
+  );
 };
 
-export const PanoramaViewer: React.FC = () => {
-  const currentSceneId = usePanoramaStore(state => state.currentSceneId);
-  const setAutoRotate = usePanoramaStore(state => state.setAutoRotate);
+const GPUPreloader = () => {
+  const [start, setStart] = useState(false);
   
+  useEffect(() => {
+    const t = setTimeout(() => setStart(true), 1500);
+    return () => clearTimeout(t);
+  }, []);
+
+  if (!start) return null;
+
+  return (
+    <Suspense fallback={null}>
+      <group visible={false}>
+        {mockScenes.map((scene, i) => {
+          if (i === 0) return null; // Bỏ qua ảnh đầu
+          return <PreloadMesh key={scene.id} url={scene.image} />
+        })}
+      </group>
+    </Suspense>
+  );
+};
+
+const PanoramaScene = () => {
+  const currentSceneId = usePanoramaStore(state => state.currentSceneId);
   const [deferredSceneId, setDeferredSceneId] = useState(currentSceneId);
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isPending, startTransition] = useTransition();
   const [showHotspots, setShowHotspots] = useState(false);
 
   useEffect(() => {
     if (currentSceneId !== deferredSceneId) {
       setShowHotspots(false);
-      setIsTransitioning(true);
+      // Sử dụng startTransition để báo cho React biết đây là một cập nhật ngầm.
+      // Nếu useTexture(newScene) bị suspend (chưa load kịp), React sẽ không fallback ra Suspense gốc làm đen màn hình,
+      // mà vẫn tiếp tục giữ nguyên giao diện cảnh cũ hiện tại cho đến khi ảnh mới load xong rồi mới commit!
+      startTransition(() => {
+        setDeferredSceneId(currentSceneId);
+      });
     }
   }, [currentSceneId, deferredSceneId]);
 
-  const handleTextureLoaded = React.useCallback(() => {
-    if (isTransitioning) {
-      setDeferredSceneId(currentSceneId);
-      // Giữ blur overlay một khoảnh khắc rất ngắn để che lúc WebGL bắt đầu swap texture
-      setTimeout(() => setIsTransitioning(false), 50);
-      setTimeout(() => setShowHotspots(true), 300);
-    }
-  }, [isTransitioning, currentSceneId]);
-
-  // Hiện hotspot khi load lần đầu tiên
   useEffect(() => {
-    if (currentSceneId === deferredSceneId && !isTransitioning && !showHotspots) {
-      setShowHotspots(true);
+    if (!isPending && currentSceneId === deferredSceneId) {
+      const timer = setTimeout(() => setShowHotspots(true), 300);
+      return () => clearTimeout(timer);
     }
-  }, [currentSceneId, deferredSceneId, isTransitioning, showHotspots]);
+  }, [isPending, currentSceneId, deferredSceneId]);
 
   const currentScene = mockScenes.find((s) => s.id === deferredSceneId) || mockScenes[0];
 
   return (
-    <div className="absolute inset-0 w-full h-full z-0 bg-gray-950 cursor-grab active:cursor-grabbing">
-      {/* Smooth Transition Overlay (Màn hình chờ tải dạng kính mờ) */}
-      <AnimatePresence>
-        {isTransitioning && (
-          <motion.div 
-            initial={{ opacity: 0, backdropFilter: 'blur(0px)' }}
-            animate={{ opacity: 1, backdropFilter: 'blur(40px)' }}
-            exit={{ opacity: 0, backdropFilter: 'blur(0px)' }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="absolute inset-0 z-50 pointer-events-none bg-white/5"
-          >
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-12 h-12 rounded-full border-4 border-white/20 border-t-white animate-spin shadow-[0_0_20px_rgba(255,255,255,0.5)]"></div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+    <>
+      <PanoramaSphere image={currentScene.image} />
+      
+      {/* Sa bàn mặt bằng 3D đặt ở dưới chân - Chỉ hiện ở cảnh đầu tiên */}
+      {currentScene.id === 'scene-1' && <FloorPlanNadir />}
+      
+      {showHotspots && currentScene.hotspots && [...currentScene.hotspots]
+        .sort((a, b) => a.position[1] - b.position[1]) // Sort by Y ascending to fix line overlaps via DOM order
+        .map((hotspot) => (
+        <HotspotNode key={hotspot.id} hotspot={hotspot} />
+      ))}
+      
+      <Controls />
+      <GPUPreloader />
+    </>
+  );
+};
 
-      <ErrorBoundary>
+export const PanoramaViewer: React.FC = () => {
+  const setAutoRotate = usePanoramaStore(state => state.setAutoRotate);
+  
+  return (
+    <div className="absolute inset-0 w-full h-full z-0 bg-gray-950 cursor-grab active:cursor-grabbing">      <ErrorBoundary>
         <Canvas 
           camera={{ position: [0, 0, 0.1], fov: 75 }} 
           gl={{ powerPreference: 'high-performance', antialias: false }}
@@ -329,25 +377,7 @@ export const PanoramaViewer: React.FC = () => {
           onPointerDown={() => setAutoRotate(false)}
         >
           <Suspense fallback={null}>
-            <PanoramaSphere image={currentScene.image} />
-            
-            {/* Sa bàn mặt bằng 3D đặt ở dưới chân - Chỉ hiện ở cảnh đầu tiên */}
-            {currentScene.id === 'scene-1' && <FloorPlanNadir />}
-            
-            {showHotspots && currentScene.hotspots && [...currentScene.hotspots]
-              .sort((a, b) => a.position[1] - b.position[1]) // Sort by Y ascending to fix line overlaps via DOM order
-              .map((hotspot) => (
-              <HotspotNode key={hotspot.id} hotspot={hotspot} />
-            ))}
-            
-            <Controls />
-
-            {/* Trình tải trước Texture chạy ngầm để không làm đen màn hình */}
-            {isTransitioning && currentSceneId !== deferredSceneId && (
-              <Suspense fallback={null}>
-                <TexturePreloader sceneId={currentSceneId} onLoaded={handleTextureLoaded} />
-              </Suspense>
-            )}
+            <PanoramaScene />
           </Suspense>
 
           <AdaptiveDpr pixelated />
