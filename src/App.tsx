@@ -1,10 +1,11 @@
 import React, { Suspense } from 'react';
-import { PanoramaViewer } from './components/panorama/PanoramaViewer';
+// import { PanoramaViewer } from './components/panorama/PanoramaViewer';
+import { LoadingScreen } from './components/ui/LoadingScreen';
 import { FloatingMenu } from './components/ui/FloatingMenu';
 import { RightToolbar } from './components/ui/RightToolbar';
 import { useUIStore } from './store/useUIStore';
-import { AnimatePresence } from 'framer-motion';
-// const DebugPanel = React.lazy(() => import('./components/panorama/DebugPanel').then(module => ({ default: module.DebugPanel })));
+import { useTransition, animated } from '@react-spring/web';
+const PanoramaViewer = React.lazy(() => import('./components/panorama/PanoramaViewer').then(m => ({ default: m.PanoramaViewer })));
 const OverviewModal = React.lazy(() => import('./components/modals/OverviewModal').then(module => ({ default: module.OverviewModal })));
 const FloorPlanModal = React.lazy(() => import('./components/modals/FloorPlanModal').then(module => ({ default: module.FloorPlanModal })));
 const GalleryModal = React.lazy(() => import('./components/modals/GalleryModal').then(module => ({ default: module.GalleryModal })));
@@ -16,11 +17,20 @@ const LeadForm = React.lazy(() => import('./components/ui/LeadForm').then(module
 
 function App() {
   const { activeModal } = useUIStore();
+  
+  const transitions = useTransition(activeModal, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    config: { tension: 300, friction: 30 }
+  });
 
   return (
     <div className="w-screen h-screen overflow-hidden relative bg-gray-950 text-white font-sans selection:bg-gold-500/30 select-none">
       {/* 360 Viewer Background layer */}
-      <PanoramaViewer />
+      <Suspense fallback={<LoadingScreen />}>
+        <PanoramaViewer />
+      </Suspense>
 
       {/* No Header */}
 
@@ -30,15 +40,20 @@ function App() {
 
       {/* Modals layer - Lazy Loaded */}
       <Suspense fallback={null}>
-        <AnimatePresence mode="wait">
-          {activeModal === 'overview' && <OverviewModal key="overview" />}
-          {activeModal === 'floorplan' && <FloorPlanModal key="floorplan" />}
-          {activeModal === 'video' && <VideoModal key="video" />}
-          {activeModal === 'gallery' && <GalleryModal key="gallery" />}
-          {activeModal === 'map' && <MapModal key="map" />}
-          {activeModal === 'news' && <NewsModal key="news" />}
-          {activeModal === 'ultis' && <UltisModal key="ultis" />}
-        </AnimatePresence>
+        {transitions((style, item) => {
+          if (!item) return null;
+          return (
+            <animated.div style={style} className="fixed inset-0 z-50 pointer-events-none">
+              {item === 'overview' && <OverviewModal />}
+              {item === 'floorplan' && <FloorPlanModal />}
+              {item === 'video' && <VideoModal />}
+              {item === 'gallery' && <GalleryModal />}
+              {item === 'map' && <MapModal />}
+              {item === 'news' && <NewsModal />}
+              {item === 'ultis' && <UltisModal />}
+            </animated.div>
+          );
+        })}
         <LeadForm />
       </Suspense>
       

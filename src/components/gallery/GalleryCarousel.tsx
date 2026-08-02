@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useTransition, animated } from '@react-spring/web';
 import { playClick } from '../../utils/sound';
 
 interface GalleryCarouselProps {
@@ -32,21 +32,32 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedImageIndex, onClose, onNext, onPrev]);
 
+  const containerTransitions = useTransition(selectedImageIndex !== null, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    config: { duration: 300 }
+  });
+
+  const imageTransitions = useTransition(selectedImageIndex, {
+    from: { opacity: 0, scale: 0.95 },
+    enter: { opacity: 1, scale: 1 },
+    leave: { opacity: 0, scale: 1.05 },
+    config: { duration: 200 },
+    exitBeforeEnter: true
+  });
+
   return (
-    <AnimatePresence>
-      {selectedImageIndex !== null && (
-        <motion.div 
-          key="gallery-fullscreen-carousel"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
+    <>
+      {containerTransitions((style, show) => show && (
+        <animated.div 
+          style={style}
           className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-2xl"
         >
           {/* Top Bar */}
           <div className="absolute top-0 inset-x-0 p-6 flex justify-between items-center z-20 bg-gradient-to-b from-black/50 to-transparent">
             <span className="text-white/80 font-bold tracking-widest text-sm glass-panel !bg-white/10 !border-white/10 !text-white px-4 py-1.5 rounded-full">
-              {selectedImageIndex + 1} / {displayImages.length}
+              {(selectedImageIndex ?? 0) + 1} / {displayImages.length}
             </span>
             <button 
               onClick={() => { playClick(); onClose(); }}
@@ -73,23 +84,19 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
 
           {/* Main Image Container */}
           <div className="w-full h-full p-12 flex items-center justify-center" onClick={onClose}>
-            <AnimatePresence mode="wait">
-              <motion.img
-                key={selectedImageIndex}
-                src={displayImages[selectedImageIndex]}
+            {imageTransitions((imgStyle, index) => index !== null && (
+              <animated.img
+                src={displayImages[index]}
                 alt="Fullscreen view"
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 1.05 }}
-                transition={{ duration: 0.2 }}
-                className="max-w-full max-h-full object-contain drop-shadow-2xl rounded-xl z-10"
+                style={imgStyle}
+                className="max-w-full max-h-full object-contain drop-shadow-2xl rounded-xl z-10 absolute"
                 onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image itself
               />
-            </AnimatePresence>
+            ))}
           </div>
           
-        </motion.div>
-      )}
-    </AnimatePresence>
+        </animated.div>
+      ))}
+    </>
   );
 };

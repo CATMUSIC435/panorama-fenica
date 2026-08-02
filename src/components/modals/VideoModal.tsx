@@ -3,7 +3,7 @@ import { Modal } from '../ui/Modal';
 import { useTranslation } from 'react-i18next';
 import { playClick } from '../../utils/sound';
 import { ChevronLeft, ChevronRight, PlayCircle } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useTransition, animated } from '@react-spring/web';
 
 const VIDEO_IDS = [
   'oq1kr1-mFIo',
@@ -31,26 +31,34 @@ export const VideoModal: React.FC = () => {
 
   const activeVideoId = VIDEO_IDS[activeIndex];
 
+  const videoTransitions = useTransition(activeVideoId + (isPlaying ? '-playing' : '-thumb'), {
+    from: { opacity: 0, scale: 0.95 },
+    enter: { opacity: 1, scale: 1 },
+    leave: { opacity: 0, scale: 1.05 },
+    config: { duration: 300 },
+    exitBeforeEnter: true
+  });
+
   return (
     <Modal title={t('menu.video')} maxWidth="max-w-6xl">
       <div className="flex flex-col min-h-[75vh] gap-6 relative">
         {/* Main Video Carousel Area */}
         <div className="flex-1 relative overflow-hidden flex flex-col items-center justify-center bg-gray-900/90 backdrop-blur-md rounded-2xl border border-white/20 shadow-[inset_0_4px_24px_rgba(0,0,0,0.4)]">
           
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeVideoId + (isPlaying ? '-playing' : '-thumb')}
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 1.05 }}
-              transition={{ duration: 0.3 }}
+          {videoTransitions((style, item) => {
+            const isItemPlaying = item.endsWith('-playing');
+            const itemId = item.replace('-playing', '').replace('-thumb', '');
+            
+            return (
+            <animated.div
+              style={style}
               className="w-full h-full absolute inset-0 flex items-center justify-center"
             >
-              {isPlaying ? (
+              {isItemPlaying ? (
                 <iframe
                   width="100%"
                   height="100%"
-                  src={`https://www.youtube.com/embed/${activeVideoId}?autoplay=1&rel=0`}
+                  src={`https://www.youtube.com/embed/${itemId}?autoplay=1&rel=0`}
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -61,23 +69,21 @@ export const VideoModal: React.FC = () => {
               ) : (
                 <div className="w-full h-full relative group cursor-pointer" onClick={() => { playClick(); setIsPlaying(true); }}>
                   <img
-                    src={`https://img.youtube.com/vi/${activeVideoId}/maxresdefault.jpg`}
+                    src={`https://img.youtube.com/vi/${itemId}/maxresdefault.jpg`}
                     alt="Video Thumbnail"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="bg-accent/90 text-white rounded-full p-3 md:p-6 shadow-[0_0_30px_rgba(var(--tw-colors-accent),0.6)] backdrop-blur-md"
+                    <div
+                      className="bg-accent/90 text-white rounded-full p-3 md:p-6 shadow-[0_0_30px_rgba(var(--tw-colors-accent),0.6)] backdrop-blur-md transition-transform duration-300 hover:scale-110 active:scale-95"
                     >
                       <PlayCircle className="w-12 h-12 md:w-20 md:h-20" />
-                    </motion.div>
+                    </div>
                   </div>
                 </div>
               )}
-            </motion.div>
-          </AnimatePresence>
+            </animated.div>
+          )})}
 
           {/* Navigation Arrows */}
           <button

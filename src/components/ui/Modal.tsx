@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { animated, useSpring } from '@react-spring/web';
 import { useUIStore } from '../../store/useUIStore';
 import { X } from 'lucide-react';
 import { playClick } from '../../utils/sound';
@@ -18,28 +18,22 @@ export const Modal: React.FC<ModalProps> = ({ title, children, maxWidth = 'max-w
     closeModal();
   };
 
+  const springProps = useSpring({
+    from: { y: 30, scale: 0.95 },
+    to: { y: 0, scale: 1 },
+    config: { tension: 300, friction: 30 }
+  });
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-8 pointer-events-none">
       {/* Light overlay for the background */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
+      <div 
         className="absolute inset-0 glass-overlay pointer-events-auto"
         onClick={handleClose}
       />
       
-      <motion.div 
-        layout
-        initial={{ opacity: 0, y: 30, scale: 0.95 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        exit={{ opacity: 0, y: 20, scale: 0.95 }}
-        transition={{ 
-          type: "spring", 
-          stiffness: 300, 
-          damping: 30 
-        }}
+      <animated.div 
+        style={springProps}
         className={`relative w-[95vw] ${maxWidth} 2xl:max-w-[85vw] max-h-[96vh] md:max-h-[90vh] glass-panel rounded-2xl md:rounded-[2.5rem] overflow-hidden flex flex-col pointer-events-auto shadow-2xl`}
       >
         {title && (
@@ -67,7 +61,7 @@ export const Modal: React.FC<ModalProps> = ({ title, children, maxWidth = 'max-w
         <div className="overflow-y-auto px-2 py-2 md:px-8 md:py-5 flex-1 custom-scrollbar">
           {children}
         </div>
-      </motion.div>
+      </animated.div>
     </div>
   );
 };

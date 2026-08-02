@@ -3,7 +3,7 @@ import { useUIStore } from '../../store/useUIStore';
 import { usePanoramaStore } from '../../store/usePanoramaStore';
 import { mockScenes } from '../../data/mock';
 import { Info, Map, Layers, Image as ImageIcon, Newspaper, RefreshCcw, ChevronDown, Menu, X, PlaySquare } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useTransition, animated } from '@react-spring/web';
 import { useTranslation } from 'react-i18next';
 import { playClick, playPop } from '../../utils/sound';
 
@@ -31,12 +31,26 @@ export const FloatingMenu: React.FC = () => {
     i18n.changeLanguage(i18n.language.startsWith('en') ? 'vi' : 'en');
   };
 
+  const menuTransitions = useTransition(isMenuOpen, {
+    from: { opacity: 0, x: -20, scale: 0.95 },
+    enter: { opacity: 1, x: 0, scale: 1 },
+    leave: { opacity: 0, x: -20, scale: 0.95 },
+    config: { duration: 200 }
+  });
+
+  const sceneTransitions = useTransition(isSceneMenuOpen, {
+    from: { maxHeight: 0, opacity: 0 },
+    enter: { maxHeight: 500, opacity: 1 },
+    leave: { maxHeight: 0, opacity: 0 },
+    config: { duration: 200 }
+  });
+
   return (
     <div className="fixed top-4 left-4 md:top-6 md:left-6 z-40 flex flex-col gap-3">
       
       <div className="flex gap-2">
         {/* Toggle Menu Button */}
-        <motion.button 
+        <button 
           onClick={() => { playPop(); setIsMenuOpen(!isMenuOpen); }}
           className="flex items-center gap-2 px-3 py-2 md:px-4 md:py-2.5 glass-panel hover:bg-white/60 active:scale-95 transition-all self-start rounded-full backdrop-blur-3xl"
         >
@@ -44,24 +58,20 @@ export const FloatingMenu: React.FC = () => {
           <span className="font-bold tracking-widest text-[10px] md:text-xs uppercase text-primary">
             FENICA
           </span>
-        </motion.button>
+        </button>
 
         {/* Language Toggle */}
-        <motion.button 
+        <button 
           onClick={toggleLanguage}
           className="flex items-center justify-center px-2 py-2 md:px-3 md:py-2.5 glass-panel hover:bg-white/60 active:scale-95 transition-all self-start rounded-full backdrop-blur-3xl font-bold text-[10px] md:text-xs text-primary uppercase min-w-[36px] md:min-w-[44px]"
         >
           {i18n.language.substring(0, 2)}
-        </motion.button>
+        </button>
       </div>
 
-      <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div 
-            initial={{ opacity: 0, x: -20, scale: 0.95 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            exit={{ opacity: 0, x: -20, scale: 0.95 }}
-            transition={{ duration: 0.2 }}
+      {menuTransitions((style, show) => show && (
+          <animated.div 
+            style={style}
             className="flex flex-col gap-2 w-[230px] md:w-[260px]"
           >
             {/* Scene Selector */}
@@ -82,12 +92,9 @@ export const FloatingMenu: React.FC = () => {
                 <ChevronDown size={18} className={`text-secondary shrink-0 transition-transform duration-300 ${isSceneMenuOpen ? 'rotate-180' : ''}`} />
               </button>
 
-                <AnimatePresence>
-                  {isSceneMenuOpen && (
-                    <motion.div 
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
+                {sceneTransitions((sceneStyle, showScene) => showScene && (
+                    <animated.div 
+                      style={sceneStyle}
                       className="overflow-hidden"
                     >
                       <div className="pt-1 px-1 pb-1 space-y-1">
@@ -110,9 +117,8 @@ export const FloatingMenu: React.FC = () => {
                         </button>
                       ))}
                     </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+                    </animated.div>
+                ))}
             </div>
 
             {/* Main Features Section */}
@@ -135,9 +141,8 @@ export const FloatingMenu: React.FC = () => {
               ))}
             </div>
             
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </animated.div>
+        ))}
     </div>
   );
 };

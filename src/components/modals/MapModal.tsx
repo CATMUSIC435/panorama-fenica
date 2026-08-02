@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from '../ui/Modal';
 import { useTranslation } from 'react-i18next';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useTransition, useSpring, animated } from '@react-spring/web';
 // @ts-ignore
 import { MapComponent } from './MapComponent';
 import { playClick } from '../../utils/sound';
@@ -9,6 +9,33 @@ import { playClick } from '../../utils/sound';
 export const MapModal: React.FC = () => {
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<'mapbox' | 'svg'>('mapbox');
+
+  const tabTransitions = useTransition(activeTab, {
+    from: { opacity: 0, scale: 0.95 },
+    enter: { opacity: 1, scale: 1 },
+    leave: { opacity: 0, scale: 0.95 },
+    config: { duration: 400 },
+    exitBeforeEnter: true
+  });
+
+  const glowSpring = useSpring({
+    from: { scale: 1, opacity: 0.3 },
+    to: { scale: 1.2, opacity: 0.6 },
+    loop: { reverse: true },
+    config: { duration: 2000 }
+  });
+
+  const raySpring = useSpring({
+    from: { x: '-200%', opacity: 0 },
+    to: async (next) => {
+      while (true) {
+        await next({ x: '50%', opacity: 0.5, config: { duration: 2000 } });
+        await next({ x: '300%', opacity: 0, config: { duration: 2000 } });
+        await new Promise(r => setTimeout(r, 1000));
+        await next({ x: '-200%', opacity: 0, immediate: true });
+      }
+    }
+  });
 
   return (
     <Modal title={t('map.title')} maxWidth="max-w-7xl">
@@ -40,53 +67,36 @@ export const MapModal: React.FC = () => {
         </div>
 
         <div className="glass-card rounded-[2rem] overflow-hidden flex-1 relative p-0 border border-white/20 shadow-[inset_0_4px_24px_rgba(0,0,0,0.4)] bg-gray-900/90 flex items-center justify-center">
-          <AnimatePresence mode="wait">
-            {activeTab === 'mapbox' ? (
-              <motion.div
-                key="mapbox"
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.4 }}
+          {tabTransitions((style, tab) => 
+            tab === 'mapbox' ? (
+              <animated.div
+                style={style}
                 className="absolute inset-0"
               >
                 <MapComponent />
-              </motion.div>
+              </animated.div>
             ) : (
-              <motion.div 
-                key="svg"
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.5, ease: "easeOut" }}
+              <animated.div 
+                style={style}
                 className="w-full h-full relative flex items-center justify-center overflow-auto custom-scrollbar p-4 md:p-8"
               >
                 {/* Decorative Glowing Backdrop */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[2rem] flex items-center justify-center">
-                  <motion.div
-                    animate={{ 
-                      scale: [1, 1.2, 1],
-                      opacity: [0.3, 0.6, 0.3]
-                    }}
-                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  <animated.div
+                    style={glowSpring}
                     className="w-3/4 h-3/4 bg-accent/10 rounded-full blur-[80px]"
                   />
                 </div>
 
                 {/* Sweeping Light Ray Effect */}
                 <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[2rem]">
-                  <motion.div 
-                    animate={{ 
-                      x: ['-200%', '300%'],
-                      opacity: [0, 0.5, 0]
+                  <animated.div 
+                    style={{
+                      ...raySpring,
+                      // We need to keep the skew and translation. In react-spring, it's easier to combine.
+                      transform: raySpring.x.to(x => `translateX(${x}) translateY(-25%) skewX(30deg)`)
                     }}
-                    transition={{ 
-                      duration: 4, 
-                      repeat: Infinity,
-                      ease: "linear",
-                      repeatDelay: 1
-                    }}
-                    className="w-1/3 h-[150%] bg-gradient-to-r from-transparent via-white/10 to-transparent skew-x-[30deg] -translate-y-1/4"
+                    className="w-1/3 h-[150%] bg-gradient-to-r from-transparent via-white/10 to-transparent absolute top-0"
                   />
                 </div>
 
@@ -101,9 +111,9 @@ export const MapModal: React.FC = () => {
                     <img src="./assets/map-animated-clean.svg" alt="Project Map" className="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]" />
                   </object>
                 </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+              </animated.div>
+            )
+          )}
         </div>
       </div>
     </Modal>

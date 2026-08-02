@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo, useCallback } from 'react';
 import { Html } from '@react-three/drei';
 import * as THREE from 'three';
 import { usePanoramaStore } from '../../store/usePanoramaStore';
@@ -13,26 +13,26 @@ export const HotspotNode: React.FC<HotspotNodeProps> = React.memo(({ hotspot }) 
   const setCurrentSceneId = usePanoramaStore(state => state.setCurrentSceneId);
   const isDebugMode = usePanoramaStore(state => state.isDebugMode);
   const setDraggedHotspotId = usePanoramaStore(state => state.setDraggedHotspotId);
-  const hotspotOverrides = usePanoramaStore(state => state.hotspotOverrides);
+  const currentPosOverride = usePanoramaStore(state => state.hotspotOverrides[hotspot.id]);
 
-  const currentPos = hotspotOverrides[hotspot.id] || hotspot.position;
-  const positionVector = new THREE.Vector3(...currentPos);
+  const currentPos = currentPosOverride || hotspot.position;
+  const positionVector = useMemo(() => new THREE.Vector3(...currentPos), [currentPos]);
 
-  const handleClick = (e: React.MouseEvent) => {
+  const handleClick = useCallback((e: React.MouseEvent) => {
     if (isDebugMode) return;
     e.stopPropagation();
     playClick();
     if (hotspot.type === 'scene' && hotspot.targetSceneId) {
       setCurrentSceneId(hotspot.targetSceneId);
     }
-  };
+  }, [isDebugMode, hotspot, setCurrentSceneId]);
 
-  const handlePointerDown = (e: any) => {
+  const handlePointerDown = useCallback((e: any) => {
     if (isDebugMode) {
       e.stopPropagation();
       setDraggedHotspotId(hotspot.id);
     }
-  };
+  }, [isDebugMode, hotspot.id, setDraggedHotspotId]);
 
   return (
     <>

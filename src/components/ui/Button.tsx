@@ -1,8 +1,8 @@
 import React from 'react';
 import { cn } from '../../utils';
-import { motion, HTMLMotionProps } from 'framer-motion';
+import { animated, useSpring } from '@react-spring/web';
 
-interface ButtonProps extends HTMLMotionProps<"button"> {
+interface ButtonProps extends React.ComponentPropsWithoutRef<"button"> {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
   className?: string;
@@ -10,7 +10,7 @@ interface ButtonProps extends HTMLMotionProps<"button"> {
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ variant = 'primary', size = 'md', className, children, ...props }, ref) => {
+  ({ variant = 'primary', size = 'md', className, children, onMouseEnter, onMouseLeave, onMouseDown, onMouseUp, ...props }, ref) => {
     const baseStyles = "inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 disabled:pointer-events-none disabled:opacity-50";
     
     const variants = {
@@ -26,16 +26,27 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       lg: "h-14 px-8 text-lg",
     };
 
+    const [isHovered, setIsHovered] = React.useState(false);
+    const [isPressed, setIsPressed] = React.useState(false);
+
+    const springProps = useSpring({
+      scale: isPressed ? 0.98 : (isHovered ? 1.02 : 1),
+      config: { tension: 400, friction: 15 }
+    });
+
     return (
-      <motion.button
+      <animated.button
         ref={ref}
-        whileHover={{ scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
+        style={springProps}
+        onMouseEnter={(e) => { setIsHovered(true); onMouseEnter?.(e); }}
+        onMouseLeave={(e) => { setIsHovered(false); setIsPressed(false); onMouseLeave?.(e); }}
+        onMouseDown={(e) => { setIsPressed(true); onMouseDown?.(e); }}
+        onMouseUp={(e) => { setIsPressed(false); onMouseUp?.(e); }}
         className={cn(baseStyles, variants[variant], sizes[size], className)}
         {...props}
       >
         {children}
-      </motion.button>
+      </animated.button>
     );
   }
 );

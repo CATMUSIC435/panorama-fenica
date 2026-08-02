@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Map, { Marker, NavigationControl } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useTransition, animated } from '@react-spring/web';
 import { playClick, playPop } from '../../utils/sound';
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN || '';
@@ -18,6 +18,13 @@ export const MapComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const selectedStyle = MAP_STYLES.find(s => s.url === currentStyle);
+
+  const transitions = useTransition(isOpen, {
+    from: { opacity: 0, y: -10, scale: 0.95 },
+    enter: { opacity: 1, y: 0, scale: 1 },
+    leave: { opacity: 0, y: -10, scale: 0.95 },
+    config: { duration: 200 }
+  });
 
   return (
     <div className="absolute inset-0 w-full h-full bg-gray-100 flex items-center justify-center">
@@ -65,13 +72,9 @@ export const MapComponent = () => {
             </svg>
           </button>
           
-          <AnimatePresence>
-            {isOpen && (
-              <motion.div 
-                initial={{ opacity: 0, y: -10, scale: 0.95 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: -10, scale: 0.95 }}
-                transition={{ duration: 0.2 }}
+          {transitions((style, item) => item && (
+              <animated.div 
+                style={style}
                 className="absolute top-full left-0 mt-2 w-36 bg-white/95 backdrop-blur-xl rounded-lg border border-white/50 shadow-xl overflow-hidden py-1"
               >
                 {MAP_STYLES.map(style => (
@@ -96,9 +99,8 @@ export const MapComponent = () => {
                     {style.name}
                   </button>
                 ))}
-              </motion.div>
-            )}
-          </AnimatePresence>
+              </animated.div>
+            ))}
         </div>
       </div>
     </div>

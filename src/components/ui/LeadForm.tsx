@@ -1,28 +1,34 @@
 import React from 'react';
 import { useUIStore } from '../../store/useUIStore';
 import { X } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useTransition, animated, to } from '@react-spring/web';
 
 export const LeadForm: React.FC = () => {
   const { activeModal, closeModal } = useUIStore();
   const isOpen = activeModal === 'leadform';
 
+  const transitions = useTransition(isOpen, {
+    from: { overlayOpacity: 0, panelOpacity: 0, panelY: 50, panelScale: 0.95 },
+    enter: { overlayOpacity: 1, panelOpacity: 1, panelY: 0, panelScale: 1 },
+    leave: { overlayOpacity: 0, panelOpacity: 0, panelY: 20, panelScale: 0.95 },
+    config: { tension: 300, friction: 30 }
+  });
+
   return (
-    <AnimatePresence>
-      {isOpen && (
+    <>
+      {transitions((style, show) => show && (
         <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+          <animated.div 
+            style={{ opacity: style.overlayOpacity }}
             className="absolute inset-0 glass-overlay"
             onClick={closeModal}
           />
           
-          <motion.div 
-            initial={{ opacity: 0, y: 50, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
+          <animated.div 
+            style={{ 
+              opacity: style.panelOpacity,
+              transform: to([style.panelY, style.panelScale], (y, s) => `translateY(${y}px) scale(${s})`)
+            }}
             className="relative w-full max-w-md glass-panel rounded-3xl flex flex-col z-10"
           >
             <div className="flex justify-between items-center p-6 border-b border-black/5 bg-gradient-to-r from-black/5 to-transparent relative overflow-hidden">
@@ -98,9 +104,9 @@ export const LeadForm: React.FC = () => {
                 </button>
               </div>
             </form>
-          </motion.div>
+            </animated.div>
         </div>
-      )}
-    </AnimatePresence>
+      ))}
+    </>
   );
 };

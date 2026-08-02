@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Maximize, Minimize, Music, Music2, RefreshCcw, Globe, MapPinned, X, Settings2 } from 'lucide-react';
 import { usePanoramaStore } from '../../store/usePanoramaStore';
 import { playClick, playPop } from '../../utils/sound';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useTransition, animated } from '@react-spring/web';
 
 export const RightToolbar: React.FC = () => {
   const { autoRotate, setAutoRotate } = usePanoramaStore();
@@ -66,115 +66,106 @@ export const RightToolbar: React.FC = () => {
     return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
   }, []);
 
-  // Animation variants for the staggered children
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: { staggerChildren: 0.05, staggerDirection: -1 }
-    },
-    exit: {
-      opacity: 0,
-      transition: { staggerChildren: 0.05, staggerDirection: 1 }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, scale: 0.5, y: 20 },
-    show: { opacity: 1, scale: 1, y: 0 },
-    exit: { opacity: 0, scale: 0.5, y: 20 }
-  };
+  const transitions = useTransition(isOpen ? [1, 2, 3, 4, 5] : [], {
+    keys: item => item,
+    from: { opacity: 0, scale: 0.5, y: 20 },
+    enter: { opacity: 1, scale: 1, y: 0 },
+    leave: { opacity: 0, scale: 0.5, y: 20 },
+    trail: 50,
+  });
 
   return (
     <div className="fixed right-4 bottom-4 md:right-8 md:bottom-8 z-40 flex flex-col items-center gap-3">
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div 
-            variants={containerVariants}
-            initial="hidden"
-            animate="show"
-            exit="exit"
-            className="flex flex-col gap-3"
-          >
-            {/* Website Link */}
-            <motion.button
-              variants={itemVariants}
-              onClick={() => { playClick(); window.open('https://fenica.vn', '_blank'); setIsOpen(false); }}
-              className="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg group relative active:scale-90 glass-panel hover:bg-white/60 text-primary border border-transparent"
-              aria-label="Website Fenica"
-            >
-              <Globe size={16} />
-              <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 glass-panel !bg-black/70 !text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap hidden md:block">
-                Truy cập Website
-              </div>
-            </motion.button>
-
-            {/* Google Maps Link */}
-            <motion.button
-              variants={itemVariants}
-              onClick={() => { playClick(); window.open('https://maps.app.goo.gl/ShWcuMTA8fTHxW6F6', '_blank'); setIsOpen(false); }}
-              className="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg group relative active:scale-90 glass-panel hover:bg-white/60 text-primary border border-transparent"
-              aria-label="Google Maps"
-            >
-              <MapPinned size={16} />
-              <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 glass-panel !bg-black/70 !text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap hidden md:block">
-                Bản đồ Google Maps
-              </div>
-            </motion.button>
-
-            {/* Background Music Toggle */}
-            <motion.button
-              variants={itemVariants}
-              onClick={toggleMusic}
-              className={`w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg group relative active:scale-90 ${
-                isPlayingMusic 
-                  ? 'glass-panel !bg-white/80 text-accent border border-accent/30' 
-                  : 'glass-panel hover:bg-white/60 text-primary border border-transparent'
-              }`}
-              aria-label="Toggle Background Music"
-            >
-              {isPlayingMusic ? <Music size={16} className="animate-pulse" /> : <Music2 size={16} />}
-              
-              {/* Tooltip */}
-              <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 glass-panel !bg-black/70 !text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap hidden md:block">
-                {isPlayingMusic ? 'Tắt nhạc nền' : 'Bật nhạc nền'}
-              </div>
-            </motion.button>
-
-            {/* Auto Rotate Toggle */}
-            <motion.button
-              variants={itemVariants}
-              onClick={toggleAutoRotate}
-              className={`w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg group relative active:scale-90 ${
-                autoRotate 
-                  ? 'glass-panel !bg-white/80 text-accent border border-accent/30' 
-                  : 'glass-panel hover:bg-white/60 text-primary border border-transparent'
-              }`}
-              aria-label="Toggle Auto Rotate"
-            >
-              <RefreshCcw size={16} className={autoRotate ? "animate-spin-slow" : ""} />
-              
-              <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 glass-panel !bg-black/70 !text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap hidden md:block">
-                {autoRotate ? 'Dừng xoay tự động' : 'Bật xoay tự động'}
-              </div>
-            </motion.button>
-
-            {/* Fullscreen Toggle */}
-            <motion.button
-              variants={itemVariants}
-              onClick={toggleFullscreen}
-              className="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg group relative active:scale-90 glass-panel hover:bg-white/60 text-primary border border-transparent"
-              aria-label="Toggle Fullscreen"
-            >
-              {isFullscreen ? <Minimize size={16} /> : <Maximize size={16} />}
-              
-              <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 glass-panel !bg-black/70 !text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap hidden md:block">
-                {isFullscreen ? 'Thu nhỏ' : 'Toàn màn hình'}
-              </div>
-            </motion.button>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <div className="flex flex-col gap-3">
+        {transitions((style, item) => {
+          switch (item) {
+            case 1:
+              return (
+                <animated.button
+                  style={style}
+                  onClick={() => { playClick(); window.open('https://fenica.vn', '_blank'); setIsOpen(false); }}
+                  className="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg group relative active:scale-90 glass-panel hover:bg-white/60 text-primary border border-transparent"
+                  aria-label="Website Fenica"
+                >
+                  <Globe size={16} />
+                  <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 glass-panel !bg-black/70 !text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap hidden md:block">
+                    Truy cập Website
+                  </div>
+                </animated.button>
+              );
+            case 2:
+              return (
+                <animated.button
+                  style={style}
+                  onClick={() => { playClick(); window.open('https://maps.app.goo.gl/ShWcuMTA8fTHxW6F6', '_blank'); setIsOpen(false); }}
+                  className="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg group relative active:scale-90 glass-panel hover:bg-white/60 text-primary border border-transparent"
+                  aria-label="Google Maps"
+                >
+                  <MapPinned size={16} />
+                  <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 glass-panel !bg-black/70 !text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap hidden md:block">
+                    Bản đồ Google Maps
+                  </div>
+                </animated.button>
+              );
+            case 3:
+              return (
+                <animated.button
+                  style={style}
+                  onClick={toggleMusic}
+                  className={`w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg group relative active:scale-90 ${
+                    isPlayingMusic 
+                      ? 'glass-panel !bg-white/80 text-accent border border-accent/30' 
+                      : 'glass-panel hover:bg-white/60 text-primary border border-transparent'
+                  }`}
+                  aria-label="Toggle Background Music"
+                >
+                  {isPlayingMusic ? <Music size={16} className="animate-pulse" /> : <Music2 size={16} />}
+                  
+                  {/* Tooltip */}
+                  <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 glass-panel !bg-black/70 !text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap hidden md:block">
+                    {isPlayingMusic ? 'Tắt nhạc nền' : 'Bật nhạc nền'}
+                  </div>
+                </animated.button>
+              );
+            case 4:
+              return (
+                <animated.button
+                  style={style}
+                  onClick={toggleAutoRotate}
+                  className={`w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg group relative active:scale-90 ${
+                    autoRotate 
+                      ? 'glass-panel !bg-white/80 text-accent border border-accent/30' 
+                      : 'glass-panel hover:bg-white/60 text-primary border border-transparent'
+                  }`}
+                  aria-label="Toggle Auto Rotate"
+                >
+                  <RefreshCcw size={16} className={autoRotate ? "animate-spin-slow" : ""} />
+                  
+                  <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 glass-panel !bg-black/70 !text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap hidden md:block">
+                    {autoRotate ? 'Dừng xoay tự động' : 'Bật xoay tự động'}
+                  </div>
+                </animated.button>
+              );
+            case 5:
+              return (
+                <animated.button
+                  style={style}
+                  onClick={toggleFullscreen}
+                  className="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg group relative active:scale-90 glass-panel hover:bg-white/60 text-primary border border-transparent"
+                  aria-label="Toggle Fullscreen"
+                >
+                  {isFullscreen ? <Minimize size={16} /> : <Maximize size={16} />}
+                  
+                  <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 glass-panel !bg-black/70 !text-white text-xs font-medium rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap hidden md:block">
+                    {isFullscreen ? 'Thu nhỏ' : 'Toàn màn hình'}
+                  </div>
+                </animated.button>
+              );
+            default:
+              return null;
+          }
+        })}
+      </div>
 
       {/* Main Toggle Button */}
       <button
