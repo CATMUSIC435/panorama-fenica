@@ -8,11 +8,31 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          'vendor-react': ['react', 'react-dom'],
-          'vendor-three': ['three', '@react-three/fiber', '@react-three/drei'],
-          'vendor-ui': ['@react-spring/web', 'lucide-react', 'zustand'],
-          'vendor-heavy': ['mapbox-gl', 'react-map-gl', 'recharts']
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('mapbox-gl') || id.includes('react-map-gl')) {
+              return 'vendor-map';
+            }
+            if (id.includes('recharts') || id.includes('d3')) {
+              return 'vendor-charts';
+            }
+            if (id.includes('three') || id.includes('three-stdlib')) {
+              return 'vendor-three';
+            }
+            if (id.includes('@react-three')) {
+              return 'vendor-react-three';
+            }
+            if (id.includes('lucide')) {
+              return 'vendor-icons';
+            }
+            if (id.includes('@react-spring')) {
+              return 'vendor-spring';
+            }
+            if (id.includes('react') || id.includes('react-dom')) {
+              return 'vendor-react';
+            }
+            return 'vendor-core';
+          }
         }
       }
     },

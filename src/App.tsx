@@ -1,11 +1,10 @@
 import React, { Suspense } from 'react';
-// import { PanoramaViewer } from './components/panorama/PanoramaViewer';
-import { LoadingScreen } from './components/ui/LoadingScreen';
+import { GlobalLoader } from './components/ui/GlobalLoader';
 import { FloatingMenu } from './components/ui/FloatingMenu';
 import { RightToolbar } from './components/ui/RightToolbar';
 import { useUIStore } from './store/useUIStore';
 import { useTransition, animated } from '@react-spring/web';
-import { DebugPanel } from './components/panorama/DebugPanel';
+import { Leva } from 'leva';
 const PanoramaViewer = React.lazy(() => import('./components/panorama/PanoramaViewer').then(m => ({ default: m.PanoramaViewer })));
 const OverviewModal = React.lazy(() => import('./components/modals/OverviewModal').then(module => ({ default: module.OverviewModal })));
 const FloorPlanModal = React.lazy(() => import('./components/modals/FloorPlanModal').then(module => ({ default: module.FloorPlanModal })));
@@ -28,8 +27,10 @@ function App() {
 
   return (
     <div className="w-screen h-screen overflow-hidden relative bg-gray-950 text-white font-sans selection:bg-gold-500/30 select-none">
+      <GlobalLoader />
+      
       {/* 360 Viewer Background layer */}
-      <Suspense fallback={<LoadingScreen />}>
+      <Suspense fallback={null}>
         <PanoramaViewer />
       </Suspense>
 
@@ -58,10 +59,8 @@ function App() {
         <LeadForm />
       </Suspense>
       
-      {/* Debug Layer */}
-      <Suspense fallback={null}>
-        <DebugPanel />
-      </Suspense>
+      {/* Hide Leva globally */}
+      <Leva hidden />
     </div>
   );
 }

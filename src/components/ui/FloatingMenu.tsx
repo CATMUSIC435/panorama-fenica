@@ -11,7 +11,7 @@ export const FloatingMenu: React.FC = () => {
   const { t, i18n } = useTranslation();
   const { openModal, activeModal } = useUIStore();
   const { currentSceneId, setCurrentSceneId } = usePanoramaStore();
-  const [isMenuOpen, setIsMenuOpen] = useState(() => window.innerWidth > 768);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSceneMenuOpen, setIsSceneMenuOpen] = useState(false);
 
   const currentScene = mockScenes.find(s => s.id === currentSceneId);

@@ -1,6 +1,6 @@
 import React, { Suspense, useRef, useState, useEffect, useMemo, useTransition } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { OrbitControls, useTexture, AdaptiveDpr, AdaptiveEvents, Html, TransformControls } from '@react-three/drei';
+import { OrbitControls, useTexture, AdaptiveDpr, AdaptiveEvents, Html, TransformControls, useGLTF } from '@react-three/drei';
 import { useControls } from 'leva';
 import * as THREE from 'three';
 import { usePanoramaStore } from '../../store/usePanoramaStore';
@@ -423,22 +423,31 @@ const PreloadMesh = ({ url }: { url: string }) => {
 };
 
 const GPUPreloader = () => {
+  const [currentIndex, setCurrentIndex] = useState(1);
   const [start, setStart] = useState(false);
   
   useEffect(() => {
-    const t = setTimeout(() => setStart(true), 1500);
+    // Delay preloading by 5 seconds to ensure initial entrance is completely smooth
+    const t = setTimeout(() => setStart(true), 5000);
     return () => clearTimeout(t);
   }, []);
+
+  useEffect(() => {
+    if (start && currentIndex < mockScenes.length) {
+      // Stagger GPU texture upload every 2 seconds to prevent main thread freeze
+      const t = setTimeout(() => setCurrentIndex(prev => prev + 1), 2000);
+      return () => clearTimeout(t);
+    }
+  }, [start, currentIndex]);
 
   if (!start) return null;
 
   return (
     <Suspense fallback={null}>
       <group visible={false}>
-        {mockScenes.map((scene, i) => {
-          if (i === 0) return null; // Bỏ qua ảnh đầu
-          return <PreloadMesh key={scene.id} url={scene.image} />
-        })}
+        {mockScenes.slice(1, currentIndex).map((scene) => (
+          <PreloadMesh key={scene.id} url={scene.image} />
+        ))}
       </group>
     </Suspense>
   );
@@ -475,6 +484,14 @@ const PanoramaScene = () => {
   const sceneLines = currentScene.lines || [];
   const overridenLines = linesOverrides[deferredSceneId] || [];
   const allLines = [...sceneLines, ...overridenLines];
+
+  // Kích hoạt preload cả Texture và GLTF ngay khi render,
+  // giúp LoadingManager gom chung tiến trình, tránh bị load 2 nhịp.
+  useTexture.preload(currentScene.panorama);
+  useTexture.preload('./assets/images/plans/mau-mat-bang-tang-03.png'); // Tránh khựng lúc hiện floor plan
+  if (currentScene.models) {
+    currentScene.models.forEach(model => useGLTF.preload(model.url));
+  }
 
   return (
     <>
@@ -517,7 +534,7 @@ export const PanoramaViewer: React.FC = () => {
     <div className="absolute inset-0 w-full h-full z-0 bg-gray-950 cursor-grab active:cursor-grabbing">      <ErrorBoundary>
         <Canvas 
           camera={{ position: [0, 0, 0.1], fov: 75 }} 
-          gl={{ powerPreference: 'high-performance', antialias: false }}
+          gl={{ powerPreference: 'high-performance', antialias: true }}
           dpr={[1, 2]}
           onPointerDown={() => setAutoRotate(false)}
         >
