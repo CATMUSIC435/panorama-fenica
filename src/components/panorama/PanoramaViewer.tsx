@@ -487,7 +487,7 @@ const PanoramaScene = () => {
 
   // Kích hoạt preload cả Texture và GLTF ngay khi render,
   // giúp LoadingManager gom chung tiến trình, tránh bị load 2 nhịp.
-  useTexture.preload(currentScene.panorama);
+  useTexture.preload(currentScene.image);
   useTexture.preload('./assets/images/plans/mau-mat-bang-tang-03.png'); // Tránh khựng lúc hiện floor plan
   if (currentScene.models) {
     currentScene.models.forEach(model => useGLTF.preload(model.url));
