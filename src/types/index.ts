@@ -20,12 +20,30 @@ export interface Hotspot {
   unitCode?: string; // For 'unit' type
   lineHeight?: number; // Custom line height in pixels to avoid overlap
 }
+export interface PanoramaLine {
+  id: string;
+  points: [number, number, number][]; // Array of [x, y, z] coordinates
+  color?: string;
+  dashed?: boolean;
+  animated?: boolean;
+  label?: string; // 3D Text label for the line
+}
+
+export interface SceneModel {
+  id: string;
+  url: string;
+  position: [number, number, number];
+  rotation: [number, number, number];
+  scale: [number, number, number];
+}
 
 export interface Scene {
   id: string;
   name: string;
   image: string; // URL to equirectangular image
   hotspots: Hotspot[];
+  lines?: PanoramaLine[];
+  models?: SceneModel[];
 }
 
 export interface Unit {

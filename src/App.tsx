@@ -5,6 +5,7 @@ import { FloatingMenu } from './components/ui/FloatingMenu';
 import { RightToolbar } from './components/ui/RightToolbar';
 import { useUIStore } from './store/useUIStore';
 import { useTransition, animated } from '@react-spring/web';
+import { DebugPanel } from './components/panorama/DebugPanel';
 const PanoramaViewer = React.lazy(() => import('./components/panorama/PanoramaViewer').then(m => ({ default: m.PanoramaViewer })));
 const OverviewModal = React.lazy(() => import('./components/modals/OverviewModal').then(module => ({ default: module.OverviewModal })));
 const FloorPlanModal = React.lazy(() => import('./components/modals/FloorPlanModal').then(module => ({ default: module.FloorPlanModal })));
@@ -58,9 +59,9 @@ function App() {
       </Suspense>
       
       {/* Debug Layer */}
-      {/* <Suspense fallback={null}>
+      <Suspense fallback={null}>
         <DebugPanel />
-      </Suspense> */}
+      </Suspense>
     </div>
   );
 }
