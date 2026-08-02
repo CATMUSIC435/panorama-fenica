@@ -145,7 +145,7 @@ export const mockScenes: Scene[] = [
     models: [
       {
         id: 'model-project',
-        url: './assets/project-opt.glb',
+        url: './assets/project-draco.glb',
         position: [-73.0, -268.0, -175.0],
         rotation: [0, -1.55, 0],
         scale: [0.2, 0.2, 0.2]
