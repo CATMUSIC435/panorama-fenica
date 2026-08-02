@@ -56,11 +56,10 @@ export const HotspotNode: React.FC<HotspotNodeProps> = React.memo(({ hotspot }) 
             }
           }}
         >
-          {/* Pulsing Dot */}
+          {/* Pulsing Dot (3-ring ripple) */}
           <div className="absolute flex items-center justify-center z-10 will-change-transform">
-            <div className="absolute w-2 h-2 md:w-3 md:h-3 2xl:w-5 2xl:h-5 bg-white/40 rounded-full animate-ping will-change-transform"></div>
-            <div className="absolute w-1.5 h-1.5 md:w-2 md:h-2 2xl:w-3 2xl:h-3 bg-white/60 rounded-full animate-pulse will-change-transform"></div>
-            <div className="w-[3px] h-[3px] md:w-1 md:h-1 2xl:w-2 2xl:h-2 bg-white rounded-full shadow-[0_0_10px_rgba(255,255,255,1)] relative transition-transform duration-300 group-hover:scale-150 will-change-transform"></div>
+            <div className="panorama-ripple"><span></span></div>
+            <div className="w-[3px] h-[3px] md:w-1 md:h-1 2xl:w-2 2xl:h-2 bg-white rounded-full shadow-[0_0_10px_rgba(255,255,255,1)] relative transition-transform duration-300 group-hover:scale-150 will-change-transform z-20"></div>
           </div>
 
           {/* Vertical Line */}

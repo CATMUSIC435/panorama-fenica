@@ -102,3 +102,97 @@
 .wp-content ol { @apply list-decimal; }
 .wp-content figure { @apply m-0; }
 .wp-content figcaption { @apply text-center text-sm text-secondary mt-2 italic; }
+
+/* Floor Plan Marker Animations */
+.ripple-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.ripple-container::before,
+.ripple-container::after,
+.ripple-container span {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 122, 255, 0.5);
+  animation: ripple 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.ripple-container::after {
+  animation-delay: 0.6s;
+}
+
+.ripple-container span {
+  animation-delay: 1.2s;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* Panorama Ripple Animations (White) */
+.panorama-ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.panorama-ripple::before,
+.panorama-ripple::after,
+.panorama-ripple span {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  animation: ripple-white 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.panorama-ripple::after {
+  animation-delay: 0.6s;
+}
+
+.panorama-ripple span {
+  animation-delay: 1.2s;
+}
+
+@keyframes ripple-white {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce-number {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.animate-number-run {
+  display: inline-block;
+  animation: bounce-number 1.5s ease-in-out infinite;
+}

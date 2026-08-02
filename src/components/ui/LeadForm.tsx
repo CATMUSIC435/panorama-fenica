@@ -36,9 +36,9 @@ export const LeadForm: React.FC = () => {
               <h3 className="text-xl font-bold text-primary relative z-10">Register Interest</h3>
               <button 
                 onClick={closeModal}
-                className="p-2 text-secondary hover:text-primary hover:bg-white/50 rounded-full transition-all duration-300 relative z-10 backdrop-blur-md"
+                className="p-3 md:p-2 text-secondary hover:text-primary hover:bg-white/50 rounded-full transition-all duration-300 relative z-10 backdrop-blur-md"
               >
-                <X size={20} />
+                <X className="w-6 h-6 md:w-5 md:h-5" />
               </button>
             </div>
             

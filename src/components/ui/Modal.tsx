@@ -42,9 +42,9 @@ export const Modal: React.FC<ModalProps> = ({ title, children, maxWidth = 'max-w
             <h3 className="text-sm md:text-xl font-bold text-primary tracking-tight relative z-10 pl-1">{title}</h3>
             <button 
               onClick={handleClose}
-              className="p-1 md:p-2 text-primary hover:text-primary hover:bg-white/60 bg-white/40 border border-white/50 rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-all duration-300 relative z-10 backdrop-blur-md active:scale-90"
+              className="p-3 md:p-2 text-primary hover:text-primary hover:bg-white/60 bg-white/40 border border-white/50 rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.05)] transition-all duration-300 relative z-10 backdrop-blur-md active:scale-90"
             >
-              <X size={16} className="md:w-4 md:h-4" />
+              <X className="w-6 h-6 md:w-4 md:h-4" />
             </button>
           </div>
         )}
@@ -52,9 +52,9 @@ export const Modal: React.FC<ModalProps> = ({ title, children, maxWidth = 'max-w
         {!title && (
           <button 
             onClick={handleClose}
-            className="absolute top-2 right-2 md:top-6 md:right-6 z-10 p-1.5 md:p-2.5 text-primary bg-white/50 border border-white/60 hover:bg-white/80 rounded-full transition-all duration-300 backdrop-blur-md shadow-[0_4px_12px_rgba(0,0,0,0.05)] active:scale-90"
+            className="absolute top-2 right-2 md:top-6 md:right-6 z-10 p-3 md:p-2.5 text-primary bg-white/50 border border-white/60 hover:bg-white/80 rounded-full transition-all duration-300 backdrop-blur-md shadow-[0_4px_12px_rgba(0,0,0,0.05)] active:scale-90"
           >
-            <X size={16} className="md:w-5 md:h-5" />
+            <X className="w-6 h-6 md:w-5 md:h-5" />
           </button>
         )}
 

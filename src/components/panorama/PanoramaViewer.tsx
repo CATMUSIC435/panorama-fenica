@@ -120,7 +120,7 @@ const FloorPlanNadir = () => {
          return (
            <Html key={pin.id} position={[x, y, 0]} center>
              <div 
-               className="pointer-events-auto w-5 h-5 md:w-6 md:h-6 bg-white text-primary border border-primary/20 rounded-full flex items-center justify-center text-[8px] md:text-[10px] font-bold shadow-lg hover:scale-125 transition-transform cursor-pointer hover:bg-accent hover:text-white will-change-transform"
+               className="group relative pointer-events-auto w-4 h-4 md:w-5 md:h-5 bg-white/95 text-primary border border-primary/20 rounded-full flex items-center justify-center text-[7px] md:text-[8px] font-bold shadow-lg hover:scale-110 transition-transform cursor-pointer hover:bg-accent hover:text-white will-change-transform"
                onPointerDown={(e) => {
                  e.stopPropagation();
                  if (!isDebugMode) {
@@ -131,7 +131,10 @@ const FloorPlanNadir = () => {
                }}
                title={`Căn hộ ${pin.id}`}
              >
-               {pin.id.split('-')[1]}
+               <div className="ripple-container"><span></span></div>
+               <span className="animate-number-run pointer-events-none relative z-10">
+                 {pin.id.split('-')[1]}
+               </span>
              </div>
            </Html>
          );

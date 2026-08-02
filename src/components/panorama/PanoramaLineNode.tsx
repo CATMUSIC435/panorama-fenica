@@ -96,18 +96,18 @@ export const PanoramaLineNode: React.FC<PanoramaLineNodeProps> = React.memo(({ l
     <group>
       {/* 1. Permanent Glow - Vầng sáng nền (Tube 3D hoàn hảo, scale đúng khi zoom) */}
       <mesh renderOrder={99}>
-        <tubeGeometry args={[curve, tubularSegments, 0.5, 8, false]} />
+        <tubeGeometry args={[curve, tubularSegments, 1.0, 8, false]} />
         <meshBasicMaterial color={color} transparent opacity={0.3} depthWrite={false} side={THREE.DoubleSide} />
       </mesh>
       
       <mesh renderOrder={100}>
-        <tubeGeometry args={[curve, tubularSegments, 0.2, 8, false]} />
+        <tubeGeometry args={[curve, tubularSegments, 0.4, 8, false]} />
         <meshBasicMaterial color={color} transparent opacity={0.6} depthWrite={false} side={THREE.DoubleSide} />
       </mesh>
 
       {/* 2. Base Solid Core - Lõi trắng liền (Tube 3D mảnh) */}
       <mesh renderOrder={101}>
-        <tubeGeometry args={[curve, tubularSegments, 0.06, 8, false]} />
+        <tubeGeometry args={[curve, tubularSegments, 0.12, 8, false]} />
         <meshBasicMaterial color="#ffffff" transparent opacity={0.9} depthWrite={false} side={THREE.DoubleSide} />
       </mesh>
 
@@ -116,12 +116,12 @@ export const PanoramaLineNode: React.FC<PanoramaLineNodeProps> = React.memo(({ l
         <group key={i} ref={(el) => (cometsRef.current[i] = el as THREE.Group)}>
           {/* Lõi tia chớp */}
           <mesh rotation={[Math.PI / 2, 0, 0]} renderOrder={105}>
-            <capsuleGeometry args={[0.1, 3, 4, 8]} />
+            <capsuleGeometry args={[0.2, 1.5, 4, 8]} />
             <meshBasicMaterial color="#ffffff" depthWrite={false} />
           </mesh>
           {/* Vầng sáng bao quanh tia chớp */}
           <mesh rotation={[Math.PI / 2, 0, 0]} renderOrder={104}>
-            <capsuleGeometry args={[0.18, 3, 4, 8]} />
+            <capsuleGeometry args={[0.36, 1.5, 4, 8]} />
             <meshBasicMaterial color={color} transparent opacity={0.8} depthWrite={false} blending={THREE.AdditiveBlending} />
           </mesh>
         </group>

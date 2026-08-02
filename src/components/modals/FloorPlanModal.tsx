@@ -82,7 +82,10 @@ export const FloorPlanModal: React.FC = () => {
                 centerOnInit={true}
                 wheel={{ step: 0.1 }}
               >
-                {({ zoomIn, zoomOut, resetTransform }) => (
+                {({ zoomIn, zoomOut, resetTransform, state }) => {
+                  const currentScale = state?.scale || 1;
+                  
+                  return (
                   <React.Fragment>
                     <div className="absolute top-4 right-4 z-20 flex flex-col gap-2">
                       <button onClick={() => { playClick(); zoomIn(); }} className="w-10 h-10 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-xl border border-white/20 flex items-center justify-center text-white shadow-lg transition-all active:scale-95" title="Phóng to">
@@ -118,42 +121,49 @@ export const FloorPlanModal: React.FC = () => {
                           const isSelected = selectedUnit?.code === pin.id;
                           
                           return (
-                            <button
-                              key={pin.id}
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                playClick();
-                                // Fallback if the unit is not found in mock data
-                                const foundUnit = units.find(u => u.code === pin.id) || {
-                                  code: pin.id,
-                                  type: 'Tiêu chuẩn',
-                                  area: Math.floor(Math.random() * 30 + 50),
-                                  direction: 'Đông Nam',
-                                  view: 'Nội khu',
-                                  status: 'available',
-                                  price: 'Liên hệ',
-                                  polygon: ""
-                                };
-                                // Force any unit type dynamically if not matching
-                                setSelectedUnit(foundUnit);
-                              }}
-                              className={`absolute w-4 h-4 md:w-6 md:h-6 -ml-2 -mt-2 md:-ml-3 md:-mt-3 rounded-full flex items-center justify-center text-[8px] md:text-[10px] font-bold shadow-lg transition-all hover:scale-125 z-10 ${
-                                isSelected 
-                                  ? 'bg-accent text-white scale-125 shadow-[0_0_15px_rgba(var(--color-accent),0.8)] z-20' 
-                                  : 'bg-white/90 text-primary border border-primary/20 hover:bg-accent hover:text-white'
-                              }`}
-                              style={{ left: `${leftPercent}%`, top: `${topPercent}%` }}
-                              title={`Căn hộ ${pin.id}`}
-                            >
-                              {/* Only show the number part e.g. "01" */}
-                              {pin.id.split('-')[1]}
-                            </button>
+                              <button
+                                key={pin.id}
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  playClick();
+                                  // Fallback if the unit is not found in mock data
+                                  const foundUnit = units.find(u => u.code === pin.id) || {
+                                    code: pin.id,
+                                    type: 'Tiêu chuẩn',
+                                    area: Math.floor(Math.random() * 30 + 50),
+                                    direction: 'Đông Nam',
+                                    view: 'Nội khu',
+                                    status: 'available',
+                                    price: 'Liên hệ',
+                                    polygon: ""
+                                  };
+                                  // Force any unit type dynamically if not matching
+                                  setSelectedUnit(foundUnit);
+                                }}
+                                className={`absolute w-4 h-4 md:w-5 md:h-5 -ml-2 -mt-2 md:-ml-2.5 md:-mt-2.5 rounded-full flex items-center justify-center text-[6px] md:text-[8px] font-bold shadow-lg transition-colors z-10 group ${
+                                  isSelected 
+                                    ? 'bg-accent text-white shadow-[0_0_15px_rgba(var(--color-accent),0.8)] z-20' 
+                                    : 'bg-white/95 text-primary border border-primary/20 hover:bg-accent hover:text-white'
+                                }`}
+                                style={{ 
+                                  left: `${leftPercent}%`, 
+                                  top: `${topPercent}%`,
+                                  transform: `scale(${Math.min(1.5, 1 / currentScale)})`
+                                }}
+                                title={`Căn hộ ${pin.id}`}
+                              >
+                                <div className="ripple-container"><span></span></div>
+                                <span className="animate-number-run pointer-events-none relative z-10">
+                                  {pin.id.split('-')[1]}
+                                </span>
+                              </button>
                           );
                         })}
                       </div>
                     </TransformComponent>
                   </React.Fragment>
-                )}
+                  );
+                }}
               </TransformWrapper>
             </div>
           </div>
