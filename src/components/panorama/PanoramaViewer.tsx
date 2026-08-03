@@ -79,14 +79,13 @@ const FloorPlanNadir = () => {
       
       updateFloorplanTransform({ position: newPos as any, rotation: newRot as any, scale: newScl as any });
       
-      setLeva(prev => ({
-        ...prev,
+      setLeva({
         posX: newPos[0], posY: newPos[1], posZ: newPos[2],
         rotX: THREE.MathUtils.radToDeg(newRot[0]), 
         rotY: THREE.MathUtils.radToDeg(newRot[1]), 
         rotZ: THREE.MathUtils.radToDeg(newRot[2]),
         sclX: newScl[0], sclY: newScl[1], sclZ: newScl[2],
-      }));
+      });
     }
   };
   
