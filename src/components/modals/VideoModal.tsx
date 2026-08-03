@@ -72,6 +72,8 @@ export const VideoModal: React.FC = () => {
                     src={`https://img.youtube.com/vi/${itemId}/maxresdefault.jpg`}
                     alt="Video Thumbnail"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                     <div

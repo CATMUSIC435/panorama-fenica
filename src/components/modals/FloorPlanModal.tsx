@@ -99,13 +99,14 @@ export const FloorPlanModal: React.FC = () => {
                       </button>
                     </div>
                     <TransformComponent wrapperClass="w-full h-full" contentClass="w-full h-full flex items-center justify-center">
-                      <div className="relative inline-block w-full max-w-5xl">
+                      <div className="relative inline-block max-w-full max-h-[70vh]">
                         <img 
                           src={currentFloorData?.image} 
                           alt="Floor Plan" 
-                          className="w-full h-auto drop-shadow-2xl cursor-grab active:cursor-grabbing"
+                          className="max-w-full max-h-[70vh] object-contain drop-shadow-2xl cursor-grab active:cursor-grabbing"
                           draggable={false}
                           loading="lazy"
+                          decoding="async"
                           onLoad={(e) => {
                             setImgSize({
                               w: e.currentTarget.naturalWidth || 8000,
@@ -169,17 +170,7 @@ export const FloorPlanModal: React.FC = () => {
           </div>
           
           {/* Sidebar Area */}
-          {currentFloorData?.isUpdating ? (
-            <div className="w-full md:w-80 glass-card flex-shrink-0 flex flex-col items-center justify-center p-8 text-center rounded-2xl min-h-[400px]">
-              <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mb-6 border border-accent/20">
-                <svg className="w-10 h-10 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-3">Đang cập nhật</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Dữ liệu chi tiết và vị trí các căn hộ trên mặt bằng này đang được hoàn thiện. Vui lòng quay lại sau.</p>
-            </div>
-          ) : (
+          {!currentFloorData?.isUpdating && (
             <UnitDetailsSidebar 
               units={units}
               selectedUnit={selectedUnit}

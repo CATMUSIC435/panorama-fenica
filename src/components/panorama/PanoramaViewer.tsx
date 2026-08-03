@@ -8,6 +8,7 @@ import { mockScenes } from '../../data/mock';
 import { HotspotNode } from './HotspotNode';
 import { PanoramaLineNode } from './PanoramaLineNode';
 import { PanoramaModelNode } from './PanoramaModelNode';
+import { CompassBar } from './CompassBar';
 import { ErrorBoundary } from '../ErrorBoundary';
 import { mapData } from '../../data/mock';
 import { playClick } from '../../utils/sound';
@@ -27,16 +28,16 @@ const FloorPlanNadir = () => {
   // Keep track of the initial values so Leva doesn't reset on re-renders
   const [initialTransform] = useState(() => {
     return floorplanTransform || {
-      position: [8, -60, -2] as [number, number, number],
-      rotation: [-Math.PI / 2, 0, -Math.PI / 2.02] as [number, number, number],
-      scale: [1.1, 0.9, 1] as [number, number, number]
+      position: [12.0, -62.0, 2.0] as [number, number, number],
+      rotation: [THREE.MathUtils.degToRad(-90), 0, THREE.MathUtils.degToRad(-89)] as [number, number, number],
+      scale: [1.2, 1.4, 2.00] as [number, number, number]
     };
   });
 
   const transform = floorplanTransform || initialTransform;
 
   // Render Leva controls only in debug mode
-  const [{ mode, posX, posY, posZ, rotX, rotY, rotZ, sclX, sclY, sclZ }, setLeva] = useControls('Chỉnh Toạ Độ Mặt Bằng', () => ({
+  const [{ mode, posX, posY, posZ, rotX, rotY, rotZ, sclX, sclY, sclZ, aspectMult }, setLeva] = useControls('Chỉnh Toạ Độ Mặt Bằng', () => ({
     mode: { options: ['translate', 'rotate', 'scale'], value: 'translate' },
     posX: { value: initialTransform.position[0], step: 0.5 },
     posY: { value: initialTransform.position[1], step: 0.5 },
@@ -47,6 +48,7 @@ const FloorPlanNadir = () => {
     sclX: { value: initialTransform.scale[0], step: 0.05 },
     sclY: { value: initialTransform.scale[1], step: 0.05 },
     sclZ: { value: initialTransform.scale[2], step: 0.05 },
+    aspectMult: { value: 1.24, step: 0.01, label: 'Độ giãn (Aspect)' }
   }), [isDebugMode]);
 
   // Sync Leva -> Three.js and Store
@@ -77,13 +79,14 @@ const FloorPlanNadir = () => {
       
       updateFloorplanTransform({ position: newPos as any, rotation: newRot as any, scale: newScl as any });
       
-      setLeva({
+      setLeva(prev => ({
+        ...prev,
         posX: newPos[0], posY: newPos[1], posZ: newPos[2],
         rotX: THREE.MathUtils.radToDeg(newRot[0]), 
         rotY: THREE.MathUtils.radToDeg(newRot[1]), 
         rotZ: THREE.MathUtils.radToDeg(newRot[2]),
         sclX: newScl[0], sclY: newScl[1], sclZ: newScl[2],
-      });
+      }));
     }
   };
   
@@ -97,7 +100,7 @@ const FloorPlanNadir = () => {
   const imgW = texture.image?.width || 8000;
   const imgH = texture.image?.height || 4000;
   const planeW = 118;
-  const planeH = planeW * (imgH / imgW) * 1.24;
+  const planeH = planeW * (imgH / imgW) * aspectMult;
 
   const content = (
     <group 
@@ -381,6 +384,14 @@ const Controls = () => {
       perspectiveCamera.fov += (targetFov.current - perspectiveCamera.fov) * 0.1;
       perspectiveCamera.updateProjectionMatrix();
     }
+
+    const compassEl = document.getElementById('compass-slider-inner');
+    if (compassEl) {
+      const forward = new THREE.Vector3(0, 0, -1).applyQuaternion(camera.quaternion);
+      const angle = Math.atan2(forward.x, forward.z); 
+      const px = (angle / (2 * Math.PI)) * 1440;
+      compassEl.style.transform = `translateX(${px}px)`;
+    }
   });
 
   return (
@@ -534,7 +545,9 @@ export const PanoramaViewer: React.FC = () => {
   const setAutoRotate = usePanoramaStore(state => state.setAutoRotate);
   
   return (
-    <div className="absolute inset-0 w-full h-full z-0 bg-gray-950 cursor-grab active:cursor-grabbing">      <ErrorBoundary>
+    <div className="absolute inset-0 w-full h-full z-0 bg-gray-950 cursor-grab active:cursor-grabbing">
+      <CompassBar />
+      <ErrorBoundary>
         <Canvas 
           camera={{ position: [0, 0, 0.1], fov: 75 }} 
           gl={{ powerPreference: 'high-performance', antialias: true }}

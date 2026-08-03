@@ -9,6 +9,52 @@ interface PanoramaLineNodeProps {
   line: PanoramaLine;
 }
 
+const TaperedTube = React.memo(({ curve, tubularSegments, radius, color, opacity, renderOrder }: any) => {
+  const geomRef = useRef<THREE.TubeGeometry>(null);
+  
+  React.useLayoutEffect(() => {
+    if (!geomRef.current) return;
+    const geom = geomRef.current;
+    const posAttribute = geom.attributes.position;
+    const radialSegments = 8;
+    
+    for (let i = 0; i <= tubularSegments; i++) {
+      const t = i / tubularSegments;
+      
+      // Taper over the first and last 10%
+      let taper = 1.0;
+      const taperLen = 0.1; 
+      if (t < taperLen) {
+        taper = t / taperLen;
+      } else if (t > 1.0 - taperLen) {
+        taper = (1.0 - t) / taperLen;
+      }
+      
+      // Smooth taper (ease-in-out)
+      taper = taper * taper * (3 - 2 * taper);
+      taper = Math.max(0.001, taper);
+
+      const center = curve.getPointAt(t);
+      
+      for (let j = 0; j <= radialSegments; j++) {
+        const vertexIndex = i * (radialSegments + 1) + j;
+        const v = new THREE.Vector3().fromBufferAttribute(posAttribute, vertexIndex);
+        v.sub(center).multiplyScalar(taper).add(center);
+        posAttribute.setXYZ(vertexIndex, v.x, v.y, v.z);
+      }
+    }
+    posAttribute.needsUpdate = true;
+    geom.computeVertexNormals();
+  }, [curve, tubularSegments, radius]);
+
+  return (
+    <mesh renderOrder={renderOrder}>
+      <tubeGeometry ref={geomRef} args={[curve, tubularSegments, radius, 8, false]} />
+      <meshBasicMaterial color={color} transparent opacity={opacity} depthWrite={false} side={THREE.DoubleSide} />
+    </mesh>
+  );
+});
+
 export const PanoramaLineNode: React.FC<PanoramaLineNodeProps> = React.memo(({ line }) => {
   const cometsRef = useRef<THREE.Group[]>([]);
   const isDebugMode = usePanoramaStore(state => state.isDebugMode);
@@ -93,23 +139,14 @@ export const PanoramaLineNode: React.FC<PanoramaLineNodeProps> = React.memo(({ l
   const color = line.color || '#0088ff';
 
   return (
-    <group>
+    <group scale={[3, 3, 3]}>
       {/* 1. Permanent Glow - Vầng sáng nền (Tube 3D hoàn hảo, scale đúng khi zoom) */}
-      <mesh renderOrder={99}>
-        <tubeGeometry args={[curve, tubularSegments, 1.0, 8, false]} />
-        <meshBasicMaterial color={color} transparent opacity={0.3} depthWrite={false} side={THREE.DoubleSide} />
-      </mesh>
+      <TaperedTube curve={curve} tubularSegments={tubularSegments} radius={1.0} color={color} opacity={0.3} renderOrder={99} />
       
-      <mesh renderOrder={100}>
-        <tubeGeometry args={[curve, tubularSegments, 0.4, 8, false]} />
-        <meshBasicMaterial color={color} transparent opacity={0.6} depthWrite={false} side={THREE.DoubleSide} />
-      </mesh>
+      <TaperedTube curve={curve} tubularSegments={tubularSegments} radius={0.4} color={color} opacity={0.6} renderOrder={100} />
 
       {/* 2. Base Solid Core - Lõi trắng liền (Tube 3D mảnh) */}
-      <mesh renderOrder={101}>
-        <tubeGeometry args={[curve, tubularSegments, 0.12, 8, false]} />
-        <meshBasicMaterial color="#ffffff" transparent opacity={0.9} depthWrite={false} side={THREE.DoubleSide} />
-      </mesh>
+      <TaperedTube curve={curve} tubularSegments={tubularSegments} radius={0.12} color="#ffffff" opacity={0.9} renderOrder={101} />
 
       {/* 3. Running Flash - Các vệt sáng chớp chạy dọc đường (3D Capsules) */}
       {line.animated && [...Array(numComets)].map((_, i) => (

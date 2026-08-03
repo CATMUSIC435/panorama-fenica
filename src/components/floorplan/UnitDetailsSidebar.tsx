@@ -100,6 +100,7 @@ export const UnitDetailsSidebar: React.FC<UnitDetailsSidebarProps> = ({
                  alt={`3D Layout ${selectedUnit?.code}`} 
                  className="max-w-full max-h-[200px] object-contain drop-shadow-2xl group-hover:scale-110 transition-transform duration-500 ease-out cursor-pointer"
                  loading="lazy"
+                 decoding="async"
                />
              </div>
              <p className="text-center text-[11px] text-gray-500 mt-2 italic font-medium">* Ảnh chỉ mang tính chất tham khảo</p>

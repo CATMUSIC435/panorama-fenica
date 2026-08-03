@@ -74,9 +74,9 @@ export const HotspotNode: React.FC<HotspotNodeProps> = React.memo(({ hotspot }) 
               className="absolute bottom-full bg-[#0A2540] text-white border border-white/20 rounded-full px-1.5 py-0.5 md:px-2 md:py-0.5 2xl:px-3 2xl:py-1.5 flex flex-col items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.5)] transform transition-transform duration-300 group-hover:scale-110 whitespace-nowrap z-20 pointer-events-none will-change-transform"
               style={{ marginBottom: hotspot.lineHeight ? `${hotspot.lineHeight + 4}px` : '52px' }}
             >
-              <span className="text-[6px] md:text-[7px] 2xl:text-[10px] font-bold uppercase tracking-wider">{hotspot.title}</span>
+              <span className="text-[6px] md:text-[7px] 2xl:text-[10px] font-bold uppercase tracking-wider" style={{ color: hotspot.textColor || 'white' }}>{hotspot.title}</span>
               {hotspot.description && (
-                <span className="text-[5px] md:text-[6px] 2xl:text-[8px] font-medium text-white/80 mt-0.5">{hotspot.description}</span>
+                <span className="text-[5px] md:text-[6px] 2xl:text-[8px] font-medium mt-0.5" style={{ color: hotspot.textColor || 'rgba(255,255,255,0.8)' }}>{hotspot.description}</span>
               )}
             </div>
           )}

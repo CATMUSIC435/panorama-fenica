@@ -19,6 +19,7 @@ export interface Hotspot {
   description?: string;
   unitCode?: string; // For 'unit' type
   lineHeight?: number; // Custom line height in pixels to avoid overlap
+  textColor?: string; // Custom text color for the label
 }
 export interface PanoramaLine {
   id: string;

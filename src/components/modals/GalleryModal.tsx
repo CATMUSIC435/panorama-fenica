@@ -90,6 +90,7 @@ export const GalleryModal: React.FC = () => {
                   alt={`Gallery image ${index + 1}`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
+                  decoding="async"
                 />
                 
                 {/* Overlay on hover */}
