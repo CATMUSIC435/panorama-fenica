@@ -4,7 +4,7 @@ import { FloatingMenu } from './components/ui/FloatingMenu';
 import { RightToolbar } from './components/ui/RightToolbar';
 import { useUIStore } from './store/useUIStore';
 import { useTransition, animated } from '@react-spring/web';
-// import { Leva } from 'leva';
+import { Leva } from 'leva';
 const PanoramaViewer = React.lazy(() => import('./components/panorama/PanoramaViewer').then(m => ({ default: m.PanoramaViewer })));
 const OverviewModal = React.lazy(() => import('./components/modals/OverviewModal').then(module => ({ default: module.OverviewModal })));
 const FloorPlanModal = React.lazy(() => import('./components/modals/FloorPlanModal').then(module => ({ default: module.FloorPlanModal })));
@@ -60,7 +60,7 @@ function App() {
       </Suspense>
       
       {/* Hide Leva globally */}
-      {/* <Leva hidden /> */}
+      <Leva hidden />
     </div>
   );
 }
