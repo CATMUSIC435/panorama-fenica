@@ -63,7 +63,7 @@ export const mockScenes: Scene[] = [
       { id: 'h9', type: 'info', position: [3.21, -1.66, -45.41], title: 'Aeon Mall', description: '14 phút', lineHeight: 60 },
       { id: 'h10', type: 'info', position: [5.67, -1.87, -60.38], title: 'Sân Golf Sông Bé', description: '14 phút', lineHeight: 240 },
       { id: 'h1', type: 'info', position: [10.97, -5.83, -29.24], title: 'Ngã 6 An Phú', description: '3 phút', lineHeight: 100, textColor: '#F5D061' },
-      { id: 'h2', type: 'info', position: [15.46, -6.85, -39.63], title: 'Ga An Phú', description: '4 phút', lineHeight: 210, textColor: '#F5D061', icon: 'train' },
+      { id: 'h2', type: 'info', position: [15.46, -6.85, -39.63], title: 'Ga An Phú - Metro số 01', description: '4 phút', lineHeight: 210, textColor: '#F5D061', icon: 'train' },
       { id: 'hx', type: 'info', position: [20.64, -18.22, -15.85], title: 'Fenica Sales Gallery', description: 'Ngay tại dự án', lineHeight: 160 },
       { id: 'h12', type: 'info', position: [22.99, -4.62, -38.29], title: 'BVĐK An Phú', description: '5 phút', lineHeight: 320 },
       { id: 'h13', type: 'info', position: [34.04, -3.19, -46.32], title: 'BV Columbia Asia', description: '8 phút', lineHeight: 220 },
