@@ -78,7 +78,6 @@ export const mockScenes: Scene[] = [
       { id: 'h26', type: 'info', position: [-116.68, 0.30, 3.50], title: 'Làng Đại học', description: '16 phút', lineHeight: 210 },
       { id: 'h27', type: 'info', position: [-113.80, -23.57, 42.38], title: 'VÀNH ĐAI 3 TP.HCM', description: '8 LÀN XE CAO TỐC TRÊN CAO', lineHeight: 180, textColor: '#F5D061' },
       // { id: 'h28', type: 'info', position: [-133.70, -40.27, 19.07], title: 'MỸ PHƯỚC – TÂN VẠN', description: 'LỘ GIỚI 64 MÉT - 10 LÀN XE', lineHeight: 160, textColor: '#F5D061' },
-      // { id: 'h29', type: 'info', position: [-70, -126.57, -70], title: 'TRẦN QUANG DIỆU', description: 'LỘ GIỚI 22 MÉT - 4 LÀN XE', lineHeight: 240, textColor: '#F5D061' },
       // { id: 'h30', type: 'info', position: [43.98, -29.12, -177.68], title: 'DT743', description: 'LỘ GIỚI 60 MÉT - 10 LÀN XE', lineHeight: 160, textColor: '#F5D061' },
       { id: 'h31', type: 'info', position: [168.03, -31.01, -108.49], title: 'CAO TỐC TPHCM – TDM - CT', description: 'LỘ GIỚI 60 MÉT - 10 LÀN XE', lineHeight: 160, textColor: '#F5D061' },
       { id: 'h32', type: 'info', position: [-31.34, -0.34, 33.43], title: 'Cụm công nghiệp', description: '10 phút', lineHeight: 140 },
@@ -86,11 +85,13 @@ export const mockScenes: Scene[] = [
       { id: 'h33', type: 'info', position: [90.17, -11.76, -44.68], title: 'Tiểu học an Phú 3', description: '6 phút', lineHeight: 220 },
       { id: 'h34', type: 'info', position: [192.25, -13.63, 61.81], title: 'Chợ Phú phong', description: '5 phút', lineHeight: 150 },
       { id: 'h35', type: 'info', position: [200.65, -18.77, -18.77], title: 'Điện máy chợ lớn', description: '4 phút', lineHeight: 100 },
-      { id: 'h36', type: 'info', position: [-86.70, -99.90, 91.24], title: 'Trường mần non Hoa Anh Đào', description: '1 phút', lineHeight: 200 },
+      { id: 'h36', type: 'info', position: [-86.70, -99.90, 91.24], title: 'Trường mần non Hoa Anh Đào', description: '1 phút', lineHeight: 140 },
       { id: 'h37', type: 'info', position: [191.79, -62.71, 15.78], title: 'Trường mần non Ánh Mai', description: '1 phút', lineHeight: 120 },
       { id: 'h38', type: 'info', position: [9.11, -2.05, 52.56], title: 'Tổ hợp Giáo dục FPT 8,4 ha', description: '10 phút', lineHeight: 140 },
       { id: 'h38', type: 'info', position: [-1.65, -6.07, 52.17], title: 'KĐT Suối Cây Sao 16 ha', description: '3 phút', lineHeight: 240 },
       { id: 'h39', type: 'info', position: [-24.52, -1.91, 38.66], title: ' KĐT Mới Tân Bình 32,5 ha', description: '4 phút', lineHeight: 240 },
+      { id: 'h40', type: 'info', position: [-68.62, -132.74, -59.09], title: 'BÁCH HÓA XANH', description: '1 phút', lineHeight: 100 },
+      { id: 'h41', type: 'info', position: [-82.95, -123.94, -59.82], title: 'Siêu thị MAXIDI', description: '1 phút', lineHeight: 120},
     ],
     lines: [
       {
@@ -237,7 +238,85 @@ export const mockScenes: Scene[] = [
         dashed: true,
         animated: true,
         label: 'TRẦN QUANG DIỆU - LỘ GIỚI 22M - 4 LÀN XE'
-      },
+      }, 
+      {
+    "id": "line-1785844703251",
+    "points": [
+      [
+        -47.7,
+        -11.72,
+        -9.35
+      ],
+      [
+        -44.42,
+        -11.7,
+        -19.74
+      ],
+      [
+        -40.87,
+        -11.7,
+        -26.32
+      ],
+      [
+        -37.26,
+        -12.18,
+        -31.04
+      ],
+      [
+        -18.94,
+        -14.09,
+        -44.08
+      ],
+      [
+        -3.39,
+        -13.09,
+        -48.14
+      ],
+      [
+        4.92,
+        -11.76,
+        -48.35
+      ],
+      [
+        10.72,
+        -10.48,
+        -47.7
+      ],
+      [
+        19.39,
+        -8.66,
+        -45.27
+      ],
+      [
+        22.89,
+        -7.6,
+        -43.8
+      ],
+      [
+        27.34,
+        -5.41,
+        -41.51
+      ],
+      [
+        28.3,
+        -4.28,
+        -41
+      ],
+      [
+        28.39,
+        -2.66,
+        -41.07
+      ],
+      [
+        30.24,
+        -1.7,
+        -39.78
+      ]
+    ],
+    "color": "#ca8a04",
+    "dashed": true,
+    "animated": true
+  },
       {
         "id": "line-1785766711461",
         "points": [

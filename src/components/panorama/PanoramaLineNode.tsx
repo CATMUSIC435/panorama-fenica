@@ -89,29 +89,47 @@ export const PanoramaLineNode: React.FC<PanoramaLineNodeProps> = React.memo(({ l
   const labelData = useMemo(() => {
     if (!line.label || !curve) return null;
     
-    const t = 0.65; // Nhích chữ qua bên phải một chút thay vì 0.5 ở giữa đường
-    const position = curve.getPointAt(t);
-    // Kéo chữ nhô lên bề mặt đường một chút xíu để không bị chìm
-    const textPosition = position.clone().multiplyScalar(0.99); 
+    const chars = Array.from(line.label);
+    const N = chars.length;
+    const L = curve.getLength();
+    const u_center = 0.65;
     
-    const tangent = curve.getTangentAt(t).normalize();
-    const z = position.clone().normalize().negate(); // Trục Z hướng về camera (tâm)
-    let x = tangent.clone(); // Trục X dọc theo đường
-    let y = z.clone().cross(x).normalize(); // Trục Y vuông góc
+    // Khoảng cách giữa các chữ cái. FontSize đang là 2.5, ta chọn S khoảng 1.3
+    const baseSpacing = 1.3;
     
-    // Nếu chữ bị lộn ngược (Y hướng xuống), lật lại trục X và Y
-    if (y.y < 0) {
-      x.negate();
-      y.negate();
-    }
+    const charData = chars.map((char, i) => {
+      // Tính toán offset của ký tự này so với tâm chữ
+      const offset = (i - (N - 1) / 2) * baseSpacing;
+      let u = u_center + offset / L;
+      
+      // Chặn u trong khoảng [0, 1] để không bị văng ra khỏi đường
+      u = Math.max(0.001, Math.min(0.999, u));
+      
+      const position = curve.getPointAt(u);
+      // Kéo chữ nhô lên bề mặt đường một chút xíu để không bị chìm
+      const textPosition = position.clone().multiplyScalar(0.99); 
+      
+      const tangent = curve.getTangentAt(u).normalize();
+      const z = position.clone().normalize().negate(); // Trục Z hướng về camera (tâm)
+      let x = tangent.clone(); // Trục X dọc theo đường
+      let y = z.clone().cross(x).normalize(); // Trục Y vuông góc
+      
+      // Nếu chữ bị lộn ngược (Y hướng xuống), lật lại trục X và Y
+      if (y.y < 0) {
+        x.negate();
+        y.negate();
+      }
+      
+      // Đẩy chữ nhích lên một chút theo phương thẳng đứng của chữ để nó "đứng trên" bề mặt đường
+      textPosition.add(y.clone().multiplyScalar(0.4));
+      
+      const matrix = new THREE.Matrix4().makeBasis(x, y, z);
+      const quaternion = new THREE.Quaternion().setFromRotationMatrix(matrix);
+      
+      return { char, position: textPosition, quaternion, id: `char-${i}` };
+    });
     
-    // Đẩy chữ nhích lên một chút theo phương thẳng đứng của chữ để nó "đứng trên" bề mặt đường
-    textPosition.add(y.clone().multiplyScalar(0.4));
-    
-    const matrix = new THREE.Matrix4().makeBasis(x, y, z);
-    const quaternion = new THREE.Quaternion().setFromRotationMatrix(matrix);
-    
-    return { position: textPosition, quaternion };
+    return charData;
   }, [curve, line.label]);
 
   const numComets = 6; // Number of continuous pulses
@@ -164,23 +182,27 @@ export const PanoramaLineNode: React.FC<PanoramaLineNodeProps> = React.memo(({ l
         </group>
       ))}
 
-      {/* 5. 3D Label Text (Nếu có) */}
+      {/* 5. Curved 3D Label Text */}
       {labelData && line.label && (
-        <Text
-          position={labelData.position}
-          quaternion={labelData.quaternion}
-          fontSize={2.5}
-          color="#ffffff"
-          outlineWidth={0.08}
-          outlineColor="#000000"
-          anchorX="center"
-          anchorY="bottom"
-          renderOrder={110}
-          fontWeight="bold"
-          letterSpacing={0.1}
-        >
-          {line.label}
-        </Text>
+        <group>
+          {labelData.map((data, idx) => (
+            <Text
+              key={data.id}
+              position={data.position}
+              quaternion={data.quaternion}
+              fontSize={2.5}
+              color="#ffffff"
+              outlineWidth={0.08}
+              outlineColor="#000000"
+              anchorX="center"
+              anchorY="bottom"
+              renderOrder={110}
+              fontWeight="bold"
+            >
+              {data.char}
+            </Text>
+          ))}
+        </group>
       )}
 
       {/* 6. Draggable Control Points cho chế độ Debug */}

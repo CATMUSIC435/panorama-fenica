@@ -5,6 +5,7 @@ import { RightToolbar } from './components/ui/RightToolbar';
 import { useUIStore } from './store/useUIStore';
 import { useTransition, animated } from '@react-spring/web';
 import { Leva } from 'leva';
+import { DebugPanel } from './components/panorama/DebugPanel';
 const PanoramaViewer = React.lazy(() => import('./components/panorama/PanoramaViewer').then(m => ({ default: m.PanoramaViewer })));
 const OverviewModal = React.lazy(() => import('./components/modals/OverviewModal').then(module => ({ default: module.OverviewModal })));
 const FloorPlanModal = React.lazy(() => import('./components/modals/FloorPlanModal').then(module => ({ default: module.FloorPlanModal })));
@@ -61,6 +62,9 @@ function App() {
       
       {/* Hide Leva globally */}
       <Leva hidden />
+      
+      {/* Debug Panel */}
+      <DebugPanel />
     </div>
   );
 }
