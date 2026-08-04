@@ -185,7 +185,7 @@ export const PanoramaLineNode: React.FC<PanoramaLineNodeProps> = React.memo(({ l
       {/* 5. Curved 3D Label Text */}
       {labelData && line.label && (
         <group>
-          {labelData.map((data, idx) => (
+          {labelData.map((data) => (
             <Text
               key={data.id}
               position={data.position}
