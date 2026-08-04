@@ -16,7 +16,7 @@ const TaperedTube = React.memo(({ curve, tubularSegments, radius, color, opacity
     if (!geomRef.current) return;
     const geom = geomRef.current;
     const posAttribute = geom.attributes.position;
-    const radialSegments = 8;
+    const radialSegments = 32;
     
     for (let i = 0; i <= tubularSegments; i++) {
       const t = i / tubularSegments;
@@ -49,7 +49,7 @@ const TaperedTube = React.memo(({ curve, tubularSegments, radius, color, opacity
 
   return (
     <mesh renderOrder={renderOrder}>
-      <tubeGeometry ref={geomRef} args={[curve, tubularSegments, radius, 8, false]} />
+      <tubeGeometry ref={geomRef} args={[curve, tubularSegments, radius, 32, false]} />
       <meshBasicMaterial color={color} transparent opacity={opacity} depthWrite={false} side={THREE.DoubleSide} />
     </mesh>
   );
@@ -141,24 +141,24 @@ export const PanoramaLineNode: React.FC<PanoramaLineNodeProps> = React.memo(({ l
   return (
     <group scale={[3, 3, 3]}>
       {/* 1. Permanent Glow - Vầng sáng nền (Tube 3D hoàn hảo, scale đúng khi zoom) */}
-      <TaperedTube curve={curve} tubularSegments={tubularSegments} radius={1.0} color={color} opacity={0.3} renderOrder={99} />
+      <TaperedTube curve={curve} tubularSegments={tubularSegments} radius={0.75} color={color} opacity={0.3} renderOrder={99} />
       
-      <TaperedTube curve={curve} tubularSegments={tubularSegments} radius={0.4} color={color} opacity={0.6} renderOrder={100} />
+      <TaperedTube curve={curve} tubularSegments={tubularSegments} radius={0.3} color={color} opacity={0.6} renderOrder={100} />
 
       {/* 2. Base Solid Core - Lõi trắng liền (Tube 3D mảnh) */}
-      <TaperedTube curve={curve} tubularSegments={tubularSegments} radius={0.12} color="#ffffff" opacity={0.9} renderOrder={101} />
+      <TaperedTube curve={curve} tubularSegments={tubularSegments} radius={0.09} color="#ffffff" opacity={0.9} renderOrder={101} />
 
       {/* 3. Running Flash - Các vệt sáng chớp chạy dọc đường (3D Capsules) */}
       {line.animated && [...Array(numComets)].map((_, i) => (
         <group key={i} ref={(el) => (cometsRef.current[i] = el as THREE.Group)}>
           {/* Lõi tia chớp */}
           <mesh rotation={[Math.PI / 2, 0, 0]} renderOrder={105}>
-            <capsuleGeometry args={[0.2, 1.5, 4, 8]} />
+            <capsuleGeometry args={[0.15, 1.5, 16, 32]} />
             <meshBasicMaterial color="#ffffff" depthWrite={false} />
           </mesh>
           {/* Vầng sáng bao quanh tia chớp */}
           <mesh rotation={[Math.PI / 2, 0, 0]} renderOrder={104}>
-            <capsuleGeometry args={[0.36, 1.5, 4, 8]} />
+            <capsuleGeometry args={[0.27, 1.5, 16, 32]} />
             <meshBasicMaterial color={color} transparent opacity={0.8} depthWrite={false} blending={THREE.AdditiveBlending} />
           </mesh>
         </group>

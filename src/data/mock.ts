@@ -52,7 +52,7 @@ export const mockScenes: Scene[] = [
     name: 'Exterior View',
     image: './assets/mat-bang-tang-360-6mb.jpg', // Using the asset provided
     hotspots: [
-      { id: 'h18', type: 'info', position: [-142.60, -20.57, -29.84], title: 'Ga S12 - Metro số 01', description: '5 phút', lineHeight: 90, textColor: '#F5D061' },
+      { id: 'h18', type: 'info', position: [-142.60, -20.57, -29.84], title: 'Ga S12 - Metro số 01', description: '5 phút', lineHeight: 90, textColor: '#F5D061', icon: 'train' },
       { id: 'h6', type: 'info', position: [-104.99, -1.84, -79.13], title: 'Vincom Plaza', description: '8 phút', lineHeight: 250 },
       { id: 'h5', type: 'info', position: [-64.07, -3.08, -52.45], title: 'KCN Sóng Thần 2', description: '7 phút', lineHeight: 160 },
       { id: 'h4', type: 'info', position: [-79.18, -2.35, -69.37], title: 'ICD Sóng Thần', description: '7 phút', lineHeight: 90 },
@@ -63,19 +63,19 @@ export const mockScenes: Scene[] = [
       { id: 'h9', type: 'info', position: [3.21, -1.66, -45.41], title: 'Aeon Mall', description: '14 phút', lineHeight: 60 },
       { id: 'h10', type: 'info', position: [5.67, -1.87, -60.38], title: 'Sân Golf Sông Bé', description: '14 phút', lineHeight: 240 },
       { id: 'h1', type: 'info', position: [10.97, -5.83, -29.24], title: 'Ngã 6 An Phú', description: '3 phút', lineHeight: 100, textColor: '#F5D061' },
-      { id: 'h2', type: 'info', position: [15.46, -6.85, -39.63], title: 'Ga An Phú', description: '4 phút', lineHeight: 210, textColor: '#F5D061' },
+      { id: 'h2', type: 'info', position: [15.46, -6.85, -39.63], title: 'Ga An Phú', description: '4 phút', lineHeight: 210, textColor: '#F5D061', icon: 'train' },
       { id: 'hx', type: 'info', position: [20.64, -18.22, -15.85], title: 'Fenica Sales Gallery', description: 'Ngay tại dự án', lineHeight: 160 },
       { id: 'h12', type: 'info', position: [22.99, -4.62, -38.29], title: 'BVĐK An Phú', description: '5 phút', lineHeight: 320 },
       { id: 'h13', type: 'info', position: [34.04, -3.19, -46.32], title: 'BV Columbia Asia', description: '8 phút', lineHeight: 220 },
       { id: 'h15', type: 'info', position: [63.02, -5.23, -70.59], title: 'ĐH Kinh tế - Kỹ thuật Bình Dương', description: '7 phút', lineHeight: 60 },
-      { id: 'h16', type: 'info', position: [98.42, -8.05, -22.68], title: 'THCS Nguyễn Văn Trỗi & TH An Phú 1', description: '6 phút', lineHeight: 220 },
+      { id: 'h16', type: 'info', position: [98.42, -8.05, -22.68], title: 'THCS Nguyễn Văn Trỗi & TH An Phú 1', description: '6 phút', lineHeight: 260 },
       { id: 'h19', type: 'info', position: [72.70, -5.44, 40.91], title: 'Chợ Phú An', description: '5 phút', lineHeight: 80 },
-      { id: 'h20', type: 'info', position: [32.43, -7.49, 41.74], title: 'Khu Di tích & Du lịch Hố Lang', description: '2 phút', lineHeight: 160 },
+      { id: 'h20', type: 'info', position: [32.43, -7.49, 41.74], title: 'Khu Du lịch Hố Lang', description: '2 phút', lineHeight: 160 },
       { id: 'h21', type: 'info', position: [-8.88, -3.24, 51.69], title: 'KĐT Đông Bình Dương', description: '7 phút', lineHeight: 80 },
       { id: 'h22', type: 'info', position: [-30.11, -2.99, 34.41], title: 'THCS Tân Bình', description: '4 phút', lineHeight: 100 },
       { id: 'h23', type: 'info', position: [-46.44, -1.29, 26.13], title: 'Chợ Tân Bình', description: '5 phút', lineHeight: 200 },
       { id: 'h25', type: 'info', position: [-95.73, -0.73, 19.48], title: 'KCN Tân Đông Hiệp', description: '8 phút', lineHeight: 160 },
-      { id: 'h26', type: 'info', position: [-116.68, 0.30, 3.50], title: 'Làng Đại học', description: '16 phút', lineHeight: 200 },
+      { id: 'h26', type: 'info', position: [-116.68, 0.30, 3.50], title: 'Làng Đại học', description: '16 phút', lineHeight: 210 },
       { id: 'h27', type: 'info', position: [-113.80, -23.57, 42.38], title: 'VÀNH ĐAI 3 TP.HCM', description: '8 LÀN XE CAO TỐC TRÊN CAO', lineHeight: 180, textColor: '#F5D061' },
       // { id: 'h28', type: 'info', position: [-133.70, -40.27, 19.07], title: 'MỸ PHƯỚC – TÂN VẠN', description: 'LỘ GIỚI 64 MÉT - 10 LÀN XE', lineHeight: 160, textColor: '#F5D061' },
       // { id: 'h29', type: 'info', position: [-70, -126.57, -70], title: 'TRẦN QUANG DIỆU', description: 'LỘ GIỚI 22 MÉT - 4 LÀN XE', lineHeight: 240, textColor: '#F5D061' },
@@ -89,8 +89,8 @@ export const mockScenes: Scene[] = [
       { id: 'h36', type: 'info', position: [-86.70, -99.90, 91.24], title: 'Trường mần non Hoa Anh Đào', description: '1 phút', lineHeight: 200 },
       { id: 'h37', type: 'info', position: [191.79, -62.71, 15.78], title: 'Trường mần non Ánh Mai', description: '1 phút', lineHeight: 120 },
       { id: 'h38', type: 'info', position: [9.11, -2.05, 52.56], title: 'Tổ hợp Giáo dục FPT 8,4 ha', description: '10 phút', lineHeight: 140 },
-      { id: 'h38', type: 'info', position: [-1.65, -6.07, 52.17], title: 'KĐT Suối Cây Sao 16 ha', description: '6 phút', lineHeight: 240 },
-      { id: 'h39', type: 'info', position: [-24.52, -1.91, 38.66], title: ' KĐT Mới Tân Bình 32,5 ha', description: '8 phút', lineHeight: 240 },
+      { id: 'h38', type: 'info', position: [-1.65, -6.07, 52.17], title: 'KĐT Suối Cây Sao 16 ha', description: '3 phút', lineHeight: 240 },
+      { id: 'h39', type: 'info', position: [-24.52, -1.91, 38.66], title: ' KĐT Mới Tân Bình 32,5 ha', description: '4 phút', lineHeight: 240 },
     ],
     lines: [
       {
@@ -133,12 +133,36 @@ export const mockScenes: Scene[] = [
           [38.46, -4.48, -31.64],
           [40.23, -3.95, -29.43],
           [41.57, -3.31, -27.59],
-          [42.3, -2.69, -26.52]
+          [42.3, -2.69, -26.52], [
+            43.45,
+            -2.87,
+            -24.58
+          ],
+          [
+            43.9,
+            -2.66,
+            -23.78
+          ],
+          [
+            45.89,
+            -2.59,
+            -19.68
+          ],
+          [
+            46.55,
+            -2.32,
+            -18.11
+          ],
+          [
+            47.41,
+            -1.47,
+            -15.81
+          ]
         ],
         color: '#2563eb', // Đậm hơn (Blue-600)
         dashed: true,
         animated: true,
-        label: 'MỸ PHƯỚC - TÂN VẠN - LỘ GIỚI 64 MÉT - 10 LÀN XE'
+        label: 'MỸ PHƯỚC - TÂN VẠN - LỘ GIỚI 64M - 10 LÀN XE'
       },
       {
         id: 'line-1785665145510',
@@ -203,24 +227,34 @@ export const mockScenes: Scene[] = [
             -1.52,
             37.33
           ],
-           [
-        30.65,
-        -0.29,
-        39.5
-      ]
+          [
+            30.65,
+            -0.29,
+            39.5
+          ]
         ],
         color: '#ca8a04', // Đậm hơn (Yellow-600)
         dashed: true,
         animated: true,
-        label: 'TRẦN QUANG DIỆU - LỘ GIỚI 22 MÉT - 4 LÀN XE'
+        label: 'TRẦN QUANG DIỆU - LỘ GIỚI 22M - 4 LÀN XE'
       },
       {
         "id": "line-1785766711461",
         "points": [
           [
-            -31.91,
-            -1.52,
-            -38.46
+            -39.5,
+            -0.97,
+            -30.64
+          ],
+          [
+            -28.25,
+            -3.82,
+            -41.08
+          ],
+          [
+            -14.41,
+            -5.98,
+            -47.5
           ],
           [
             26.18,
@@ -238,15 +272,15 @@ export const mockScenes: Scene[] = [
             28.22
           ],
           [
-        39.6,
-        -0.7,
-        30.52
-      ]
+            39.6,
+            -0.7,
+            30.52
+          ]
         ],
         "color": "#DC143C",
         "dashed": true,
         "animated": true,
-        label: 'DT743 - LỘ GIỚI 60 MÉT - 10 LÀN XE'
+        label: 'DT743 - LỘ GIỚI 60M - 10 LÀN XE'
       }
     ],
     models: [

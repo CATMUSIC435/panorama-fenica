@@ -1,6 +1,7 @@
 import React, { useMemo, useCallback } from 'react';
 import { Html } from '@react-three/drei';
 import * as THREE from 'three';
+import { Train } from 'lucide-react';
 import { usePanoramaStore } from '../../store/usePanoramaStore';
 import { playClick } from '../../utils/sound';
 import { Hotspot } from '../../types';
@@ -71,13 +72,20 @@ export const HotspotNode: React.FC<HotspotNodeProps> = React.memo(({ hotspot }) 
           {/* Label (Positioned at the top of the line) */}
           {hotspot.title && (
             <div 
-              className="absolute bottom-full bg-[#0A2540] text-white border border-white/20 rounded-full px-1.5 py-0.5 md:px-2 md:py-0.5 2xl:px-3 2xl:py-1.5 flex flex-col items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.5)] transform transition-transform duration-300 group-hover:scale-110 whitespace-nowrap z-20 pointer-events-none will-change-transform"
+              className="absolute bottom-full bg-[#0A2540] text-white border border-white/20 rounded-full px-2 py-1 md:px-3 md:py-1.5 2xl:px-4 2xl:py-2 flex items-center gap-2 shadow-[0_4px_12px_rgba(0,0,0,0.5)] transform transition-transform duration-300 group-hover:scale-110 whitespace-nowrap z-20 pointer-events-none will-change-transform"
               style={{ marginBottom: hotspot.lineHeight ? `${hotspot.lineHeight + 4}px` : '52px' }}
             >
-              <span className="text-[6px] md:text-[7px] 2xl:text-[10px] font-bold uppercase tracking-wider" style={{ color: hotspot.textColor || 'white' }}>{hotspot.title}</span>
-              {hotspot.description && (
-                <span className="text-[5px] md:text-[6px] 2xl:text-[8px] font-medium mt-0.5" style={{ color: hotspot.textColor || 'rgba(255,255,255,0.8)' }}>{hotspot.description}</span>
+              {hotspot.icon === 'train' && (
+                <div className="bg-[#F5D061] p-1.5 rounded-full shadow-[0_0_10px_rgba(245,208,97,0.4)]">
+                  <Train className="w-3 h-3 md:w-4 md:h-4 2xl:w-5 2xl:h-5 text-[#0A2540]" strokeWidth={2.5} />
+                </div>
               )}
+              <div className="flex flex-col items-center justify-center">
+                <span className="text-[6px] md:text-[7px] 2xl:text-[10px] font-bold uppercase tracking-wider" style={{ color: hotspot.textColor || 'white' }}>{hotspot.title}</span>
+                {hotspot.description && (
+                  <span className="text-[5px] md:text-[6px] 2xl:text-[8px] font-medium mt-0.5" style={{ color: hotspot.textColor || 'rgba(255,255,255,0.8)' }}>{hotspot.description}</span>
+                )}
+              </div>
             </div>
           )}
         </div>
