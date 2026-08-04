@@ -15,7 +15,7 @@ import { playClick } from '../../utils/sound';
 import { useUIStore } from '../../store/useUIStore';
 
 const FloorPlanNadir = () => {
-  const texture = useTexture('./assets/images/plans/mau-mat-bang-tang-03.png');
+  const texture = useTexture('./assets/images/plans/mau-mat-bang-tang-cls.png');
   const openModal = useUIStore(state => state.openModal);
   const setPreselectedUnitId = useUIStore(state => state.setPreselectedUnitId);
   
