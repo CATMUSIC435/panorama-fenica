@@ -9,7 +9,7 @@ export const CompassBar: React.FC = () => {
       {/* Moving Scale */}
       <div className="absolute top-0 left-1/2 h-full w-0 will-change-transform" id="compass-slider-inner">
         {[-4, -3, -2, -1, 0, 1, 2, 3, 4].map(i => {
-           const labels = ['NAM', 'TÂY', 'BẮC', 'ĐÔNG'];
+           const labels = ['ĐÔNG', 'NAM', 'TÂY', 'BẮC'];
            const label = labels[((i % 4) + 4) % 4];
            return (
              <div 
