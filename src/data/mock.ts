@@ -77,9 +77,9 @@ export const mockScenes: Scene[] = [
       { id: 'h25', type: 'info', position: [-95.73, -0.73, 19.48], title: 'KCN Tân Đông Hiệp', description: '8 phút', lineHeight: 160 },
       { id: 'h26', type: 'info', position: [-116.68, 0.30, 3.50], title: 'Làng Đại học', description: '16 phút', lineHeight: 200 },
       { id: 'h27', type: 'info', position: [-113.80, -23.57, 42.38], title: 'VÀNH ĐAI 3 TP.HCM', description: '8 LÀN XE CAO TỐC TRÊN CAO', lineHeight: 180, textColor: '#F5D061' },
-      { id: 'h28', type: 'info', position: [-133.70, -40.27, 19.07], title: 'MỸ PHƯỚC – TÂN VẠN', description: 'LỘ GIỚI 64 MÉT - 10 LÀN XE', lineHeight: 160, textColor: '#F5D061' },
-      { id: 'h29', type: 'info', position: [-70, -126.57, -70], title: 'TRẦN QUANG DIỆU', description: 'LỘ GIỚI 22 MÉT - 4 LÀN XE', lineHeight: 240, textColor: '#F5D061' },
-      { id: 'h30', type: 'info', position: [43.98, -29.12, -177.68], title: 'DT743', description: 'LỘ GIỚI 60 MÉT - 10 LÀN XE', lineHeight: 160, textColor: '#F5D061' },
+      // { id: 'h28', type: 'info', position: [-133.70, -40.27, 19.07], title: 'MỸ PHƯỚC – TÂN VẠN', description: 'LỘ GIỚI 64 MÉT - 10 LÀN XE', lineHeight: 160, textColor: '#F5D061' },
+      // { id: 'h29', type: 'info', position: [-70, -126.57, -70], title: 'TRẦN QUANG DIỆU', description: 'LỘ GIỚI 22 MÉT - 4 LÀN XE', lineHeight: 240, textColor: '#F5D061' },
+      // { id: 'h30', type: 'info', position: [43.98, -29.12, -177.68], title: 'DT743', description: 'LỘ GIỚI 60 MÉT - 10 LÀN XE', lineHeight: 160, textColor: '#F5D061' },
       { id: 'h31', type: 'info', position: [168.03, -31.01, -108.49], title: 'CAO TỐC TPHCM – TDM - CT', description: 'LỘ GIỚI 60 MÉT - 10 LÀN XE', lineHeight: 160, textColor: '#F5D061' },
       { id: 'h32', type: 'info', position: [-31.34, -0.34, 33.43], title: 'Cụm công nghiệp', description: '10 phút', lineHeight: 140 },
       { id: 'h24', type: 'info', position: [-45.05, 0.00, 28.48], title: 'THPT Nguyễn Thị Minh Khai & THCS Tân Đông Hiệp B', description: '7 phút', lineHeight: 280 },
@@ -138,7 +138,7 @@ export const mockScenes: Scene[] = [
         color: '#2563eb', // Đậm hơn (Blue-600)
         dashed: true,
         animated: true,
-        label: 'MỸ PHƯỚC - TÂN VẠN'
+        label: 'MỸ PHƯỚC - TÂN VẠN - LỘ GIỚI 64 MÉT - 10 LÀN XE'
       },
       {
         id: 'line-1785665145510',
@@ -212,7 +212,7 @@ export const mockScenes: Scene[] = [
         color: '#ca8a04', // Đậm hơn (Yellow-600)
         dashed: true,
         animated: true,
-        label: 'TRẦN QUANG DIỆU'
+        label: 'TRẦN QUANG DIỆU - LỘ GIỚI 22 MÉT - 4 LÀN XE'
       },
       {
         "id": "line-1785766711461",
@@ -246,7 +246,7 @@ export const mockScenes: Scene[] = [
         "color": "#DC143C",
         "dashed": true,
         "animated": true,
-        label: 'DT743'
+        label: 'DT743 - LỘ GIỚI 60 MÉT - 10 LÀN XE'
       }
     ],
     models: [
